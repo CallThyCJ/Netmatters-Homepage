@@ -1,0 +1,15 @@
+.titleBar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.titleItems {
+    flex-grow: 1;
+}
+
+#burgerMenuButton {
+    min-width: 300px;
+    flex-shrink: 0;
+}
