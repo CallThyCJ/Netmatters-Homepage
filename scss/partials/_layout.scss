@@ -87,6 +87,10 @@
     position: relative;
 }
 
+.infoBanner img {
+    background-size: cover;
+}
+
 .infoBannerItem {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
