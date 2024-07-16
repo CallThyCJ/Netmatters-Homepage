@@ -88,7 +88,11 @@
 
 #bannerImage {
     //background-size: cover;
+    flex-basis: 100%;
     z-index: 0;
+    min-width: none;
+    min-height: 550px;
+    //overflow: hidden;
 }
 
 // .infoBannerItem {
