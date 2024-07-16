@@ -81,7 +81,7 @@
 .infoBanner {
     display: flex !important; 
     height: 550px;
-    width: 100%;
+    width: auto;
     position: relative;
     justify-content: center;
 }
@@ -106,4 +106,15 @@
     z-index: 1;
     align-self: center;
 }
+
+.overlayingBannerItems h1, p{
+    z-index: 2;
+    text-align: center;
+}
+
+.overlayingBannerItems button {
+    align-self: center;
+}
+
+
 
