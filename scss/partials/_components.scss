@@ -9,6 +9,26 @@ button {
     border: none;
 }
 
+.blueButton {
+    background-color: #4183d7;
+}
+
+.darkButton {
+    background-color: #272936;
+}
+
+.greenButton {
+    background-color: #2ecc71;
+}
+
+.darkGreenButton {
+    background-color: #00b67b;
+}
+
+.redButton {
+    background-color:#f62459;
+}
+
 #serviceMenu H1 {
     font-size: 3rem;
     margin-top: 6%;
@@ -29,3 +49,91 @@ button {
 #itButton {
     background-color: #4183d7;
 }
+
+#welcome, .infoSection {
+    background-color: #333645;
+    color: white;
+}
+
+#welcome h1 {
+    font-size: 2.4rem;
+}
+
+#welcomeText p {
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+#welcome button {
+    font-size: 1.5rem;
+    padding: 2%;
+}
+
+#stars img {
+    min-width: 0;
+}
+
+#clientQoute {
+    text-align: left;
+    font-size: 1.7rem;
+}
+
+#client {
+    color: #a3a8ac;
+}
+
+#newsSection h1 {
+    font-size: 2.3rem;
+    color: #333645;
+}
+
+.midSection p {
+    color: #666;
+}
+
+.topSection img {
+    width: 100%;
+    height: 100%;
+}
+
+.newsItem-1 h3 {
+    color: #f62459;
+}
+
+.newsItem-2 h3 {
+    color: #f7b322;
+}
+
+.newsItem-3 h3 {
+    color: #4183d7;
+}
+
+.socials {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-right: 3%;
+    padding-left: 3%;
+}
+
+.netmattersLinks a {
+    color: white;
+    text-decoration: none;
+}
+
+.netmattersLinks a:visited {
+    color: white;
+    border: none;
+}
+
+#copyrightSection {
+    background-color: #212330;
+}
+

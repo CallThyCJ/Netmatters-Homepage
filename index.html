@@ -39,7 +39,7 @@
 
         <div id="serviceMenu">
             <H1>Our Services</H1>
-            <div id="container">
+            <div class="container">
                 <div class="item item-1"> 
                     <img src="Assets/Bespoke Software Logo.png" alt="Bespoke Software Logo">
                     <h3>Bespoke Software</h3>
@@ -58,7 +58,7 @@
                     <img src="Assets/Digital Marketing Logo.png" alt="Digital Marketing Logo">
                     <h3>Digital Marketing</h3>
                     <p>Driven brand awareness &amp; ROI through creative digital marketing campaigns.</p>
-                    <button type="button" class="tagButton">Read More</button>
+                    <button type="button" class="tagButton greenButton">Read More</button>
                </div>
 
                <div class="item item-4">
@@ -89,52 +89,62 @@
                     <button type="button" class="tagButton">Read More</button>
                </div>   
             </div>
-            
-            <h2>View Our Work &rarr;</h1>
-            <div id="accreditations">
+            <div class="ourWork">
+                <h2>View Our Work &rarr;</h2>
+            </div>
+            <div class="accreditations">
                 <img src="Assets/princess-royal-training-bw.png" alt="Royal training award">
                 <img src="Assets/norfolk carbon charter.png" alt="norfolk carbon award">
                 <img src="Assets/ISO Certification.png" alt="ISO award">
             </div>
         </div>
 
-        <div>
+        <div id="welcome">
             <h1>Welcome to Netmatters</h1>
-            <div>
-                <p>Netmatters is a leading Bespoke Software, IT Support, and Digital Marketing company based in the East of England with offices in Cambridge, Wymondham, and Great Yarmouth.</p>
+            <div id="welcomeText">
+                <p class="bold">Netmatters is a leading Bespoke Software, IT Support, and Digital Marketing company based in the East of England with offices in Cambridge, Wymondham, and Great Yarmouth.</p>
                 <p>We aren't tied into contracts with third-party providers, so you know that our recommendations for your business are based purely with one benefit in mind: to help improve your business with the most appropriate solutions.</p>
                 <p>We pride ourselves on being an ethical business and have a unique business offering and cost model that ensures you get the most from our relationship in an upfront manner.</p>
-                <div>
-                    <button type="button">Why Choose Us &rarr</button>
-                    <button type="button">Our Culture &rarr</button>
+                <div class="welcomeButtons">
+                    <button type="button" class="darkButton">Why Choose Us &rarr;</button>
+                    <button type="button" class="darkButton">Our Culture &rarr;</button>
                 </div>
             </div>
-            <H1>What Our Clients Think</H1>
             <div>
-                <img src="Assets/Stars.png" alt="5 Stars">
-                <p>Netmatters stood out from the start. Great guys and very easy to work with. Both the build and digital marketing teams are clearly skilled -they know their stuff! They delivered a website to our (high!) expectations and went over and above to ensure we were satisfied clients - and we are!</p>
-                <p>Eleanor Bishop, Head of Marketing - Ashcroft Partnership LLP</p>
-                <div>
-                    <button>Google Reviews &rarr;</button>
-                    <button>Trustpilot Reviews &rarr;</button>
+                <H1>What Our Clients Think</H1>
+            </div>
+            <div>
+                <div id="stars">
+                    <img src="Assets/Star.png" alt="Star Image">
+                    <img src="Assets/Star.png" alt="Star Image">
+                    <img src="Assets/Star.png" alt="Star Image">
+                    <img src="Assets/Star.png" alt="Star Image">
+                    <img src="Assets/Star.png" alt="Star Image">
+                </div>
+                    <p id="clientQoute" class="bold italic">Netmatters stood out from the start. Great guys and very easy to work with. Both the build and digital marketing teams are clearly skilled -they know their stuff! They delivered a website to our (high!) expectations and went over and above to ensure we were satisfied clients - and we are!</p>
+                    <div id="clintInfo">
+                        <p id="client">Eleanor Bishop, Head of Marketing -</p> <p id="clientCompany" class="bold">Ashcroft Partnership LLP</p>
+                    </div>
+                <div class="welcomeButtons">
+                    <button class="blueButton">Google Reviews &rarr;</button>
+                    <button class="darkGreenButton">Trustpilot Reviews &rarr;</button>
                 </div>
             </div>
         </div>
 
-        <div>
+        <div id="newsSection">
             <div>
                 <h1>Latest News</h1>
-                <h2>View All &rarr;</h2>
             </div>
-            <div class="newsItems">
-                <div class="newsItem-1">
+            <div class="container">
+                <div class="item newsItem-1">
                     <div class="topSection">
                         <img src="Assets/junes-notables.png" alt="June Noteable">
                     </div>
                     <div class="midSection">
                         <H3>June's Noteable 2024 - Celebrating Our Team</H3>
                         <p>June Notables 2024 Celebrating the achievements and dedication of our staff, at Netmatters, we put a...</p>
-                        <button type="button">Read More</button>
+                        <button type="button" class="redButton">Read More</button>
                     </div>
                     <div class="bottomSection">
                         <img src="Assets/netmatters mini logo.png" alt="Netmatters no text logo">
@@ -143,7 +153,7 @@
                     </div>
                 </div>
 
-                <div class="newsItem-2">
+                <div class="item newsItem-2">
                     <div class="topSection">
                         <img src="Assets/elliott-peacock.png" alt="Latest Hero">
                     </div>
@@ -160,7 +170,7 @@
                     </div>
                 </div>
 
-                <div class="newsItem-3">
+                <div class="item newsItem-3">
                     <div class="topSection">
                         <img src="Assets/tom-lancaster.png" alt="Latest Hero">
                     </div>
@@ -168,36 +178,42 @@
                         <H3>Tom Lancaster - Netmatters 10 Year Hero</H3>
                         <p>Tom Lancaster - Netmatters 10 Year Hero</p>
                         <p>Today, we celebrate the brilliant accomplishments of Tom Lan...</p>
-                        <button type="button">Read More</button>
+                        <button type="button" class="blueButton">Read More</button>
                     </div>
                     <div class="bottomSection">
                         <img src="Assets/netmatters mini logo.png" alt="Netmatters no text logo">
-                        <p>Posted by Netmatters</p>
-                        <p>1st July 2024</p>     
+                        <div class="postDate">
+                            <p>Posted by Netmatters</p>
+                            <p>1st July 2024</p>
+                        </div>     
                     </div>
                 </div>
             </div>
             <H2>View All &rarr;</H2>
-            <img src="Assets/black_swan_logo.png" alt="Black Swan Logo">
+            <div class="accreditations">
+                <img src="Assets/black_swan_logo.png" alt="Black Swan Logo">
+                <img src="Assets/crane logo.png" alt="Crane Logo">
+                <img src="Assets/girl_guides_anglia_logo.png" alt="girl guides logo">
+            </div>
         </div>
 
         <div class="infoSection">
             <img src="Assets/Netmatters logo white.png" alt="Netmatters logo white">
             <div class="socialMedia">
                 <H3>FOLLOW US ON:</H3>
-                <button type="button" class="socials" id="facebook">
+                <button type="button" class="socials darkButton" id="facebook">
                     <img src="Assets/facebook.png" alt="facebook logo">
                     <a href="https://www.facebook.com/netmatters/"></a>
                 </button>
-                <button type="button" class="socials" id="Linkedin">
+                <button type="button" class="socials darkButton" id="Linkedin">
                     <img src="Assets/Linkedin logo.png" alt="Linkedin logo">
                     <a href="https://www.linkedin.com/company/netmatters-ltd/"></a>
                 </button>
-                <button type="button" class="socials" id="X">
+                <button type="button" class="socials darkButton" id="X">
                     <img src="Assets/X logo.png" alt="X logo">
                     <a href="https://x.com/netmattersltd"></a>
                 </button>
-                <button type="button" class="socials" id="Instagram">
+                <button type="button" class="socials darkButton" id="Instagram">
                     <img src="Assets/instagram logo.png" alt="Instagram logo">
                     <a href="https://www.instagram.com/netmattersltd/"></a>
                 </button>
@@ -205,6 +221,7 @@
 
             <div class="aboutMatters">
                 <H3>ABOUT NETMATTERS</H3>
+                <div class="netmattersLinks">
                 <a href="https://www.netmatters.co.uk/news">News</a>
                 <a href="https://www.netmatters.co.uk/our-careers">Our Careers</a>
                 <a href="https://www.netmatters.co.uk/team">Our Team</a>
@@ -215,10 +232,12 @@
                 <a href="https://www.netmatters.co.uk/cctv-policy">CCTV Policy</a>
                 <a href="https://www.netmatters.co.uk/our-culture/environmental-policy">Environmental Policy</a>
                 <a href="https://www.netmatters.co.uk/terms-and-conditions">Terms &amp; Conditions</a>
+                </div>
             </div>
 
             <div class="ourServices">
                 <H3>OUR SERVICES</H3>
+                <div class="netmattersLinks">
                 <a href="https://www.netmatters.co.uk/bespoke-software">Bespoke Software</a>
                 <a href="https://www.netmatters.co.uk/it-support">IT Software</a>
                 <a href="https://www.netmatters.co.uk/digital-marketing">Digital Marketing</a>
@@ -226,10 +245,12 @@
                 <a href="https://www.netmatters.co.uk/web-design">Web Design</a>
                 <a href="https://www.netmatters.co.uk/cyber-security">Cyber Security</a>
                 <a href="https://www.netmatters.co.uk/train-for-a-career-in-tech">Developer Training</a>
+                </div>
             </div>
 
             <div class="ourIndustries">
                 <h3>OUR INDUSTRIES</h3>
+                <div class="netmattersLinks">
                 <a href="https://www.netmatters.co.uk/industries/financial-services">Financial Services</a>
                 <a href="https://www.netmatters.co.uk/industries/construction">Construction</a>
                 <a href="https://www.netmatters.co.uk/industries/e-commerce">Retail &amp; E-commerce</a>
@@ -238,19 +259,22 @@
                 <a href="https://www.netmatters.co.uk/industries/healthcare">Healthcare</a>
                 <a href="https://www.netmatters.co.uk/industries/education-training">Education &amp; Training</a>
                 <a href="https://www.netmatters.co.uk/industries/travel-leisure">Travel &amp; Leisure</a>
+                </div>
             </div>
 
             <div class="Locations">
                 <h3>LOCATIONS</h3>
+                <div class="netmattersLinks">
                 <a href="https://www.netmatters.co.uk/cambridge-office">Cambridge Office</a>
                 <a href="https://www.netmatters.co.uk/wymondham-office">Wymondham Office</a>
                 <a href="https://www.netmatters.co.uk/yarmouth-office">Yarmouth Office</a>
+                </div>
             </div>
         </div>
     </div>
 </body>
 
-<footer>
+<footer id="copyrightSection">
     <div>
         <p>&copy; Copyright Netmatters 2024.</p>
         <p>All rights reserved.</p>
