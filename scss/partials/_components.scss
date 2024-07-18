@@ -35,6 +35,10 @@ button {
     background-color: rgb(146, 111, 177);
 }
 
+.maroon {
+    background-color: rgb(214, 69, 65);
+}
+
 .bold {
     font-weight: bold;
 }
@@ -88,10 +92,23 @@ button {
 
 // OUR SERVICES SECTION
 
+#serviceMenu {
+    color: rgb(51, 54, 69);
+
+}
+
+#serviceMenu .item {
+    text-align: center;
+}
+
 #serviceMenu H1 {
     font-size: 3rem;
     margin-top: 6%;
     margin-bottom: 5%;
+}
+
+#serviceMenu p {
+    font-size: 0.83rem;
 }
 
 .item button {
@@ -107,6 +124,14 @@ button {
 
 #itButton {
     background-color: #4183d7;
+}
+
+.accreditations img {
+    filter: grayscale(100%);
+}
+
+.accreditations img:hover {
+    filter: none;
 }
 
 // WELCOME TO NETMATTERS SECTION
