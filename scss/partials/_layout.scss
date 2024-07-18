@@ -1,3 +1,5 @@
+// TITLE HEADER SECTION
+
 .titleBar {
     display: flex;
     align-items: center;
@@ -77,6 +79,7 @@
     height: 55%;
 }
 
+// IMAGE BANNER SECTION
 
 .infoBanner {
     display: flex !important; 
@@ -101,25 +104,17 @@
 // }
 
 .overlayingBannerItems {
-    // display: flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
     position: absolute;
     z-index: 1;
-    align-self: center;
+    //align-self: center;
 }
 
-.overlayingBannerItems h1, p{
-    z-index: 2;
-    text-align: center;
-}
-
-.overlayingBannerItems button {
-    align-self: center;
-    height: 60px;
-    font-size: 20px;
-    // margin-top: 15%;
-
-
-}
+// OUR SERVICES SECTION
 
 #serviceMenu {
     margin-left: 2%;
@@ -155,6 +150,8 @@
     justify-content: center;
 }
 
+// WELCOME TO NETMATTERS SECTION
+
 #welcome {
     padding-left: 2%;
     padding-right: 2%;
@@ -181,6 +178,8 @@
     gap: 8px;
     margin-bottom: 5%;
 }
+
+// NEWS SECTION
 
 #newsSection, .infoSection {
     padding-left: 2%;
@@ -217,6 +216,8 @@
     padding-left: 4%;
     align-items: center;
 }
+
+// SOCIAL MEDIA AND SITE LINKS SECTION
 
 .netmattersLinks {
     display: flex;
