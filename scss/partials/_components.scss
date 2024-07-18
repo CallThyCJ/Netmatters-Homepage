@@ -49,10 +49,28 @@ button {
 
 // MAIN HEADER SECTION
 
-.searchBar {
+.searchBar, #phoneIcon {
     @include mq("m") {
         display: none;
     }
+}
+
+.lSearchBar {
+    @include mq("s") {
+        display: none;
+    }
+}
+
+#homeNetmattersLogo {
+    @include mq("m") {
+        max-height: 60.06px;
+        max-width: 345px;
+
+    }
+}
+
+#lSearchBar {
+    max-width: 174px;
 }
 
 #mainSearchBar, #searchIcon {
