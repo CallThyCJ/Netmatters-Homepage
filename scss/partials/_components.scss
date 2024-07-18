@@ -182,6 +182,11 @@ button {
 .topSection img {
     width: 100%;
     height: 100%;
+    padding-top: 0px;
+}
+
+.bottomSection img {
+    padding-top: 0%;
 }
 
 .newsItem-1 h3 {
@@ -194,6 +199,10 @@ button {
 
 .newsItem-3 h3 {
     color: #4183d7;
+}
+
+.postDate {
+    line-height: 0.3px;
 }
 
 .infoSection {
