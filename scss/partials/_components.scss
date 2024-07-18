@@ -49,6 +49,12 @@ button {
 
 // MAIN HEADER SECTION
 
+.searchBar {
+    @include mq("m") {
+        display: none;
+    }
+}
+
 #mainSearchBar, #searchIcon {
     border-top-style: solid;
     border-left-style: solid;
