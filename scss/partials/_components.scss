@@ -47,6 +47,19 @@ button {
     font-style: italic;
 }
 
+.mobileOnly {
+    @include mq("m") {
+        display: none;
+    }
+}
+
+.biggerDevice {
+    display: none;
+    @include mq("m") {
+        display: inline;
+    }
+}
+
 // MAIN HEADER SECTION
 
 .titlebar {
@@ -57,12 +70,6 @@ button {
 
 .searchBar, #phoneIcon {
     @include mq("m") {
-        display: none;
-    }
-}
-
-.lSearchBar {
-    @include mq("s") {
         display: none;
     }
 }
@@ -79,6 +86,13 @@ button {
 
 .lDeviceSearchBar {
     grid-area: searchBar;
+    @include mq("s") {
+        display: none;
+    }
+    @include mq("m") {
+        display: flex;
+    }
+    
 }
 
 #lSearchBar {

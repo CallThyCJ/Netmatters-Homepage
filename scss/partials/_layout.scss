@@ -102,7 +102,7 @@
     //background-size: cover;
     flex-basis: 100%;
     z-index: 0;
-    min-width: none;
+    min-width: 0px;
     min-height: 550px;
     //overflow: hidden;
 }
@@ -220,6 +220,12 @@
 
 // NEWS SECTION
 
+.newsTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .newsContainer {
     display: flex;
     flex-direction: column;
@@ -227,13 +233,13 @@
     gap: 35px;
     @include mq("m") {
         flex-direction: row;
+        overflow: hidden;
     }
 }
 
 .item {
     @include mq("m") {
         min-width: 350px;
-        overflow: hidden;
     }
 }
 
@@ -279,6 +285,27 @@
 .netmattersLinks {
     display: flex;
     flex-direction: column;
+    @include mq("m") {
+        min-width: 255px;
+    }
+}
+
+.biggerDeviceSiteLinks {
+    @include mq("m") {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20%;
+    }
+}
+
+// COPYRIGHT SECTION
+
+#coprightInfo {
+    @include mq("m") {
+        display: flex;
+        align-items: center;
+        gap: 1%;
+    }
 }
 
 
