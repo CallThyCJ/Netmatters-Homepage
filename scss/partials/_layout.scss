@@ -18,8 +18,15 @@
         "logo . searchBar burgerMenu";
         gap: 0px;
         justify-items: end;
-
-
+    }
+    @include mq("m") {
+        display: grid;
+        grid-template-columns: 43% 7% 15% 15% 10% 10%; 
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "logo . support contact search burgerMenu";
+        gap: 0px;
+        justify-items: end;
     }
 }
 
