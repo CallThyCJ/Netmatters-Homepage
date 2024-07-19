@@ -77,8 +77,8 @@ button {
 #homeNetmattersLogo {
     @include mq("m") {
         grid-area: logo;
-        max-height: 60.06px;
-        max-width: 345px;
+        min-height: 60.06px;
+        min-width: 345px;
         //flex-grow: 2;
 
     }
@@ -96,14 +96,23 @@ button {
 }
 
 #lSearchBar {
+    min-width: 174px;
     max-width: 174px;
+    text-indent: 8%;
+    font-size: 0.9rem;
 }
 
 #burgerMenuButton {
     grid-area: burgerMenu;
+    @include mq("m") {
+        max-width: 0;
+        max-height: 0;
+        min-width: 63px;
+        min-height: 56px;
+    }  
 }
 
-#mainSearchBar, #searchIcon {
+#mainSearchBar, #searchIcon, #lSearchBar {
     border-top-style: solid;
     border-left-style: solid;
     border-bottom-style: solid;
@@ -118,6 +127,18 @@ button {
     border-left-style: none;
     border-top-left-radius: none;
     border-bottom-left-radius: none;
+}
+
+#lSearchIcon {
+    min-width: 63px;
+    min-height: 56px;
+    background-color: #999aa2;
+}
+
+#whiteMagGlass {
+    height: 45%;
+    width: 48%;
+
 }
 
 // IMAGE BANNER SECTION
