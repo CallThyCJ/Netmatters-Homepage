@@ -286,9 +286,23 @@ button {
 
 // NEWS SECTION
 
+#newsSection {
+    @include mq("m") {
+        padding-top: 3%;
+        padding-bottom: 4%;
+    }
+}
+
 #newsSection h1 {
     font-size: 2.3rem;
     color: #333645;
+}
+
+.newsContainer {
+    @include mq("m") {
+        margin-bottom: 14%;
+        box-shadow: 0px 0px 42px 26px rgba(0,0,0,0.05);
+    }
 }
 
 .midSection p {
@@ -364,6 +378,11 @@ button {
     background-color: #212330;
     color: white;
     padding: 2%;
+    @include mq("m") {
+        padding-top: 0.5%;
+        padding-bottom: 0.5%;
+        font-size: 0.8rem;
+    }
 }
 
 #netmattersCopyright, #sitemap {
