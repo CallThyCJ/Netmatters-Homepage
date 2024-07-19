@@ -162,7 +162,9 @@
         "support support"
         "marketing marketing"
         "telecoms design"
-        "security training"; 
+        "security training";
+        margin-top: 4%;
+        margin-bottom: 12%;
     }
 }
 
@@ -172,6 +174,7 @@
     align-items: center;
     border: 1px solid #ccc;
     border-radius: 15px;
+    box-shadow: 0px 0px 42px 26px rgba(0,0,0,0.05);
 }
 
 .accreditations {

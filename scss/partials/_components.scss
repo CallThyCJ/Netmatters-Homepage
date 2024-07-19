@@ -180,6 +180,9 @@ button {
     font-size: 3rem;
     margin-top: 6%;
     margin-bottom: 5%;
+    @include mq("m") {
+        font-size: 2.5rem;
+    }
 }
 
 #serviceMenu p {
@@ -231,6 +234,8 @@ button {
 
 .ourWorkGrid {
    grid-area: title2;
+   font-size: 1.5rem;
+   text-align: right;
 }
 
 #itButton {
