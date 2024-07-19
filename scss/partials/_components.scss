@@ -77,9 +77,12 @@ button {
     }
 }
 
+.lDeviceSearchBar {
+    grid-area: searchBar;
+}
+
 #lSearchBar {
     max-width: 174px;
-    grid-area: searchBar;
 }
 
 #burgerMenuButton {
@@ -157,6 +160,42 @@ button {
 
 .item img {
     padding-top: 4%;
+}
+
+#servicesGrid {
+    grid-area: title;
+}
+
+.item-1 {
+    grid-area: bespoke;
+}
+
+.item-2 {
+    grid-area: support;
+}
+
+.item-3 {
+    grid-area: marketing;
+}
+
+.item-4 {
+    grid-area: telecoms;
+}
+
+.item-5 {
+    grid-area: design;
+}
+
+.item-6 {
+   grid-area: security; 
+}
+
+.item-7 {
+    grid-area: training;
+}
+
+.ourWorkGrid {
+   grid-area: title2;
 }
 
 #itButton {

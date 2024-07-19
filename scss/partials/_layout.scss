@@ -65,7 +65,6 @@
 
 .lDeviceSearchBar {
     display: flex;
-    gap: none;
     min-height: 56px;
 }
 
@@ -132,11 +131,35 @@
     padding-bottom: 7%;
 }
 
+#services {
+    @include mq("m") {
+        display: none;
+    }
+}
+
+// #servicesGrid {
+//     @include mq("s") {
+//         display: none;
+//     }
+// }
+
 .container {
-    display: flex !important;
+    display: flex;
     flex-direction: column;
     align-items: stretch;
     gap: 35px;
+    @include mq("m") {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "title title2"
+        "bespoke bespoke"
+        "support support"
+        "marketing marketing"
+        "telecoms design"
+        "security training"; 
+    }
 }
 
 .item {
@@ -157,6 +180,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.ourWork h2 {
+    @include mq("m") {
+        display: none;
+    }
 }
 
 // WELCOME TO NETMATTERS SECTION
