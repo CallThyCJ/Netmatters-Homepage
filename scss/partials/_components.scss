@@ -49,6 +49,12 @@ button {
 
 // MAIN HEADER SECTION
 
+.titlebar {
+    @include mq("m") {
+        justify-content: flex-start;
+    }
+}
+
 .searchBar, #phoneIcon {
     @include mq("m") {
         display: none;
@@ -63,14 +69,21 @@ button {
 
 #homeNetmattersLogo {
     @include mq("m") {
+        grid-area: logo;
         max-height: 60.06px;
         max-width: 345px;
+        //flex-grow: 2;
 
     }
 }
 
 #lSearchBar {
     max-width: 174px;
+    grid-area: searchBar;
+}
+
+#burgerMenuButton {
+    grid-area: burgerMenu;
 }
 
 #mainSearchBar, #searchIcon {

@@ -10,6 +10,15 @@
     padding-left: 15px;
     padding-top: 15px;
     padding-bottom: 10px;
+    @include mq("m") {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "logo . searchBar burgerMenu"; 
+
+
+    }
 }
 
 .titleItems {
