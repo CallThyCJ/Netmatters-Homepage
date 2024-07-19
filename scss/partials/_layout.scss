@@ -143,6 +143,7 @@
 //     }
 // }
 
+
 .container {
     display: flex;
     flex-direction: column;
@@ -218,6 +219,23 @@
 }
 
 // NEWS SECTION
+
+.newsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 35px;
+    @include mq("m") {
+        flex-direction: row;
+    }
+}
+
+.item {
+    @include mq("m") {
+        min-width: 350px;
+        overflow: hidden;
+    }
+}
 
 #newsSection, .infoSection {
     padding-left: 2%;
