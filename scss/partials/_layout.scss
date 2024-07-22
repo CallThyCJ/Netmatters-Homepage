@@ -200,6 +200,18 @@
         margin-top: 4%;
         margin-bottom: 12%;
     }
+    @include mq("l") {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "title . title2"
+        "bespoke support marketing"
+        "telecoms . design"
+        "security . training";
+        margin-top: 4%;
+        margin-bottom: 12%;
+    }
 }
 
 .item {
