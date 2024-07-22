@@ -19,14 +19,15 @@
         gap: 0px;
         justify-items: end;
     }
-    @include mq("m") {
+    @include mq("l") {
         display: grid;
         grid-template-columns: 43% 7% 15% 15% 10% 10%; 
         grid-template-rows: auto;
         grid-template-areas: 
         "logo . support contact search burgerMenu";
-        gap: 0px;
-        justify-items: end;
+        column-gap: 7px;
+        justify-items: center;
+        padding-left: 0px;
     }
 }
 
@@ -76,6 +77,7 @@
     display: flex;
     min-height: 56px;
     min-width: 238px;
+
 }
 
 #mainSearchBar {
@@ -96,6 +98,34 @@
 
 #searchIcon img{
     height: 55%;
+}
+
+//MAIN NAV BAR
+
+.mainNavBar {
+    background-color: #333645;
+    display: none;
+    @include mq("l") {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding-left: 6%;
+        padding-right: 6%;
+        padding-top: 1.5%;
+        padding-bottom: 1.5%;
+    }
+}
+
+.navOptions {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.navItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 // IMAGE BANNER SECTION
@@ -130,7 +160,11 @@
     justify-content: center;
     position: absolute;
     z-index: 1;
-    //align-self: center;
+    @include mq("l") {
+        align-items: flex-start;
+        padding-right: 20%;
+        padding-left: 4%;
+    }
 }
 
 // OUR SERVICES SECTION

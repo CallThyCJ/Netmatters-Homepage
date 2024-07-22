@@ -39,6 +39,10 @@ button {
     background-color: rgb(214, 69, 65);
 }
 
+.greyButton {
+    background-color: #999aa2;
+}
+
 .bold {
     font-weight: bold;
 }
@@ -92,7 +96,9 @@ button {
     @include mq("m") {
         display: flex;
     }
-    
+    @include mq("l") {
+        display: none;
+    }   
 }
 
 #lSearchBar {
@@ -141,6 +147,61 @@ button {
 
 }
 
+#support {
+    grid-area: support;
+    width: 150px;
+    font-size: 1.3rem;
+    text-align: center;
+    //line-height: 50%;
+}
+
+#contact {
+    grid-area: contact;
+}
+
+#contactIcon, #mouseIcon {
+    min-width: 0px;
+    min-height: 0px;
+    max-width: 24px;
+    max-height: 24px;
+}
+
+#support, #contact {
+    width: 150px;
+    height: 56px;
+}
+
+#searchButton {
+    grid-area: search;
+}
+
+#searchButton {
+    min-width: 63px;
+    min-height: 56px;
+}
+
+//MAIN NAV BAR
+
+.navItem {
+    background-color: transparent;
+}
+
+.navItem img {
+    max-width: 32px;
+    max-height: 23px;
+    margin-bottom: 9px;
+}
+
+.navTitleSmall {
+    font-size: 0.7rem;
+    margin: 2px;
+}
+
+.navTitleBottom {
+    font-size: 1.2rem;
+    margin: 0.5px;
+}
+
 // IMAGE BANNER SECTION
 
 .infoBanner {
@@ -151,11 +212,22 @@ button {
     z-index: 2;
     text-align: center;
     font-size: 2.7rem;
+    @include mq("l") {
+        text-align: left;
+        font-size: 4rem;
+        margin-bottom: 2.2%;
+    }
 }
 
 .overlayingBannerItems p {
     font-size: 1.4rem;
     text-align: center;
+    @include mq("l") {
+        text-align: left;
+        font-size: 1.6rem;
+        margin-top: 1.5%;
+
+    }
 }
 
 .overlayingBannerItems button {
