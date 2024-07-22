@@ -274,6 +274,9 @@ button {
 }
 
 #ourWorkLaptop {
+    @include mq("s") {
+        display: none;
+    }
     font-size: 2.3rem;
 }
 
@@ -289,9 +292,6 @@ button {
 }
 
 #services {
-    @include mq("m") {
-        display: none;
-    }
     @include mq("l") {
         display: inline;
     }
@@ -305,6 +305,11 @@ button {
 }
 
 #firstRow .item {
+    @include mq("m") {
+        width: 720px;
+        height: 270px;
+    }
+
     @include mq("l") {
         min-width: 294px;
         width: 294px;
@@ -313,6 +318,11 @@ button {
 }
 
 #secondRow .item {
+    @include mq("m") {
+        width: 345px;
+        height: 292px;
+    }
+
     @include mq("l") {
         width: 455px;
         min-height: 292px;
@@ -347,14 +357,14 @@ button {
     grid-area: training;
 }
 
-.ourWorkGrid {
-   grid-area: title2;
-   font-size: 1.5rem;
-   text-align: right;
-   @include mq("l") {
-    display: none;
-}
-}
+// .ourWorkGrid {
+//    grid-area: title2;
+//    font-size: 1.5rem;
+//    text-align: right;
+//    @include mq("l") {
+//     display: none;
+// }
+// }
 
 #itButton {
     background-color: #4183d7;

@@ -192,16 +192,6 @@
     align-items: stretch;
     gap: 35px;
     @include mq("m") {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto;
-        grid-template-areas: 
-        "title title2"
-        "bespoke bespoke"
-        "support support"
-        "marketing marketing"
-        "telecoms design"
-        "security training";
         margin-top: 4%;
         margin-bottom: 12%;
     }
@@ -215,6 +205,15 @@
 }
 
 #firstRow {
+    @include mq("m") {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 30px;
+    }
+
     @include mq("l") {
     display: flex;
     width: 100%;
@@ -223,6 +222,13 @@
 }
 
 #secondRow {
+    @include mq("m") {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 30px;
+    }
     @include mq("l") {
         display: flex;
         flex-wrap: wrap;
