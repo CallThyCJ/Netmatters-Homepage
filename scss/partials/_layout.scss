@@ -173,12 +173,17 @@
     margin-left: 2%;
     margin-right: 2%;
     padding-bottom: 7%;
+    @include mq("l") {
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+
 }
 
-#services {
-    @include mq("m") {
-        display: none;
-    }
+#serviceHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .container {
@@ -201,16 +206,28 @@
         margin-bottom: 12%;
     }
     @include mq("l") {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto;
-        grid-template-areas: 
-        "title . title2"
-        "bespoke support marketing"
-        "telecoms . design"
-        "security . training";
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
         margin-top: 4%;
         margin-bottom: 12%;
+    }
+}
+
+#firstRow {
+    @include mq("l") {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    }
+}
+
+#secondRow {
+    @include mq("l") {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 30px;
     }
 }
 

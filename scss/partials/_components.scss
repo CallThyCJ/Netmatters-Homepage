@@ -148,15 +148,23 @@ button {
 }
 
 #support {
+    display: none;
     grid-area: support;
     width: 150px;
     font-size: 1.3rem;
     text-align: center;
-    //line-height: 50%;
+    @include mq("l") { 
+        display: inline;
+    }
 }
 
 #contact {
+    display: none;
     grid-area: contact;
+    @include mq("l") { 
+        display: inline;
+    }
+
 }
 
 #contactIcon, #mouseIcon {
@@ -176,8 +184,12 @@ button {
 }
 
 #searchButton {
+    display: none;
     min-width: 63px;
     min-height: 56px;
+    @include mq("l") { 
+        display: inline;
+    }
 }
 
 //MAIN NAV BAR
@@ -261,6 +273,10 @@ button {
     font-size: 0.83rem;
 }
 
+#ourWorkLaptop {
+    font-size: 2.3rem;
+}
+
 .item button {
     height: 47px;
     width: 130px;
@@ -272,8 +288,35 @@ button {
     padding-top: 4%;
 }
 
+#services {
+    @include mq("m") {
+        display: none;
+    }
+    @include mq("l") {
+        display: inline;
+    }
+}
+
 #servicesGrid {
     grid-area: title;
+    @include mq("l") {
+        display: none;
+    }
+}
+
+#firstRow .item {
+    @include mq("l") {
+        min-width: 294px;
+        width: 294px;
+        height: 337px;
+    }
+}
+
+#secondRow .item {
+    @include mq("l") {
+        width: 455px;
+        min-height: 292px;
+    }
 }
 
 .item-1 {
@@ -308,6 +351,9 @@ button {
    grid-area: title2;
    font-size: 1.5rem;
    text-align: right;
+   @include mq("l") {
+    display: none;
+}
 }
 
 #itButton {
