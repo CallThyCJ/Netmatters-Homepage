@@ -271,10 +271,47 @@
     padding-right: 2%;
     padding-top: 3%;
     padding-bottom: 8%;
+    @include mq("l") {
+        display: flex;
+        flex-wrap: wrap;
+        // display: grid;
+        // grid-template-columns: 2 1fr;
+        // grid-template-rows: auto;
+        // grid-template-areas: 
+        // "welcome clientThoughts"
+        // "wPara1 stars"
+        // "wPara2 clientQoute"
+        // "wPara3 clientQoute"
+        // ". client"
+        // "welcomeButtons welcomeButtons";
+        // column-gap: 30px;
+        // row-gap: 40px;
+    }
+}
+
+.welcomeContainer {
+    @include mq("l") {
+        display: flex;
+}
+}
+
+.welcomeItems {
+    @include mq("l") {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+}
+
+#welcomeHeaderLaptop {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .welcomeButtons {
     display: flex;
+    width: 100%;
     gap: 10px;
 }
 

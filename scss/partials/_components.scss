@@ -385,8 +385,25 @@ button {
     color: white;
 }
 
+#welcomeHeading {
+    @include mq("l") {
+        display: none;
+    }
+    grid-area: welcome;
+}
+
 #welcome h1 {
     font-size: 2.4rem;
+    @include mq("l") {
+        font-size: 2.2rem;
+    }
+}
+
+#welcomeRightSide {
+    @include mq("l") {
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
 }
 
 #welcomeText p {
@@ -394,22 +411,55 @@ button {
     font-size: 1.2rem;
 }
 
+#wPara1 {
+    grid-area: wPara1;
+}
+
+#wPara2 {
+    grid-area: wPara2;
+}
+
+#wPara3 {
+    grid-area: wPara3;
+}
+
+.welcomeButtons {
+    @include mq("l") {
+        flex-direction: column;
+    }
+}
+
 #welcome button {
     font-size: 1.5rem;
     padding: 2%;
+}
+
+#stars {
+    grid-area: stars;  
 }
 
 #stars img {
     min-width: 0;
 }
 
+#clientThoughts {
+    @include mq("l") {
+        display: none;
+    }
+}
+
 #clientQoute {
     text-align: left;
     font-size: 1.7rem;
+    grid-area: clientQoute;
+    @include mq("l") {
+        font-size: 1rem;
+    }
 }
 
 #client {
     color: #a3a8ac;
+    grid-area: client;
 }
 
 // NEWS SECTION
