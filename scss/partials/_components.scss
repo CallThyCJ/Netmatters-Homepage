@@ -267,6 +267,9 @@ button {
         font-size: 4rem;
         margin-bottom: 2.2%;
     }
+    @include mq("xl") {
+        font-size: 3.8rem;
+    }
 }
 
 .overlayingBannerItems p {
@@ -285,6 +288,15 @@ button {
     font-size: 20px;
     padding: 4%;
     line-height: 0px;
+    @include mq("xl") {
+        text-align: center;
+        width: 250px;
+        height: 62px;
+        max-height: 62px;
+        font-size: 1.4rem;
+        padding: 0px;
+        margin-top: 2.5%;
+    }
 }
 
 // OUR SERVICES SECTION
