@@ -399,10 +399,28 @@ button {
     }
 }
 
+#headerItem1 {
+    @include mq("l") {
+        margin-right: 10%;
+    }
+}
+
 #welcomeRightSide {
     @include mq("l") {
         justify-content: flex-end;
-        align-items: flex-end;
+    }
+}
+
+#welcomeLeftSide {
+    @include mq("l") {
+        margin-right: 8%;
+    }
+}
+
+#welcomeLeftSide p {
+    @include mq("l") {
+        margin-bottom: 8%;
+        margin-top: 6%;
     }
 }
 
@@ -426,12 +444,23 @@ button {
 .welcomeButtons {
     @include mq("l") {
         flex-direction: column;
+        width: auto;
+        max-width: 271px;
+        height: 57px;
     }
 }
 
 #welcome button {
     font-size: 1.5rem;
     padding: 2%;
+}
+
+.welcomeButtons button {
+    @include mq("l") {
+        height: 100%;
+        margin-bottom: 5%;
+        flex-grow: 1;
+    }
 }
 
 #stars {
@@ -453,13 +482,18 @@ button {
     font-size: 1.7rem;
     grid-area: clientQoute;
     @include mq("l") {
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
 }
 
 #client {
     color: #a3a8ac;
     grid-area: client;
+    font-size: 0.9rem;
+}
+
+#clientCompany {
+    font-size: 0.9rem;
 }
 
 // NEWS SECTION

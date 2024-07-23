@@ -299,14 +299,13 @@
     @include mq("l") {
         display: flex;
         flex-direction: column;
-        width: 50%;
+        width: 46%;
     }
 }
 
 #welcomeHeaderLaptop {
     display: flex;
     width: 100%;
-    justify-content: space-between;
 }
 
 .welcomeButtons {
