@@ -29,6 +29,11 @@
         justify-items: center;
         padding-left: 0px;
     }
+    @include mq("xl") {
+        grid-template-columns: 36% 3% 12% 12% 27% 10%; 
+        grid-template-areas: 
+        "logo . support contact searchBar burgerMenu";
+    }
 }
 
 .titleItems {

@@ -84,7 +84,10 @@ button {
         min-height: 60.06px;
         min-width: 345px;
         //flex-grow: 2;
-
+    }
+    @include mq("xl") {
+        width: 370px;
+        height: 65px;
     }
 }
 
@@ -98,6 +101,9 @@ button {
     }
     @include mq("l") {
         display: none;
+    }
+    @include mq("xl") {
+        display: flex;
     }   
 }
 
@@ -106,6 +112,10 @@ button {
     max-width: 174px;
     text-indent: 8%;
     font-size: 0.9rem;
+    @include mq("xl") {
+        min-width: 240px;
+        min-height: 56px;
+    }
 }
 
 #burgerMenuButton {
@@ -142,6 +152,10 @@ button {
     min-width: 63px;
     min-height: 56px;
     background-color: #999aa2;
+    @include mq("xl") {
+        min-height: 56px;
+        min-width: 63x;
+    }
 }
 
 #whiteMagGlass {
@@ -171,11 +185,31 @@ button {
 
 }
 
-#contactIcon, #mouseIcon {
+#contact, #support {
+    @include mq("xl") { 
+        padding: 0%;
+        font-size: 1.1rem;
+    }
+}
+
+#contactIcon, #mouseIcon, #whiteContactIcon {
     min-width: 0px;
     min-height: 0px;
-    max-width: 24px;
-    max-height: 24px;
+    max-width: 27px;
+    max-height: 27px;
+}
+
+#contactIcon {
+    @include mq("xl") { 
+        display: none;
+    }  
+}
+
+#whiteContactIcon {
+    display: none;
+    @include mq("xl") { 
+        display: inline;
+    }
 }
 
 #support, #contact {
@@ -185,14 +219,14 @@ button {
 
 #searchButton {
     grid-area: search;
-}
-
-#searchButton {
     display: none;
     min-width: 63px;
     min-height: 56px;
     @include mq("l") { 
         display: inline;
+    }
+    @include mq("xl") { 
+        display: none;
     }
 }
 
