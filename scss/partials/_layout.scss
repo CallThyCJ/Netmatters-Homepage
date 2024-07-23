@@ -352,11 +352,19 @@
     @include mq("m") {
         min-width: 350px;
     }
+    @include mq("l") {
+        min-width: 458px;
+        min-height: 641px;
+    }
 }
 
 #newsSection, .infoSection {
     padding-left: 2%;
     padding-right: 2%;
+    @include mq("l") {
+        padding-left: 4%;
+    padding-right: 4%;
+    }
 }
 
 #newsSection .item {
@@ -367,6 +375,10 @@
     display: flex;
     flex-grow: 1;
     width: 100%;
+    @include mq("l") {
+        min-height: 263px;
+        max-height: 263px;
+    }
 }
 
 .midSection {
@@ -375,6 +387,7 @@
     align-items: flex-start;
     width: 100%;
     padding-left: 4%;
+    padding-right: 4%;
 }
 
 .postDate {
@@ -399,6 +412,9 @@
     @include mq("m") {
         min-width: 255px;
     }
+    @include mq("l") {
+        min-width: 243px;
+    }
 }
 
 .biggerDeviceSiteLinks {
@@ -406,6 +422,14 @@
         display: flex;
         flex-wrap: wrap;
         gap: 20%;
+    }
+    @include mq("l") {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 1%;
+        margin-top: 3%;
+        overflow: hidden;
+        max-width: 942px;
     }
 }
 
