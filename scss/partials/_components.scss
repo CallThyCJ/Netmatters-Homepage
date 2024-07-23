@@ -328,6 +328,9 @@ button {
         display: none;
     }
     font-size: 2.3rem;
+    @include mq("l") {
+        display: inline;
+    }
 }
 
 .item button {
@@ -366,6 +369,12 @@ button {
         height: 337px;
         max-height: 337px;
     }
+    @include mq("xl") {
+        min-width: 370px;
+        min-height: 315px;
+        width: 370px;
+        height: 315px;
+    }
 }
 
 #secondRow .item {
@@ -377,6 +386,12 @@ button {
     @include mq("l") {
         width: 455px;
         min-height: 292px;
+    }
+    @include mq("xl") {
+        min-width: 270px;
+        min-height: 314px;
+        width: 270px;
+        height: 314px;
     }
 }
 
@@ -460,11 +475,18 @@ button {
     @include mq("l") {
         justify-content: flex-end;
     }
+    @include mq("xl") {
+        width: 100%;
+    }
 }
 
 #welcomeLeftSide {
     @include mq("l") {
         margin-right: 8%;
+    }
+    @include mq("xl") {
+        width: 600px;
+        justify-content: flex-start;
     }
 }
 
@@ -472,6 +494,11 @@ button {
     @include mq("l") {
         margin-bottom: 8%;
         margin-top: 6%;
+    }
+    @include mq("xl") {
+        margin-bottom: 3%;
+        margin-top: 3%;
+        padding-left: 15%;
     }
 }
 
@@ -495,21 +522,34 @@ button {
 .welcomeButtons {
     @include mq("l") {
         flex-direction: column;
-        width: auto;
-        max-width: 271px;
-        height: 57px;
+        width: 100%;
+    }
+    @include mq("xl") {
+        flex-direction: row;
+        justify-content: center;
     }
 }
 
 #welcome button {
     font-size: 1.5rem;
     padding: 2%;
+    @include mq("xl") {
+        width: 270px;
+        height: 57px;
+        font-size: 1.3rem;
+    }
 }
 
 .welcomeButtons button {
     @include mq("l") {
         height: 100%;
         margin-bottom: 5%;
+    }
+}
+
+#leftButtons {
+    @include mq("xl") {
+        padding-left: 7%;
     }
 }
 

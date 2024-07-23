@@ -191,6 +191,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include mq("xl") {
+        justify-content: center;
+        gap: 578px;
+    }
 }
 
 .container {
@@ -209,6 +213,9 @@
         margin-top: 4%;
         margin-bottom: 12%;
     }
+    @include mq("xl") {
+        justify-content: center;
+    }
 }
 
 #firstRow {
@@ -226,6 +233,10 @@
     width: 100%;
     justify-content: space-between;
     }
+    @include mq("xl") {
+        justify-content: center;
+        gap: 20px;
+        }
 }
 
 #secondRow {
@@ -242,6 +253,13 @@
         justify-content: space-between;
         row-gap: 30px;
     }
+    @include mq("xl") {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        width: 100%;
+        gap: 20px;
+    }
 }
 
 .item {
@@ -257,6 +275,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @include mq("xl") {
+        justify-content: center;
+        gap: 280px;
+    }
 }
 
 .ourWork {
@@ -299,8 +321,21 @@
 .welcomeContainer {
     @include mq("l") {
         display: flex;
+    }
+    @include mq("xl") {
+    justify-content: center;
+    }
+}
+
+.welcomeSections {
+    @include mq("xl") {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
 }
 }
+
+
 
 .welcomeItems {
     @include mq("l") {
@@ -308,11 +343,17 @@
         flex-direction: column;
         width: 46%;
     }
+    @include mq("xl") {
+        justify-content: center;
+    }
 }
 
 #welcomeHeaderLaptop {
     display: flex;
     width: 100%;
+    @include mq("xl") {
+        justify-content: center;
+}
 }
 
 .welcomeButtons {
