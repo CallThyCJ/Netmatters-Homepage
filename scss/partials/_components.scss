@@ -115,6 +115,9 @@ button {
         max-height: 0;
         min-width: 63px;
         min-height: 56px;
+    }
+    @include mq("l") {
+        margin-left: -50%;
     }  
 }
 
@@ -155,6 +158,7 @@ button {
     text-align: center;
     @include mq("l") { 
         display: inline;
+        margin-right: 14%;
     }
 }
 
@@ -314,6 +318,7 @@ button {
         min-width: 294px;
         width: 294px;
         height: 337px;
+        max-height: 337px;
     }
 }
 
