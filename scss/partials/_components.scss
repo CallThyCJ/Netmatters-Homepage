@@ -175,8 +175,11 @@ button {
     font-size: 1.3rem;
     text-align: center;
     @include mq("l") { 
-        display: inline;
+        display: flex;
         margin-right: 14%;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
     }
 }
 
