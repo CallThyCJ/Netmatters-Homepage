@@ -400,6 +400,12 @@
         width: 100%;
         justify-content: center;
     }
+    @include mq("xl") {
+        gap: 30px;
+        width: 100%;
+        justify-content: center;
+        overflow: visible;
+    }
 }
 
 .item {
@@ -426,6 +432,7 @@
         min-width: 370px;
         min-height: 583px;
         max-height: 583px;
+        max-width: 370px;
     }
 }
 
