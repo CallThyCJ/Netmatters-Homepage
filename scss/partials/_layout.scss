@@ -209,13 +209,13 @@
         justify-content: flex-start;
     }
     @include mq("m") {
+        justify-content: center;
         gap: 180px;
     }
     @include mq("l") {
-    gap: 360px;
+        gap: 360px;
     }
     @include mq("xl") {
-
         gap: 578px;
     }
 }
@@ -493,6 +493,15 @@
         min-height: 583px;
         max-height: 583px;
         max-width: 370px;
+    }
+}
+
+#newsSection #thirdNewsItem {
+    @include mq("m") {
+        display: none;
+    }
+    @include mq("xl") {
+        display: flex;
     }
 }
 

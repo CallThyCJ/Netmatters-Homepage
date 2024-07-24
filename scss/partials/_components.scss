@@ -370,7 +370,6 @@ button {
     @include mq("m") {
         width: 720px;
         height: 270px;
-        margin-bottom: auto;
     }
 
     @include mq("l") {
@@ -586,7 +585,7 @@ button {
 
 #leftButtons {
     @include mq("xl") {
-        margin-top: 9%;
+        margin-top: 19%;
     }
 }
 
