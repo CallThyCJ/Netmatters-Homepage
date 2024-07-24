@@ -395,6 +395,11 @@
         flex-direction: row;
         overflow: hidden;
     }
+    @include mq("xl") {
+        gap: 30px;
+        width: 100%;
+        justify-content: center;
+    }
 }
 
 .item {
@@ -417,6 +422,11 @@
 
 #newsSection .item {
     border-radius: 3px;
+    @include mq("xl") {
+        min-width: 370px;
+        min-height: 583px;
+        max-height: 583px;
+    }
 }
 
 .topSection {
@@ -436,6 +446,9 @@
     width: 100%;
     padding-left: 4%;
     padding-right: 4%;
+    @include mq("xl") {
+        flex-wrap: wrap;
+    }
 }
 
 .postDate {

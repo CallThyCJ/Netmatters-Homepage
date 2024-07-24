@@ -642,13 +642,16 @@ button {
     @include mq("l") {
         margin-bottom: 10%;
         font-size: 1rem;
-}
+    }
 }
 
 .midSection button {
     @include mq("l") {
         margin-top: 18%;
-}
+    }
+    @include mq("xl") {
+        margin-top: 8%;
+    }
 }
 
 .topSection img {
