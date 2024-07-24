@@ -303,19 +303,10 @@
     @include mq("l") {
         display: flex;
         flex-wrap: wrap;
-        // display: grid;
-        // grid-template-columns: 2 1fr;
-        // grid-template-rows: auto;
-        // grid-template-areas: 
-        // "welcome clientThoughts"
-        // "wPara1 stars"
-        // "wPara2 clientQoute"
-        // "wPara3 clientQoute"
-        // ". client"
-        // "welcomeButtons welcomeButtons";
-        // column-gap: 30px;
-        // row-gap: 40px;
     }
+    @include mq("xl") {
+        padding-bottom: 4%;
+        }
 }
 
 .welcomeContainer {
