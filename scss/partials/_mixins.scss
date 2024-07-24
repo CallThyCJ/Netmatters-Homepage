@@ -26,3 +26,11 @@
 }
 }
 
+@mixin hoverItem($bColor){
+    background-color: $bColor;
+    color: white;
+    .tagButton {
+        background-color: white;
+        color: $bColor;
+    }
+}

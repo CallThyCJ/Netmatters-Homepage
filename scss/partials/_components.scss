@@ -64,6 +64,10 @@ button {
     }
 }
 
+.hide {
+    display: none;
+}
+
 // MAIN HEADER SECTION
 
 .titlebar {
@@ -411,30 +415,116 @@ button {
 
 .item-1 {
     grid-area: bespoke;
+
+}
+
+.item-1:hover {
+    @include hoverItem(#67809f);
+    top: 50px;
+}
+
+.item-1:hover #bespokeLogoHover{
+    display: inline;
+}
+
+.item-1:hover #bespokeLogo {
+    display: none;
 }
 
 .item-2 {
     grid-area: support;
 }
 
+.item-2:hover {
+    @include hoverItem(#4183d7);
+}
+
+.item-2:hover #itLogoHover {
+    display: inline;
+}
+
+.item-2:hover #itLogo {
+    display: none;
+}
+
 .item-3 {
     grid-area: marketing;
+}
+
+.item-3:hover {
+    @include hoverItem(#2ecc71);
+}
+
+.item-3:hover #marketingLogoHover {
+    display: inline;
+}
+
+.item-3:hover #marketingLogo {
+    display: none;
 }
 
 .item-4 {
     grid-area: telecoms;
 }
 
+.item-4:hover{
+    @include hoverItem(rgb(214, 69, 65));
+}
+
+.item-4:hover #telecomLogoHover {
+    display: inline;
+}
+
+.item-4:hover #telecomLogo {
+    display: none;
+}
+
 .item-5 {
     grid-area: design;
+}
+
+.item-5:hover {
+    @include hoverItem(rgb(146, 111, 177));
+}
+
+.item-5:hover #designLogoHover {
+    display: inline;
+}
+
+.item-5:hover #designLogo {
+    display: none;
 }
 
 .item-6 {
    grid-area: security; 
 }
 
+.item-6:hover {
+    @include hoverItem(#f62459);
+ }
+
+ .item-6:hover #cyberLogoHover {
+    display: inline;
+}
+
+.item-6:hover #cyberLogo {
+    display: none;
+}
+
 .item-7 {
     grid-area: training;
+}
+
+.item-7:hover {
+    @include hoverItem(rgb(214, 69, 65));
+ }
+
+ .item-7:hover #devLogoHover {
+    display: inline;
+}
+
+.item-7:hover #devLogo {
+    display: none;
 }
 
 // .ourWorkGrid {
