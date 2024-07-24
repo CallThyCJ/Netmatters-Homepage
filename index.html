@@ -14,6 +14,7 @@
 <!-- HEADER NAV BAR -->
 
     <header>
+       <div id="titleContainer">
         <div class="titleBar">
             <img src="Assets/Netmatters logo.png" alt="Netmatters Logo" class="titleItems" id="homeNetmattersLogo">
             <img src="Assets/phone.png" alt="phone icon" class="titleItems" id="phoneIcon">
@@ -39,6 +40,7 @@
                 <img src="Assets/menu.png" alt="burgerMenuButton">
             </button>
         </div>
+    </div> 
         <div class="searchBar">
                 <input type="search" id="mainSearchBar" name="mainSearchBar" placeholder="Search..."> 
                 <button type="submit" id="searchIcon">
@@ -182,10 +184,10 @@
 <!-- WELCOME TO NETMATTERS SECTION -->
 
         <div id="welcome">
-            <div id="welcomeHeaderLaptop">
+            <!-- <div id="welcomeHeaderLaptop">
                 <h1 id="headerItem1">Welcome to Netmatters</h1>
                 <H1>What Our Clients Think</H1>
-            </div>
+            </div> -->
             <h1 id="welcomeHeading">Welcome to Netmatters</h1>
             <div class="welcomeContainer">
                 <div id="welcomeGrid">
@@ -197,7 +199,7 @@
                 <p id="wPara3">We pride ourselves on being an ethical business and have a unique business offering and cost model that ensures you get the most from our relationship in an upfront manner.</p>
                 <div id="leftButtons" class="welcomeButtons">
                     <button type="button" class="darkButton" id="chooseUs">Why Choose Us &rarr;</button>
-                    <button type="button" class="darkButton">Our Culture &rarr;</button>
+                    <button type="button" class="darkButton" id="cultureButton">Our Culture &rarr;</button>
                 </div>
             </div>
                 </div>
@@ -221,8 +223,8 @@
                         <p id="client">Eleanor Bishop, Head of Marketing -</p> <p id="clientCompany" class="bold">Ashcroft Partnership LLP</p>
                     </div>
                 <div id="rightButtons" class="welcomeButtons">
-                    <button class="blueButton">Google Reviews &rarr;</button>
-                    <button class="darkGreenButton">Trustpilot Reviews &rarr;</button>
+                    <button id="googleButton" class="blueButton">Google Reviews &rarr;</button>
+                    <button id="trustButton" class="darkGreenButton">Trustpilot Reviews &rarr;</button>
                 </div>
             </div>
         </div>

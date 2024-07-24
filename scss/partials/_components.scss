@@ -314,6 +314,9 @@ button {
     font-size: 3rem;
     margin-top: 6%;
     margin-bottom: 5%;
+    @include mq("s") {
+        font-size: 2.4rem;
+    }
     @include mq("m") {
         font-size: 2.5rem;
     }
@@ -327,9 +330,12 @@ button {
     @include mq("s") {
         display: none;
     }
-    font-size: 2.3rem;
-    @include mq("l") {
+    @include mq("m") {
         display: inline;
+        font-size: 2rem;
+    }
+    @include mq("l") {
+        font-size: 2.3rem;
     }
 }
 
@@ -358,9 +364,13 @@ button {
 }
 
 #firstRow .item {
+    @include mq("s") {
+        margin-bottom: 30px;
+    }
     @include mq("m") {
         width: 720px;
         height: 270px;
+        margin-bottom: auto;
     }
 
     @include mq("l") {
@@ -378,6 +388,9 @@ button {
 }
 
 #secondRow .item {
+    @include mq("s") {
+        margin-bottom: 30px;
+    }
     @include mq("m") {
         width: 345px;
         height: 292px;
@@ -462,6 +475,9 @@ button {
 
 #welcome h1 {
     font-size: 2.4rem;
+    @include mq("s") {
+        font-size: 2.1rem;
+    }
     @include mq("l") {
         font-size: 2.2rem;
     }
@@ -475,7 +491,7 @@ button {
 
 .headerDesktop {
     display: none;
-    @include mq("xl") {
+    @include mq("l") {
         display: inline;
     }
 }
@@ -483,16 +499,15 @@ button {
 #welcomeRightSide {
     @include mq("l") {
         justify-content: flex-end;
-    }
-    @include mq("xl") {
-        width: 100%;
         grid-area: rightSide;
+        width: 100%;
     }
 }
 
 #welcomeLeftSide {
     @include mq("l") {
-        margin-right: 8%;
+        grid-area: leftSide;
+        width: 100%;
     }
     @include mq("xl") {
         width: 100%;
@@ -502,13 +517,18 @@ button {
 }
 
 #welcomeLeftSide p {
-    @include mq("l") {
-        margin-bottom: 8%;
-        margin-top: 6%;
+    @include mq("s") {
+        line-height: 33px;
     }
-    @include mq("xl") {
+    @include mq("m") {
+        line-height: 30px;
+    }
+    @include mq("l") {
         margin-bottom: 3%;
         margin-top: 3%;
+        line-height: 29px;
+    }
+    @include mq("xl") {
         line-height: 25px;
     }
 }
@@ -531,7 +551,7 @@ button {
 }
 
 .welcomeButtons {
-    @include mq("l") {
+    @include mq("s") {
         flex-direction: column;
         width: 100%;
     }
@@ -544,9 +564,15 @@ button {
 #welcome button {
     font-size: 1.5rem;
     padding: 2%;
-    @include mq("xl") {
+    @include mq("s") {
         width: 270px;
         height: 57px;
+    }
+    @include mq("m") {
+        font-size: 1.35rem;
+    }
+    @include mq("l") {
+        border-radius: 6px;
         font-size: 1.3rem;
     }
 }
@@ -554,7 +580,7 @@ button {
 .welcomeButtons button {
     @include mq("l") {
         height: 100%;
-        margin-bottom: 5%;
+        margin-bottom: 2%;
     }
 }
 
@@ -564,9 +590,38 @@ button {
     }
 }
 
+#leftButtons #cultureButton {
+    @include mq("s") {
+        width: 226px;
+        height: 57px;
+    }
+}
+
+#rightButtons {
+    @include mq("l") {
+        margin-top: 7%;
+    }
+}
+
+#rightButtons #googleButton {
+    @include mq("s") {
+        width: 263px;
+        height: 55px;
+    }
+}
+
+#rightButtons #trustButton {
+    @include mq("s") {
+        width: 294px;
+        height: 55px;
+    }
+}
+
+
+
 #stars {
     grid-area: stars;
-    @include mq("xl") {
+    @include mq("l") {
         margin-top: 2%;
     } 
 }
@@ -585,8 +640,16 @@ button {
     text-align: left;
     font-size: 1.7rem;
     grid-area: clientQoute;
+    @include mq("s") {
+        line-height: 36px;
+    }
+    @include mq("m") {
+        font-size: 1.5rem;
+        line-height: 32px;
+    }
     @include mq("l") {
         font-size: 1.3rem;
+        line-height: 30px;
     }
     @include mq("xl") {
         line-height: 33px;
@@ -597,6 +660,9 @@ button {
     color: #a3a8ac;
     grid-area: client;
     font-size: 0.9rem;
+    @include mq("m") {
+        font-size: 1.2rem;
+    }
     @include mq("xl") {
         font-size: 1.1rem;
     }
@@ -604,6 +670,9 @@ button {
 
 #clientCompany {
     font-size: 0.9rem;
+    @include mq("m") {
+        font-size: 1.2rem;
+    }
     @include mq("xl") {
         font-size: 1.1rem;
     }

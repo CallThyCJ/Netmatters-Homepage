@@ -1,5 +1,19 @@
 // TITLE HEADER SECTION
 
+#titleContainer {
+    @include mq("m") {
+    width: 750px;
+    margin-right: auto;
+    margin-left: auto;
+    }
+    @include mq("l") {
+        width: 970px;
+    }
+    @include mq("xl") {
+        width: 1200px;
+    }
+}
+
 .titleBar {
     display: flex;
     align-items: center;
@@ -17,7 +31,7 @@
         grid-template-areas: 
         "logo . searchBar burgerMenu";
         gap: 0px;
-        justify-items: end;
+        justify-items: center;
     }
     @include mq("l") {
         display: grid;
@@ -189,10 +203,19 @@
 
 #serviceHeader {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    @include mq("s") {
+        justify-content: flex-start;
+    }
+    @include mq("m") {
+        gap: 180px;
+    }
+    @include mq("l") {
+    gap: 360px;
+    }
     @include mq("xl") {
-        justify-content: center;
+
         gap: 578px;
     }
 }
@@ -219,9 +242,14 @@
 }
 
 #firstRow {
-    @include mq("m") {
+    @include mq("s") {
         display: flex;
+        flex-direction: column;
         width: 100%;
+        column-gap: 40px;
+        margin-bottom: -30px;
+    }
+    @include mq("m") {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
@@ -229,9 +257,7 @@
     }
 
     @include mq("l") {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
+        column-gap: 30px;
     }
     @include mq("xl") {
         justify-content: center;
@@ -244,15 +270,13 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
         row-gap: 30px;
+        column-gap: 30px;
     }
     @include mq("l") {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        row-gap: 30px;
-        column-gap: 30px;
     }
     @include mq("xl") {
         display: flex;
@@ -313,6 +337,9 @@
 .welcomeContainer {
     @include mq("l") {
         display: flex;
+        width: 940px;
+        margin-right: auto;
+        margin-left: auto;
     }
     @include mq("xl") {
     width: 1200px;
@@ -322,6 +349,12 @@
 }
 
 #welcomeGrid {
+    @include mq("l") {
+        display: grid;
+        grid-template-areas: 
+        "leftSide rightSide";
+        column-gap: 15px;
+    }
     @include mq("xl") {
         display: grid;
         grid-template-areas: 
@@ -331,6 +364,11 @@
 }
 
 .welcomeSections {
+    @include mq("l") {
+        display: flex;
+        flex-direction: column;
+    }
+
     @include mq("xl") {
     display: flex;
     flex-direction: column;
@@ -390,8 +428,11 @@
 
 .newsTitle {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    @include mq("m") {
+        gap: 370px;
+    }
     @include mq("xl") {
         gap: 820px;
         }
@@ -404,18 +445,15 @@
     gap: 35px;
     @include mq("m") {
         flex-direction: row;
-        overflow: hidden;
+        justify-content: center;
+        flex-wrap: wrap;
     }
-    @include mq("xl") {
+    @include mq("l") {
         gap: 30px;
         width: 100%;
-        justify-content: center;
     }
     @include mq("xl") {
-        gap: 30px;
-        width: 100%;
-        justify-content: center;
-        overflow: visible;
+        flex-wrap: nowrap;
     }
 }
 
@@ -431,14 +469,22 @@
 #newsSection, .infoSection {
     padding-left: 2%;
     padding-right: 2%;
-    @include mq("l") {
-        padding-left: 4%;
-    padding-right: 4%;
-    }
 }
 
 #newsSection .item {
     border-radius: 3px;
+    @include mq("m") {
+        min-width: 345px;
+        min-height: 569px;
+        max-height: 569px;
+        max-width: 345px;
+    }
+    @include mq("l") {
+        min-width: 455px;
+        min-height: 633px;
+        max-height: 633px;
+        max-width: 455px;
+    }
     @include mq("xl") {
         min-width: 370px;
         min-height: 583px;
