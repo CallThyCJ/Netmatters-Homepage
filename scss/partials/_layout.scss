@@ -299,7 +299,10 @@
 .accreditations {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    @include mq("s") {
+        gap: 60px;
+    }
     @include mq("xl") {
         justify-content: center;
         gap: 280px;

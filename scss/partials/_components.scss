@@ -761,6 +761,16 @@ button {
     padding-bottom: 4%;
 }
 
+.thirdItem {
+    @include mq("s") {
+        display: none;
+    }
+    @include mq("m") {
+        display: inline;
+    }
+} 
+
+
 // SOCIAL MEDIA AND SITE LINKS SECTION
 
 #whiteNetmattersLogo {
@@ -847,3 +857,11 @@ button {
     margin: 0px;
 }
 
+#hyphen {
+    @include mq("s") {
+        display: none;
+    }
+    @include mq("m") {
+        display: inline;
+    }
+}
