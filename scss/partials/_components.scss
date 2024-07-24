@@ -384,8 +384,10 @@ button {
     }
 
     @include mq("l") {
-        width: 455px;
+        min-width: 455px;
+        max-width: 455px;
         min-height: 292px;
+        max-height: 292px;
     }
     @include mq("xl") {
         min-width: 270px;

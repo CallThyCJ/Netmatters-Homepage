@@ -250,8 +250,8 @@
     @include mq("l") {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
-        row-gap: 30px;
+        justify-content: center;
+        row-gap: 50px;
     }
     @include mq("xl") {
         display: flex;

@@ -20,7 +20,7 @@
     }
 }
     @else if $break == "xl" {
-        @media (min-width: $break-l) {
+        @media (min-width: $break-xl) {
             @content;
 }
 }
