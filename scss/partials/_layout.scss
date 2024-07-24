@@ -380,10 +380,20 @@
 
 // NEWS SECTION
 
+#newsTitleContainer {
+    @include mq("xl") {
+    display: flex;
+    justify-content: center;
+    }
+}
+
 .newsTitle {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include mq("xl") {
+        gap: 820px;
+        }
 }
 
 .newsContainer {

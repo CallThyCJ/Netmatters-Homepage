@@ -619,6 +619,9 @@ button {
 #newsSection h1 {
     font-size: 2.3rem;
     color: #333645;
+    @include mq("xl") {
+    font-size: 2.1rem;    
+}
 }
 
 .newsContainer {
