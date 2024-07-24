@@ -484,6 +484,21 @@
 
 // SOCIAL MEDIA AND SITE LINKS SECTION
 
+.smSectionContainer {
+    @include mq("xl") {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    }
+}
+
+#smLeftSide {
+    @include mq("xl") {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 .netmattersLinks {
     display: flex;
     flex-direction: column;
@@ -492,6 +507,9 @@
     }
     @include mq("l") {
         min-width: 243px;
+    }
+    @include mq("xl") {
+        min-width: 200px;
     }
 }
 
@@ -508,6 +526,10 @@
         margin-top: 3%;
         overflow: hidden;
         max-width: 942px;
+    }
+    @include mq("xl") {
+        margin-top: 0px;
+        gap: 2%;
     }
 }
 
