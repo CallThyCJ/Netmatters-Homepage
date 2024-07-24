@@ -471,12 +471,20 @@ button {
     }
 }
 
+.headerDesktop {
+    display: none;
+    @include mq("xl") {
+        display: inline;
+    }
+}
+
 #welcomeRightSide {
     @include mq("l") {
         justify-content: flex-end;
     }
     @include mq("xl") {
         width: 100%;
+        grid-area: rightSide;
     }
 }
 
@@ -485,7 +493,8 @@ button {
         margin-right: 8%;
     }
     @include mq("xl") {
-        width: 600px;
+        width: 100%;
+        grid-area: leftSide;
         justify-content: flex-start;
     }
 }
@@ -498,7 +507,7 @@ button {
     @include mq("xl") {
         margin-bottom: 3%;
         margin-top: 3%;
-        padding-left: 15%;
+        line-height: 25px;
     }
 }
 
@@ -549,12 +558,15 @@ button {
 
 #leftButtons {
     @include mq("xl") {
-        padding-left: 7%;
+        margin-top: 9%;
     }
 }
 
 #stars {
-    grid-area: stars;  
+    grid-area: stars;
+    @include mq("xl") {
+        margin-top: 2%;
+    } 
 }
 
 #stars img {
@@ -574,16 +586,25 @@ button {
     @include mq("l") {
         font-size: 1.3rem;
     }
+    @include mq("xl") {
+        line-height: 33px;
+    }
 }
 
 #client {
     color: #a3a8ac;
     grid-area: client;
     font-size: 0.9rem;
+    @include mq("xl") {
+        font-size: 1.1rem;
+    }
 }
 
 #clientCompany {
     font-size: 0.9rem;
+    @include mq("xl") {
+        font-size: 1.1rem;
+    }
 }
 
 // NEWS SECTION

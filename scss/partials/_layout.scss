@@ -323,15 +323,25 @@
         display: flex;
     }
     @include mq("xl") {
-    justify-content: center;
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
     }
+}
+
+#welcomeGrid {
+    @include mq("xl") {
+        display: grid;
+        grid-template-areas: 
+        "leftSide rightSide";
+        column-gap: 15px;
+        }
 }
 
 .welcomeSections {
     @include mq("xl") {
     display: flex;
     flex-direction: column;
-    width: 50%;
 }
 }
 
@@ -352,7 +362,7 @@
     display: flex;
     width: 100%;
     @include mq("xl") {
-        justify-content: center;
+        display: none;
 }
 }
 
