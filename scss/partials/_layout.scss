@@ -243,10 +243,14 @@
 }
 
 #firstRow {
-    @include mq("s") {
+    @include mq("xs") {
         display: flex;
         flex-direction: column;
         width: 100%;
+        gap: 15px;
+        margin-bottom: -20px;
+    }
+    @include mq("s") {
         column-gap: 40px;
         margin-bottom: -30px;
     }
@@ -267,6 +271,12 @@
 }
 
 #secondRow {
+    @include mq("xs") {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
     @include mq("m") {
         display: flex;
         flex-direction: row;

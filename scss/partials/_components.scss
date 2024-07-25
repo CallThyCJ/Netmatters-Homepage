@@ -101,6 +101,9 @@ button {
 
 .lDeviceSearchBar {
     grid-area: searchBar;
+    @include mq("xs") {
+        display: none;
+    }
     @include mq("s") {
         display: none;
     }
@@ -241,6 +244,18 @@ button {
     }
 }
 
+#support:hover {
+    background-color: $blueHover;
+}
+
+#contact:hover, #searchButton:hover, #lSearchIcon:hover {
+    background-color: $greyHover;
+}
+
+#burgerMenuButton:hover {
+    background-color: $darkHover;
+}
+
 //MAIN NAV BAR
 
 .navItem {
@@ -338,6 +353,9 @@ button {
 }
 
 #ourWorkLaptop {
+    @include mq("xs") {
+        display: none;
+    }
     @include mq("s") {
         display: none;
     }
@@ -375,6 +393,7 @@ button {
 }
 
 #firstRow .item {
+    
     @include mq("s") {
         margin-bottom: 30px;
     }
@@ -565,7 +584,7 @@ button {
 
 #welcome h1 {
     font-size: 2.4rem;
-    @include mq("s") {
+    @include mq("xs") {
         font-size: 2.1rem;
     }
     @include mq("l") {
@@ -607,7 +626,7 @@ button {
 }
 
 #welcomeLeftSide p {
-    @include mq("s") {
+    @include mq("xs") {
         line-height: 33px;
     }
     @include mq("m") {
@@ -641,7 +660,7 @@ button {
 }
 
 .welcomeButtons {
-    @include mq("s") {
+    @include mq("xs") {
         flex-direction: column;
         width: 100%;
     }
@@ -654,7 +673,7 @@ button {
 #welcome button {
     font-size: 1.5rem;
     padding: 2%;
-    @include mq("s") {
+    @include mq("xs") {
         width: 270px;
         height: 57px;
     }
@@ -681,7 +700,7 @@ button {
 }
 
 #leftButtons #cultureButton {
-    @include mq("s") {
+    @include mq("xs") {
         width: 226px;
         height: 57px;
     }
@@ -694,14 +713,14 @@ button {
 }
 
 #rightButtons #googleButton {
-    @include mq("s") {
+    @include mq("xs") {
         width: 263px;
         height: 55px;
     }
 }
 
 #rightButtons #trustButton {
-    @include mq("s") {
+    @include mq("xs") {
         width: 294px;
         height: 55px;
     }
@@ -730,7 +749,7 @@ button {
     text-align: left;
     font-size: 1.7rem;
     grid-area: clientQoute;
-    @include mq("s") {
+    @include mq("xs") {
         line-height: 36px;
     }
     @include mq("m") {
@@ -750,6 +769,9 @@ button {
     color: #a3a8ac;
     grid-area: client;
     font-size: 0.9rem;
+    @include mq("xs") {
+        font-size: 0.8rem;
+    }
     @include mq("m") {
         font-size: 1.2rem;
     }
@@ -760,6 +782,9 @@ button {
 
 #clientCompany {
     font-size: 0.9rem;
+    @include mq("xs") {
+        font-size: 0.8rem;
+    }
     @include mq("m") {
         font-size: 1.2rem;
     }
@@ -852,7 +877,7 @@ button {
 }
 
 .thirdItem {
-    @include mq("s") {
+    @include mq("xs") {
         display: none;
     }
     @include mq("m") {
