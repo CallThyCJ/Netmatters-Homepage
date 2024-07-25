@@ -72,6 +72,15 @@ button {
     display: none;
 }
 
+.xsHide {
+    @include mq("xs") {
+        display: none;
+    }
+    @include mq("m") {
+        display: inline;
+    }
+}
+
 .item:hover {
     transform: translate(0, -15px);
 }
@@ -572,8 +581,17 @@ button {
     }
 }
 
+// #blackSwan {
+//     height: 50px;
+//     width: 50px;
+// }
+
 .accreditations img {
     filter: grayscale(100%);
+    // @include mq("s") {
+    //     width: 50%;
+    //     height: 50%;
+    // }
 }
 
 .accreditations img:hover {

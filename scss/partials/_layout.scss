@@ -312,7 +312,7 @@
     align-items: center;
     justify-content: center;
     @include mq("s") {
-        gap: 60px;
+        gap: 40px;
     }
     @include mq("xl") {
         justify-content: center;
