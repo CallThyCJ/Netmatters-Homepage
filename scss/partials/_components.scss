@@ -186,6 +186,8 @@ button {
     min-width: 63px;
     min-height: 56px;
     background-color: #999aa2;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
     @include mq("xl") {
         min-height: 56px;
         min-width: 63x;
