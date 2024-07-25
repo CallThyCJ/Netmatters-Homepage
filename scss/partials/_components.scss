@@ -856,7 +856,6 @@ button {
 .newsContainer {
     @include mq("m") {
         margin-bottom: 14%;
-        box-shadow: 0px 0px 42px 26px rgba(0,0,0,0.05);
     }
 }
 
