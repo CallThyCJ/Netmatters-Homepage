@@ -68,6 +68,10 @@ button {
     display: none;
 }
 
+.item:hover {
+    transform: translate(0, -15px);
+}
+
 // MAIN HEADER SECTION
 
 .titlebar {
@@ -424,7 +428,6 @@ button {
 
 .item-1:hover {
     @include hoverItem(#67809f);
-    top: 50px;
 }
 
 .item-1:hover #bespokeLogoHover{
