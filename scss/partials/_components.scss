@@ -531,10 +531,6 @@ button {
     display: none;
 }
 
-#itButton {
-    background-color: #4183d7;
-}
-
 #serviceMenu .accreditations {
     @include mq("xl") {
         margin-top: -9%;
