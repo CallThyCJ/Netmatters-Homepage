@@ -76,6 +76,10 @@ button {
     transform: translate(0, -15px);
 }
 
+.clickable:hover {
+    cursor: pointer
+}
+
 // MAIN HEADER SECTION
 
 .titlebar {
@@ -859,6 +863,7 @@ button {
 }
 
 .topSection img {
+    object-fit: fill;
     width: 100%;
     height: 100%;
     padding-top: 0px;
