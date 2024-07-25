@@ -104,6 +104,12 @@ button {
 }
 
 #homeNetmattersLogo {
+    @include mq("xs") {
+        min-height: 50.06px;
+        min-width: 282px;
+        max-height: 50.06px;
+        max-width: 282px;
+    }
     @include mq("m") {
         grid-area: logo;
         min-height: 60.06px;
