@@ -390,6 +390,7 @@ button {
         min-height: 315px;
         width: 370px;
         height: 315px;
+        margin-top: -6%;
     }
 }
 
@@ -530,17 +531,15 @@ button {
     display: none;
 }
 
-// .ourWorkGrid {
-//    grid-area: title2;
-//    font-size: 1.5rem;
-//    text-align: right;
-//    @include mq("l") {
-//     display: none;
-// }
-// }
-
 #itButton {
     background-color: #4183d7;
+}
+
+#serviceMenu .accreditations {
+    @include mq("xl") {
+        margin-top: -9%;
+        margin-bottom: -5%;
+    }
 }
 
 .accreditations img {
@@ -861,6 +860,13 @@ button {
         display: inline;
     }
 } 
+
+#newsSection .accreditations {
+    @include mq("xl") {
+        margin-top: -10%;
+        margin-bottom: -2%;
+    }
+}
 
 
 // SOCIAL MEDIA AND SITE LINKS SECTION
