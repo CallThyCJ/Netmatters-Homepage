@@ -1,0 +1,48 @@
+.smSectionContainer {
+    @include mq("xl") {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    }
+}
+
+#smLeftSide {
+    @include mq("xl") {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.netmattersLinks {
+    display: flex;
+    flex-direction: column;
+    @include mq("m") {
+        min-width: 255px;
+    }
+    @include mq("l") {
+        min-width: 243px;
+    }
+    @include mq("xl") {
+        min-width: 200px;
+    }
+}
+
+.biggerDeviceSiteLinks {
+    @include mq("m") {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20%;
+    }
+    @include mq("l") {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 1%;
+        margin-top: 3%;
+        overflow: hidden;
+        max-width: 942px;
+    }
+    @include mq("xl") {
+        margin-top: 0px;
+        gap: 2%;
+    }
+}

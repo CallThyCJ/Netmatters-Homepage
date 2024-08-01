@@ -1,0 +1,95 @@
+#welcome {
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 3%;
+    padding-bottom: 8%;
+    @include mq("l") {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    @include mq("xl") {
+        padding-bottom: 4%;
+        }
+}
+
+.welcomeContainer {
+    @include mq("l") {
+        display: flex;
+        width: 940px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    @include mq("xl") {
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    }
+}
+
+#welcomeGrid {
+    @include mq("l") {
+        display: grid;
+        grid-template-areas: 
+        "leftSide rightSide";
+        column-gap: 15px;
+    }
+    @include mq("xl") {
+        display: grid;
+        grid-template-areas: 
+        "leftSide rightSide";
+        column-gap: 15px;
+        }
+}
+
+.welcomeSections {
+    @include mq("l") {
+        display: flex;
+        flex-direction: column;
+    }
+
+    @include mq("xl") {
+    display: flex;
+    flex-direction: column;
+}
+}
+
+
+
+.welcomeItems {
+    @include mq("l") {
+        display: flex;
+        flex-direction: column;
+        width: 46%;
+    }
+    @include mq("xl") {
+        justify-content: center;
+    }
+}
+
+#welcomeHeaderLaptop {
+    display: flex;
+    width: 100%;
+    @include mq("xl") {
+        display: none;
+}
+}
+
+.welcomeButtons {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+
+#stars {
+    display: flex;
+    max-width: 250px;
+    gap: 5px;
+    margin-bottom: 5%;
+    margin-top: 7%;
+}
+
+#clintInfo {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 5%;
+}

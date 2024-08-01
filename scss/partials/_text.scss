@@ -1,0 +1,216 @@
+// FONT SIZING
+
+
+
+
+
+
+// MAIN HEADER SECTION
+
+
+#lSearchBar {
+    font-size: 0.9rem;
+}
+
+#support {
+    font-size: 1.3rem;
+}
+
+#contact, #support {
+    @include mq("xl") {
+        font-size: 1.1rem; 
+    }
+}
+
+
+//MAIN NAV BAR
+
+.navTitleSmall {
+    font-size: 0.7rem;
+}
+
+.navTitleBottom {
+    font-size: 1.2rem;
+}
+
+
+// IMAGE BANNER SECTION
+
+
+.overlayingBannerItems h1 {
+    font-size: 2.7rem;
+    @include mq("l") {
+        font-size: 4rem;
+    }
+    @include mq("xl") {
+        font-size: 3.8rem;
+    }
+}
+
+.overlayingBannerItems p {
+    font-size: 1.4rem;
+    @include mq("l") {
+        font-size: 1.6rem;
+    }
+}
+
+.overlayingBannerItems button {
+    font-size: 20px;
+    @include mq("xl") {
+        font-size: 1.4rem;
+    }
+}
+
+
+// OUR SERVICES SECTION
+
+
+#serviceMenu H1 {
+    font-size: 3rem;
+    @include mq("s") {
+        font-size: 2.4rem;
+    }
+    @include mq("m") {
+        font-size: 2.5rem;
+    }
+}
+
+#serviceMenu p {
+    font-size: 0.83rem;
+}
+
+#ourWorkLaptop {
+    @include mq("m") {
+        font-size: 2rem;
+    }
+    @include mq("l") {
+        font-size: 2.3rem;
+    }
+}
+
+.item button {
+    font-size: 1.063rem;
+}
+
+
+
+// WELCOME TO NETMATTERS SECTION
+
+
+#welcome h1 {
+    font-size: 2.4rem;
+    @include mq("xs") {
+        font-size: 2.1rem;
+    }
+    @include mq("l") {
+        font-size: 2.2rem;
+    }
+}
+
+#welcomeText p {
+    font-size: 1.2rem;
+}
+
+#welcome button {
+    font-size: 1.5rem;
+    @include mq("m") {
+        font-size: 1.35rem;
+    }
+    @include mq("l") {
+        font-size: 1.3rem;
+    }
+}
+
+#clientQoute {
+    font-size: 1.7rem;
+    @include mq("m") {
+        font-size: 1.5rem;
+    }
+    @include mq("l") {
+        font-size: 1.3rem;
+    }
+}
+
+#client {
+    font-size: 0.9rem;
+    @include mq("xs") {
+        font-size: 0.8rem;
+    }
+    @include mq("m") {
+        font-size: 1.2rem;
+    }
+    @include mq("xl") {
+        font-size: 1.1rem;
+    }
+}
+
+#clintInfo {
+    font-size: 1.3rem;
+}
+
+#clientCompany {
+    font-size: 0.9rem;
+    @include mq("xs") {
+        font-size: 0.8rem;
+    }
+    @include mq("m") {
+        font-size: 1.2rem;
+    }
+    @include mq("xl") {
+        font-size: 1.1rem;
+    }
+}
+
+
+
+// NEWS SECTION
+
+
+#newsSection h1 {
+    font-size: 2.3rem;
+    @include mq("xl") {
+        font-size: 2.1rem;    
+    }
+}
+
+.midSection p {
+    @include mq("l") {
+        font-size: 0.85rem;
+    }
+}
+
+.midSection h3 {
+    @include mq("l") {
+        font-size: 1rem;
+    }
+}
+
+
+
+// SOCIAL MEDIA AND SITE LINKS SECTION
+
+
+.biggerDeviceSiteLinks h3 {
+    @include mq("l") {
+        font-size: 0.94rem;
+    }
+}
+
+.netmattersLinks {
+    @include mq("l") {
+        font-size: 0.85rem;
+    }
+}
+
+
+
+// COPYRIGHT SECTION
+
+
+#copyrightSection {
+    @include mq("m") {
+        font-size: 0.8rem;
+    }
+}
+
+

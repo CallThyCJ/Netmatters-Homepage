@@ -1,0 +1,142 @@
+#serviceMenu {
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-bottom: 7%;
+    @include mq("l") {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+}
+
+#serviceHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include mq("s") {
+        justify-content: flex-start;
+    }
+    @include mq("m") {
+        justify-content: center;
+        gap: 180px;
+    }
+    @include mq("l") {
+        gap: 360px;
+    }
+    @include mq("xl") {
+        gap: 578px;
+        margin-top: -3%;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 35px;
+    @include mq("m") {
+        margin-top: 4%;
+        margin-bottom: 12%;
+    }
+    @include mq("l") {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 4%;
+        margin-bottom: 12%;
+    }
+    @include mq("xl") {
+        justify-content: center;
+    }
+}
+
+#firstRow {
+    @include mq("xs") {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+        margin-bottom: -20px;
+    }
+    @include mq("s") {
+        column-gap: 40px;
+        margin-bottom: -30px;
+    }
+    @include mq("m") {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 30px;
+    }
+
+    @include mq("l") {
+        column-gap: 30px;
+    }
+    @include mq("xl") {
+        justify-content: center;
+        gap: 20px;
+        }
+}
+
+#secondRow {
+    @include mq("xs") {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+    @include mq("m") {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 30px;
+        column-gap: 30px;
+    }
+    @include mq("l") {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    @include mq("xl") {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        width: 100%;
+        gap: 20px;
+    }
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-shadow: 0px 0px 42px 26px rgba(0,0,0,0.05);
+    transition: .5s ease;
+}
+
+.accreditations {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include mq("s") {
+        gap: 40px;
+    }
+    @include mq("xl") {
+        justify-content: center;
+        gap: 280px;
+    }
+}
+
+.ourWork {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ourWork h2 {
+    @include mq("m") {
+        display: none;
+    }
+}

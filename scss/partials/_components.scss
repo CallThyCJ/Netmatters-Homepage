@@ -114,7 +114,6 @@ button {
         grid-area: logo;
         min-height: 60.06px;
         min-width: 345px;
-        //flex-grow: 2;
     }
     @include mq("xl") {
         width: 370px;
@@ -145,7 +144,6 @@ button {
     min-width: 174px;
     max-width: 174px;
     text-indent: 8%;
-    font-size: 0.9rem;
     @include mq("xl") {
         min-width: 240px;
         min-height: 56px;
@@ -204,7 +202,6 @@ button {
     display: none;
     grid-area: support;
     width: 150px;
-    font-size: 1.3rem;
     text-align: center;
     @include mq("l") { 
         display: flex;
@@ -227,7 +224,6 @@ button {
 #contact, #support {
     @include mq("xl") { 
         padding: 0%;
-        font-size: 1.1rem;
     }
 }
 
@@ -294,12 +290,10 @@ button {
 }
 
 .navTitleSmall {
-    font-size: 0.7rem;
     margin: 2px;
 }
 
 .navTitleBottom {
-    font-size: 1.2rem;
     margin: 0.5px;
 }
 
@@ -312,31 +306,22 @@ button {
 .overlayingBannerItems h1 {
     z-index: 2;
     text-align: center;
-    font-size: 2.7rem;
     @include mq("l") {
         text-align: left;
-        font-size: 4rem;
         margin-bottom: 2.2%;
-    }
-    @include mq("xl") {
-        font-size: 3.8rem;
     }
 }
 
 .overlayingBannerItems p {
-    font-size: 1.4rem;
     text-align: center;
     @include mq("l") {
         text-align: left;
-        font-size: 1.6rem;
         margin-top: 1.5%;
-
     }
 }
 
 .overlayingBannerItems button {
     height: 60px;
-    font-size: 20px;
     padding: 4%;
     line-height: 0px;
     @include mq("xl") {
@@ -344,7 +329,6 @@ button {
         width: 250px;
         height: 62px;
         max-height: 62px;
-        font-size: 1.4rem;
         padding: 0px;
         margin-top: 2.5%;
     }
@@ -366,19 +350,8 @@ button {
 }
 
 #serviceMenu H1 {
-    font-size: 3rem;
     margin-top: 6%;
     margin-bottom: 5%;
-    @include mq("s") {
-        font-size: 2.4rem;
-    }
-    @include mq("m") {
-        font-size: 2.5rem;
-    }
-}
-
-#serviceMenu p {
-    font-size: 0.83rem;
 }
 
 #ourWorkLaptop {
@@ -390,17 +363,12 @@ button {
     }
     @include mq("m") {
         display: inline;
-        font-size: 2rem;
-    }
-    @include mq("l") {
-        font-size: 2.3rem;
     }
 }
 
 .item button {
     height: 47px;
     width: 130px;
-    font-size: 1.063rem;
     margin-bottom: 4%;
 }
 
@@ -589,17 +557,8 @@ button {
     }
 }
 
-// #blackSwan {
-//     height: 50px;
-//     width: 50px;
-// }
-
 .accreditations img {
     filter: grayscale(100%);
-    // @include mq("s") {
-    //     width: 50%;
-    //     height: 50%;
-    // }
 }
 
 .accreditations img:hover {
@@ -618,16 +577,6 @@ button {
         display: none;
     }
     grid-area: welcome;
-}
-
-#welcome h1 {
-    font-size: 2.4rem;
-    @include mq("xs") {
-        font-size: 2.1rem;
-    }
-    @include mq("l") {
-        font-size: 2.2rem;
-    }
 }
 
 #headerItem1 {
@@ -682,7 +631,6 @@ button {
 
 #welcomeText p {
     text-align: left;
-    font-size: 1.2rem;
 }
 
 #wPara1 {
@@ -710,18 +658,13 @@ button {
 }
 
 #welcome button {
-    font-size: 1.5rem;
     padding: 2%;
     @include mq("xs") {
         width: 270px;
         height: 57px;
     }
-    @include mq("m") {
-        font-size: 1.35rem;
-    }
     @include mq("l") {
         border-radius: 6px;
-        font-size: 1.3rem;
     }
 }
 
@@ -792,17 +735,14 @@ button {
 
 #clientQoute {
     text-align: left;
-    font-size: 1.7rem;
     grid-area: clientQoute;
     @include mq("xs") {
         line-height: 36px;
     }
     @include mq("m") {
-        font-size: 1.5rem;
         line-height: 32px;
     }
     @include mq("l") {
-        font-size: 1.3rem;
         line-height: 30px;
     }
     @include mq("xl") {
@@ -813,29 +753,6 @@ button {
 #client {
     color: #a3a8ac;
     grid-area: client;
-    font-size: 0.9rem;
-    @include mq("xs") {
-        font-size: 0.8rem;
-    }
-    @include mq("m") {
-        font-size: 1.2rem;
-    }
-    @include mq("xl") {
-        font-size: 1.1rem;
-    }
-}
-
-#clientCompany {
-    font-size: 0.9rem;
-    @include mq("xs") {
-        font-size: 0.8rem;
-    }
-    @include mq("m") {
-        font-size: 1.2rem;
-    }
-    @include mq("xl") {
-        font-size: 1.1rem;
-    }
 }
 
 // NEWS SECTION
@@ -848,11 +765,7 @@ button {
 }
 
 #newsSection h1 {
-    font-size: 2.3rem;
     color: #333645;
-    @include mq("xl") {
-    font-size: 2.1rem;    
-}
 }
 
 .newsContainer {
@@ -864,7 +777,6 @@ button {
 .midSection p {
     color: #666;
     @include mq("l") {
-        font-size: 0.85rem;
         margin-bottom: 0px;
         margin-top: 5px;
 }
@@ -874,7 +786,6 @@ button {
     margin-top: 9%;
     @include mq("l") {
         margin-bottom: 10%;
-        font-size: 1rem;
     }
 }
 
@@ -988,15 +899,8 @@ button {
     background-color: #0a66c2;
 }
 
-.biggerDeviceSiteLinks h3 {
-    @include mq("l") {
-        font-size: 0.94rem;
-    }
-}
-
 .netmattersLinks {
     @include mq("l") {
-        font-size: 0.85rem;
         margin-top: 10%;
     }
 }
@@ -1032,7 +936,6 @@ button {
     @include mq("m") {
         padding-top: 0.5%;
         padding-bottom: 0.5%;
-        font-size: 0.8rem;
     }
 }
 

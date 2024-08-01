@@ -1,0 +1,25 @@
+.mainNavBar {
+    background-color: #333645;
+    display: none;
+    @include mq("l") {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding-left: 6%;
+        padding-right: 6%;
+        padding-top: 1.5%;
+        padding-bottom: 1.5%;
+    }
+}
+
+.navOptions {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.navItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

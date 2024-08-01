@@ -1,0 +1,118 @@
+#newsTitleContainer {
+    @include mq("xl") {
+    display: flex;
+    justify-content: center;
+    }
+}
+
+.newsTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include mq("m") {
+        gap: 370px;
+    }
+    @include mq("xl") {
+        gap: 820px;
+        }
+}
+
+.newsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 35px;
+    @include mq("m") {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    @include mq("l") {
+        gap: 30px;
+        width: 100%;
+    }
+    @include mq("xl") {
+        flex-wrap: nowrap;
+    }
+}
+
+.item {
+    @include mq("m") {
+        min-width: 350px;
+    }
+    @include mq("l") {
+        min-width: 458px;
+    }
+}
+
+#newsSection, .infoSection {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+#newsSection .item {
+    border-radius: 3px;
+    @include mq("m") {
+        min-width: 345px;
+        min-height: 569px;
+        max-height: 569px;
+        max-width: 345px;
+    }
+    @include mq("l") {
+        min-width: 455px;
+        min-height: 633px;
+        max-height: 633px;
+        max-width: 455px;
+    }
+    @include mq("xl") {
+        min-width: 370px;
+        min-height: 583px;
+        max-height: 583px;
+        max-width: 370px;
+    }
+}
+
+#newsSection #thirdNewsItem {
+    @include mq("m") {
+        display: none;
+    }
+    @include mq("xl") {
+        display: flex;
+    }
+}
+
+.topSection {
+    display: flex;
+    flex-grow: 1;
+    width: 100%;
+    @include mq("l") {
+        min-height: 263px;
+        max-height: 263px;
+    }
+}
+
+.midSection {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding-left: 4%;
+    padding-right: 4%;
+    @include mq("xl") {
+        flex-wrap: wrap;
+    }
+}
+
+.postDate {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottomSection {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    padding-left: 4%;
+    align-items: center;
+    gap: 3%;
+}

@@ -1,0 +1,41 @@
+.infoBanner {
+    display: flex !important; 
+    height: 550px;
+    width: auto;
+    position: relative;
+    justify-content: center;
+}
+
+#bannerImage {
+    object-fit: cover;
+    flex-basis: 100%;
+    z-index: 0;
+    min-width: 0px;
+    min-height: 550px;
+}
+
+#bannerItemsContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    position: absolute;
+    z-index: 1;
+}
+
+.overlayingBannerItems {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+    @include mq("l") {
+        align-items: flex-start;
+        padding-right: 20%;
+        padding-left: 4%;
+    }
+}
