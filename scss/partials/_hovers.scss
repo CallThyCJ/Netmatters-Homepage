@@ -1,0 +1,25 @@
+//MAIN NAV BAR
+
+#optionBespoke:hover {
+    background-color: $greyHover;
+}
+
+#optionSupport:hover {
+    background-color: $blueHover;
+}
+
+#optionMarketing:hover {
+    background-color: $lightGreenHover;
+}
+
+#optionTelecom:hover, #optionDev:hover {
+    background-color: $maroonHover;
+}
+
+#optionDesign:hover {
+    background-color: $purpleHover;
+}
+
+#optionSecurity:hover {
+    background-color: $hotPinkHover;
+}
