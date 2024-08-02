@@ -72,6 +72,19 @@
     }
     @include mq("m") {
         font-size: 2.5rem;
+        font-weight: 400;
+    }
+    @include mq("l") {
+        font-size: 2.7rem;
+    }
+}
+
+#serviceMenu H2 {
+    @include mq("m") {
+        font-weight: 600;
+    }
+    @include mq("l") {
+        font-size: 2.35rem;
     }
 }
 
@@ -86,6 +99,15 @@
     @include mq("l") {
         font-size: 2.3rem;
     }
+}
+
+#firstRow h3, #secondRow h3 {
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+
+#firstRow p, #secondRow p {
+    font-weight: 400;
 }
 
 .item button {

@@ -7,19 +7,21 @@
         gap: 20px;
         padding-left: 6%;
         padding-right: 6%;
-        padding-top: 1.5%;
-        padding-bottom: 1.5%;
     }
 }
 
 .navOptions {
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    height: 100%;
+    justify-content: center;
 }
 
 .navItem {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    width: 167.14px;
+    height: 99.02px;
 }

@@ -23,3 +23,60 @@
 #optionSecurity:hover {
     background-color: $hotPinkHover;
 }
+
+#optionBespoke:hover #navBespokeLogo{
+    display: none;
+}
+
+#optionBespoke:hover #navBespokeLogoWhite{
+    display: inline;
+}
+
+#optionSupport:hover #navSupportLogo{
+    display: none;
+}
+
+#optionSupport:hover #navSupportLogoWhite{
+    display: inline;
+}
+
+#optionMarketing:hover #navMarketingLogo{
+    display: none;
+}
+
+#optionMarketing:hover #navMarketingLogoWhite{
+    display: inline;
+}
+
+#optionTelecom:hover #navTelecomLogo{
+    display: none;
+}
+
+#optionTelecom:hover #navTelecomLogoWhite{
+    display: inline;
+}
+
+#optionDesign:hover #navDesignLogo{
+    display: none;
+}
+
+#optionDesign:hover #navDesignLogoWhite{
+    display: inline;
+}
+
+#optionSecurity:hover #navCyberLogo{
+    display: none;
+}
+
+#optionSecurity:hover #navCyberLogoWhite{
+    display: inline;
+}
+
+#optionDev:hover #navDevLogo{
+    display: none;
+}
+
+#optionDev:hover #navDevLogoWhite{
+    display: inline;
+}
+
