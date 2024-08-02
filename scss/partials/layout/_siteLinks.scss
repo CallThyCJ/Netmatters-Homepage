@@ -1,3 +1,8 @@
+.infoSection {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
 .smSectionContainer {
     @include mq("xl") {
     display: flex;

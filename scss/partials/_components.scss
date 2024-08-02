@@ -814,6 +814,18 @@ button {
     padding-top: 0%;
 }
 
+.newsItem-1 button {
+    @include mq("m") {
+        margin-top: 52px;
+    }
+    @include mq("l") {
+        margin-top: 18%;
+    }
+    @include mq("xl") {
+        margin-top: 10%;
+    }
+} 
+
 .newsItem-1 h3 {
     color: #f62459;
 }

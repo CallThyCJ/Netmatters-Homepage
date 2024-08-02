@@ -203,8 +203,20 @@
 
 #newsSection h1 {
     font-size: 2.3rem;
+    font-weight: 600;
     @include mq("xl") {
         font-size: 2.1rem;    
+    }
+}
+
+#newsSection h2 {
+    font-weight: 620;
+    font-size: 1.5rem;
+}
+
+#juneNoteable {
+    @include mq("xl") {
+        font-size: 0.9rem;
     }
 }
 
@@ -220,6 +232,9 @@
     }
 }
 
+#newsSection .mobileOnly {
+    font-weight: 550;
+}
 
 
 // SOCIAL MEDIA AND SITE LINKS SECTION
