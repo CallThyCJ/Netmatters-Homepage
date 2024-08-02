@@ -71,13 +71,35 @@
     width: 100%;
     @include mq("xl") {
         display: none;
-}
+    }
 }
 
 .welcomeButtons {
     display: flex;
     width: 100%;
     gap: 10px;
+}
+
+#leftButtons {
+    @media (min-width: 536px) {
+        flex-direction: row;
+    }
+    @include mq("l") {
+        flex-direction: column;
+    }
+    @include mq("xl") {
+        flex-direction: row;
+    }
+}
+
+#rightButtons {
+    @media (min-width: 600px) {
+        flex-direction: row;
+    }
+    @include mq("xl") {
+        flex-direction: row;
+}
+
 }
 
 #stars {

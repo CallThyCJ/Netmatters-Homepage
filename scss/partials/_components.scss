@@ -677,7 +677,7 @@ button {
 
 #leftButtons {
     @include mq("xl") {
-        margin-top: 19%;
+        margin-top: 11.2%;
     }
 }
 
@@ -690,7 +690,10 @@ button {
 
 #rightButtons {
     @include mq("l") {
-        margin-top: 7%;
+        margin-top: -9px;
+    }
+    @include mq("xl") {
+        margin-top: 0px;
     }
 }
 
