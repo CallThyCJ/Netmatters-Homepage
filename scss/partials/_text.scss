@@ -152,6 +152,10 @@
     }
 }
 
+.welcomeContainer #arrowRight {
+        font-size: 1.2rem;
+}
+
 #clientQoute {
     font-size: 1.7rem;
     @include mq("m") {

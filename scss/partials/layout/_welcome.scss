@@ -96,10 +96,12 @@
     @media (min-width: 600px) {
         flex-direction: row;
     }
+    @include mq("l") {
+        flex-direction: column;
+    }
     @include mq("xl") {
         flex-direction: row;
-}
-
+    }
 }
 
 #stars {
