@@ -882,17 +882,24 @@ button {
 }
 
 .socialMedia button {
+    border-radius: 2px;
+    @include mq("xs") {
+        width: 109.56px;
+        height: 56px;
+        padding: 1%;
+    }
+    @include mq("s") {
+        width: 70.41px;
+    }
     @include mq("l") {
         width: 67px;
-        height: 56px;
         padding: 1%;
     }
 }
 
 .socialMedia button img {
-    @include mq("l") {
-        height: 20px;
-        width: 20px;
+    @include mq("s") {
+        height: 26px;
     }
 }
 
