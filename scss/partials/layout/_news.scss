@@ -141,3 +141,23 @@
 #newsSection .mobileOnly {
     text-align: center;
 }
+
+#newsSection .accreditations {
+    @include mq("xs") {
+        gap: 25%;
+    }
+    @include mq("s") {
+        gap: 30%;
+    }
+    @include mq("m") {
+        gap: 40px;
+    }
+    @include mq("l") {
+        gap: 100px;
+    }
+    @include mq("xl") {
+        gap: 200px;
+        margin-top: -10%;
+        margin-bottom: -2%;
+    }
+}

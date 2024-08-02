@@ -856,10 +856,14 @@ button {
     }
 } 
 
-#newsSection .accreditations {
-    @include mq("xl") {
-        margin-top: -10%;
-        margin-bottom: -2%;
+#newsSection .accreditations img {
+    @include mq("xs") {
+        max-height: 48.77px;
+        max-width: 200px;
+    }
+    @include mq("m") {
+        max-height: 148.77px;
+        max-width: 300px;
     }
 }
 
