@@ -4,6 +4,11 @@ input {
     text-indent: 2%;
 }
 
+input:focus {
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(91, 192, 222, .6);
+    border-color: #5bc0de;
+}
+
 button {
     color: white;
     background-color: #f7b322;
@@ -150,6 +155,12 @@ button {
     }
 }
 
+#lSearchBar:focus {
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(91, 192, 222, .6);
+        border-color: #5bc0de;
+        outline: 0;
+    }
+
 #burgerMenuButton {
     grid-area: burgerMenu;
     @include mq("m") {
@@ -171,6 +182,10 @@ button {
     border-color: #D5D5D5;
     border-width: 2px;
     box-shadow: rgba(0, 0, 0, 0.075) 0px 1px 1px 0px inset;
+}
+
+#mainSearchBar:focus {
+    outline: none;
 }
 
 #searchIcon {

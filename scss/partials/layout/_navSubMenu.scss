@@ -1,0 +1,16 @@
+.navSubMenuContainer {
+    display: none;
+    position: absolute;
+    z-index: 3;
+    min-width: 100%;
+    height: 278.19px;
+}
+
+#navSubMenu {
+    display: none;
+    flex-direction: column;
+}
+
+.subMenuLinkOption {
+    display: flex;
+}

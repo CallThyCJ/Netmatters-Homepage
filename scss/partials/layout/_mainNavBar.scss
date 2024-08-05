@@ -25,3 +25,12 @@
     width: 167.14px;
     height: 99.02px;
 }
+
+#optionBespoke:hover {
+    .navSubMenuContainer {
+        display: flex;
+        #navSubMenu #subBespoke {
+            display: flex;
+        }
+    }
+}
