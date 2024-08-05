@@ -80,3 +80,13 @@
     display: inline;
 }
 
+// .navItem:hover {
+//     .navSubMenuContainer, #navSubMenu {
+//         display: flex;
+//         background-color: red;
+//     }
+// }
+
+#navMarketingLogo {
+    @include menuHover($greyHover);
+}

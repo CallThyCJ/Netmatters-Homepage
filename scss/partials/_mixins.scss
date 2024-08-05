@@ -34,3 +34,19 @@
         color: $bColor;
     }
 }
+
+@mixin menuHover($color) {
+    &:hover {
+        .navSubMenuContainer {
+            display: block;
+            background-color: darken($color, 10%);
+        }
+        .navSubMenu {
+            display: flex;
+            flex-direction: column;
+        }
+        .subMenuOption {
+            display: flex;
+        }
+    }
+}
