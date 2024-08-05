@@ -38,15 +38,32 @@
 @mixin menuHover($color) {
     &:hover {
         .navSubMenuContainer {
-            display: block;
+            display: flex;
+            justify-content: center;
             background-color: darken($color, 10%);
         }
         .navSubMenu {
             display: flex;
             flex-direction: column;
+            height: 100%;
+            width: 1200px;
         }
         .subMenuOption {
             display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+        }
+        .subMenuLinks {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            max-height: 70%;
+            width: 100%;
+        }
+        .subMenuLinkOption {
+            display: flex;
+            align-items: center;
         }
     }
 }
