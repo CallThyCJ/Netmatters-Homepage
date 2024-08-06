@@ -90,6 +90,37 @@ button {
     transform: translate(0, -15px);
 }
 
+a {
+    text-decoration: none;
+}
+
+// .globalContainer {
+//     margin-right: auto;
+//     margin-left: auto;
+//     padding-left: 15px;
+//     padding-right: 15px;
+  
+//     @include mq("xs") {
+//       width: 323px;
+//     }
+  
+//     @include mq("s") {
+//       width: 750px;
+//     }
+  
+//     @include mq("m") {
+//       width: 750px;
+//     }
+  
+//     @include mq("l") {
+//       width: 970px;
+//     }
+  
+//     @include mq("xl") {
+//       width: 1200px;
+//     }
+//   }
+
 .clickable:hover {
     cursor: pointer
 }
@@ -108,8 +139,23 @@ button {
     }
 }
 
+#phoneIcon {
+    @include mq("xs") {
+        min-height: 32px;
+        min-width: 32.41px;
+        max-height: 32px;
+        max-width: 32.41px;
+    }
+}
+
 #homeNetmattersLogo {
     @include mq("xs") {
+        min-height: 12.83px;
+        min-width: 165.59px;
+        max-height: 46.98px;
+        max-width: 298.59px;
+    }
+    @include mq("s") {
         min-height: 50.06px;
         min-width: 282px;
         max-height: 50.06px;
@@ -163,6 +209,10 @@ button {
 
 #burgerMenuButton {
     grid-area: burgerMenu;
+    @include mq("xs") {
+        min-width: 63px;
+        min-height: 56px;
+    }
     @include mq("m") {
         max-width: 0;
         max-height: 0;
@@ -316,6 +366,15 @@ button {
 
 .infoBanner {
     color: white;
+}
+
+.infoBanner img {
+    @include mq("xs") {
+        filter: brightness(50%);
+    }
+    @include mq("l") {
+        filter: brightness(100%);
+    }
 }
 
 .overlayingBannerItems h1 {

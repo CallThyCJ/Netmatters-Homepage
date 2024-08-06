@@ -98,6 +98,7 @@
     flex-grow: 1;
     width: 100%;
     height: 100%;
+    position: relative;
     @include mq("m") {
         min-height: 199.41px;
         max-height: 199.41px;
@@ -111,6 +112,20 @@
         max-height: 213.86px;
     }
 }
+
+.newsCategory {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    z-index: 1;
+    background-color: rgb(247, 179, 34);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
 
 .midSection {
     display: flex;
@@ -144,7 +159,7 @@
 
 #newsSection .accreditations {
     @include mq("xs") {
-        gap: 25%;
+        gap: 20%;
     }
     @include mq("s") {
         gap: 30%;

@@ -23,6 +23,12 @@
     margin-left: auto;
     position: absolute;
     z-index: 1;
+    @include mq("l") {
+        width: 970px;
+    }
+    @include mq("xl") {
+        width: 1200px;
+    }
 }
 
 .overlayingBannerItems {
@@ -36,6 +42,5 @@
     @include mq("l") {
         align-items: flex-start;
         padding-right: 20%;
-        padding-left: 4%;
     }
 }
