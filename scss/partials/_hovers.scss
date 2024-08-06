@@ -1,7 +1,7 @@
 //MAIN NAV BAR
 
 #optionBespoke:hover {
-    background-color: $greyHover;
+    background-color: $lightgreyHover;
 }
 
 #optionSupport:hover {
@@ -89,4 +89,28 @@
 
 #optionMarketing {
     @include menuHover($lightGreenHover);
+}
+
+#optionBespoke {
+    @include menuHover($lightgreyHover);
+}
+
+#optionSupport {
+    @include menuHover($lightBlueHover);
+}
+
+#optionTelecom {
+    @include menuHover($lightRedHover);
+}
+
+#optionDesign {
+    @include menuHover($purpleHover);
+}
+
+#optionSecurity {
+    @include menuHover($hotPinkHover); 
+}
+
+#optionDev {
+    @include menuHover($lightRedHover);
 }
