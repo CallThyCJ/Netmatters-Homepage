@@ -56,7 +56,7 @@
                 width: 1200px;
             }
         }
-        .navItem::after {
+        &.navItem::after {
             display: inline;
             border-color: $color transparent transparent;
         }

@@ -1,9 +1,12 @@
-// FONT SIZING
+//GLOBAL
 
+a {
+    color: white;
+}
 
-
-
-
+a:visited {
+    color: white;
+}
 
 // MAIN HEADER SECTION
 
@@ -266,6 +269,20 @@
 
 .postedBy {
     font-weight: bold;
+}
+
+.accreditationsDetails h3 {
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.accreditationsDetails p {
+    line-height: 26px;
+    font-size: 0.7rem;
+}
+
+.accreditationsDetails a {
+    font-size: 0.9rem;
 }
 
 

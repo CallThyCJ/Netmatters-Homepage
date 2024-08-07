@@ -114,3 +114,16 @@
 #optionDev {
     @include menuHover($lightRedHover);
 }
+
+
+// NEWS
+
+
+#blackSwanInfo:hover, #craneInfo:hover, #girlGuidingrInfo:hover {
+    .accreditationsDetails {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
