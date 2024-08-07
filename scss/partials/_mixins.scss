@@ -56,6 +56,10 @@
                 width: 1200px;
             }
         }
+        .navItem::after {
+            display: inline;
+            border-color: $color transparent transparent;
+        }
         .subMenuOption {
             display: flex;
             flex-direction: row;
