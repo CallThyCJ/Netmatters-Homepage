@@ -159,10 +159,10 @@
 
 #newsSection .accreditations {
     @include mq("xs") {
-        gap: 20%;
+        gap: 5%;
     }
     @include mq("s") {
-        gap: 30%;
+        gap: 10%;
     }
     @include mq("m") {
         gap: 40px;
@@ -186,7 +186,9 @@
     display: none;
     position: absolute;
     width: 280px;
-    height: 244.8px;
+    // height: 244.8px;
+    min-height: 244.8px;
+    max-height: 260px;
     background-color: #333645;
     padding: 20px;
     color: white;
