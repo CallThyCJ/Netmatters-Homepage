@@ -141,10 +141,13 @@
     justify-content: center;
     margin-bottom: 40px;
     gap: 10px;
-}
-
-.ourWork h2 {
     @include mq("m") {
         display: none;
     }
 }
+
+// .ourWork h2 {
+//     @include mq("m") {
+//         display: none;
+//     }
+// }
