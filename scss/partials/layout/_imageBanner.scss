@@ -1,17 +1,25 @@
 .infoBanner {
     display: flex !important; 
     height: 550px;
-    width: auto;
+    width: 100%;
     position: relative;
     justify-content: center;
 }
 
-#bannerImage {
+.bannerSlider {
+    width: 100%;
+    display: flex;
+}
+
+.bannerImage {
+    display: none;
     object-fit: cover;
-    flex-basis: 100%;
+    width: 100%;
+    height: 100%;
     z-index: 0;
-    min-width: 0px;
+    min-width: 100%;
     min-height: 550px;
+    flex-shrink: 0;
 }
 
 #bannerItemsContainer {
@@ -41,6 +49,35 @@
     z-index: 1;
     @include mq("l") {
         align-items: flex-start;
+        width: 100%;
+        // padding-right: 20%;
+        // padding-left: 70%;
+    }
+}
+
+.bannerInfo {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @include mq("l") {
+        align-items: flex-start;
         padding-right: 20%;
     }
 }
+
+.displayItem {
+    display: block;
+}
+
+.sliderButtonContainer {
+    justify-content: center;
+    position: absolute;
+    gap: 30px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 44px;
+    text-align: center;
+}
+
