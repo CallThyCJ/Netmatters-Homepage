@@ -435,11 +435,11 @@ a {
     border: solid 3px white;
     border-radius: 50%;
     box-sizing: border-box;
-    display: none;
+    visibility: hidden;
 }
 
 .sliderButtonContainer button.active::after {
-    display: block;
+    visibility: visible;
 }
 
 // OUR SERVICES SECTION

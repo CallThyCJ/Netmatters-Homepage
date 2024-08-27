@@ -3,6 +3,7 @@ let bannerImageIndex = 0;
 let intervalID = null;
 const bannerInfo = document.querySelectorAll(".bannerInfo");
 const buttons = document.querySelectorAll(".sliderButtonContainer button");
+const buttonsIndex = Array.from(buttons).map((button, index) => index);
 
 
 document.addEventListener("DOMContentLoaded", initializeImage);
@@ -49,3 +50,10 @@ function nextImage() {
     bannerImageIndex++;
     showImages(bannerImageIndex);
 }
+
+buttons.forEach((button, index) => {
+    button.addEventListener("click", function() {
+        bannerImageIndex = buttonsIndex[index];
+        showImages(bannerImageIndex);
+    });
+});
