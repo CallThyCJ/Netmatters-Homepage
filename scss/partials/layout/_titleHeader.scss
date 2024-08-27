@@ -83,6 +83,10 @@
     border: none;
 }
 
+#menuIcon {
+    transition: opacity 0.2s ease;
+}
+
 
 .searchBar {
     display: flex;
