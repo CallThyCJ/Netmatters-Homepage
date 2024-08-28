@@ -15,11 +15,20 @@ button.addEventListener("click", function() {
             menuIcon.style.opacity = "1";
             menuIcon.style.animation = "none";
         }, 200);
-        sideMenu.classList.add("sideMenuShow");
-        sideMenu.classList.remove("sideMenuHide");
+        if (window.getComputedStyle(sideMenu).display === "flex") {
+            sideMenu.classList.add("sideMenuShow");
+            sideMenu.classList.remove("sideMenuHide");
+        } else {
+            mobileSideMenu.classList.add("sideMenuShow");
+            mobileSideMenu.classList.remove("sideMenuHide");
+        } 
         overlay.style.display = "block";
         setTimeout(() => overlay.style.opacity = "1", 10);
-        body.style.right = "350px";
+        if (window.getComputedStyle(sideMenu).display === "flex") {
+            body.style.right = "350px";
+        } else {
+            body.style.right = "275px";
+        }
         sideMenuOpen = true;
     } else {
         menuIcon.style.animation = "spin 4s linear infinite";
@@ -29,8 +38,13 @@ button.addEventListener("click", function() {
             menuIcon.style.opacity = "1";
             menuIcon.style.animation = "none";
         }, 200);
-        sideMenu.classList.add("sideMenuHide");
-        sideMenu.classList.remove("sideMenuShow");
+        if (window.getComputedStyle(sideMenu).display === "flex") {
+            sideMenu.classList.add("sideMenuHide");
+            sideMenu.classList.remove("sideMenuShow");
+        } else {
+            mobileSideMenu.classList.add("sideMenuHide");
+            mobileSideMenu.classList.remove("sideMenuShow");
+        }
         overlay.style.opacity = "0";
         setTimeout(() => overlay.style.display = "none", 400);
         body.style.right = "0";
@@ -47,8 +61,13 @@ overlay.addEventListener("click", function () {
             menuIcon.style.opacity = "1";
             menuIcon.style.animation = "none";
         }, 200);
-        sideMenu.classList.add("sideMenuHide");
-        sideMenu.classList.remove("sideMenuShow");
+        if (window.getComputedStyle(sideMenu).display === "flex") {
+            sideMenu.classList.add("sideMenuHide");
+            sideMenu.classList.remove("sideMenuShow");
+        } else {
+            mobileSideMenu.classList.add("sideMenuHide");
+            mobileSideMenu.classList.remove("sideMenuShow");
+        }
         overlay.style.opacity = "0";
         setTimeout(() => overlay.style.display = "none", 400);
         body.style.right = "0";
