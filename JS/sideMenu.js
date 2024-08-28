@@ -2,6 +2,7 @@ const button = document.querySelector("#burgerMenuButton");
 const sideMenu = document.querySelector(".sideMenuContainer");
 const overlay = document.querySelector("#overlay");
 const menuIcon = document.querySelector("#menuIcon");
+const body = document.querySelector("body");
 let sideMenuOpen = false;
 
 button.addEventListener("click", function() {
@@ -17,6 +18,7 @@ button.addEventListener("click", function() {
         sideMenu.classList.remove("sideMenuHide");
         overlay.style.display = "block";
         setTimeout(() => overlay.style.opacity = "1", 10);
+        body.style.right = "350px";
         sideMenuOpen = true;
     } else {
         menuIcon.style.animation = "spin 4s linear infinite";
@@ -30,6 +32,7 @@ button.addEventListener("click", function() {
         sideMenu.classList.remove("sideMenuShow");
         overlay.style.opacity = "0";
         setTimeout(() => overlay.style.display = "none", 400);
+        body.style.right = "0";
         sideMenuOpen = false;
     }
 });
@@ -47,6 +50,7 @@ overlay.addEventListener("click", function () {
         sideMenu.classList.remove("sideMenuShow");
         overlay.style.opacity = "0";
         setTimeout(() => overlay.style.display = "none", 400);
+        body.style.right = "0";
         sideMenuOpen = false;
     }
 });
