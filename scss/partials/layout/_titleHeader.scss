@@ -87,6 +87,12 @@
     transition: opacity 0.2s ease;
 }
 
+@keyframes spin { 
+    100% { 
+        transform:rotate(360deg); 
+    } 
+}
+
 
 .searchBar {
     display: flex;

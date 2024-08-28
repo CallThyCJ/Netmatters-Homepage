@@ -6,10 +6,12 @@ let sideMenuOpen = false;
 
 button.addEventListener("click", function() {
     if (sideMenuOpen === false) {
+        menuIcon.style.animation = "spin 4s linear infinite";
         menuIcon.style.opacity = "0";
         setTimeout(() => {
             menuIcon.classList.replace("fa-bars", "fa-x");
             menuIcon.style.opacity = "1";
+            menuIcon.style.animation = "none";
         }, 200);
         sideMenu.classList.add("sideMenuShow");
         sideMenu.classList.remove("sideMenuHide");
@@ -17,10 +19,12 @@ button.addEventListener("click", function() {
         setTimeout(() => overlay.style.opacity = "1", 10);
         sideMenuOpen = true;
     } else {
+        menuIcon.style.animation = "spin 4s linear infinite";
         menuIcon.style.opacity = "0";
         setTimeout(() => {
             menuIcon.classList.replace("fa-x", "fa-bars");
             menuIcon.style.opacity = "1";
+            menuIcon.style.animation = "none";
         }, 200);
         sideMenu.classList.add("sideMenuHide");
         sideMenu.classList.remove("sideMenuShow");
@@ -32,10 +36,12 @@ button.addEventListener("click", function() {
 
 overlay.addEventListener("click", function () {
     if (sideMenuOpen === true) {
+        menuIcon.style.animation = "spin 4s linear infinite";
         menuIcon.style.opacity = "0";
         setTimeout(() => {
             menuIcon.classList.replace("fa-x", "fa-bars");
             menuIcon.style.opacity = "1";
+            menuIcon.style.animation = "none";
         }, 200);
         sideMenu.classList.add("sideMenuHide");
         sideMenu.classList.remove("sideMenuShow");
