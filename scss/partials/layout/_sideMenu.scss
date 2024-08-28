@@ -5,6 +5,10 @@ body {
 }
 
 .sideMenuContainer {
+    display: none;
+    @include mq("l") {
+        display: flex;
+    }
     width: 350px;
     height: 100%;
     position: fixed;
@@ -12,7 +16,6 @@ body {
     right: 0;
     z-index: 5;
     background: #333645;
-    display: flex;
     flex-direction: column;
     overflow: auto;
     transition: left 0.4s ease;
@@ -79,5 +82,33 @@ body {
 
     &:hover {
         cursor: pointer;
+    }
+}
+
+// MOBILE SIDE MENU
+
+#mobileSideMenuContainer {
+    display: flex;
+    width: 350px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 5;
+    background: #333645;
+    flex-direction: column;
+    overflow: auto;
+    transition: left 0.4s ease;
+
+    & a:link {
+        text-decoration: none;
+    }
+
+    & a:visited{
+        text-decoration: none;
+    }
+
+    @include mq("l") {
+        display: none;
     }
 }

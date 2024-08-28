@@ -1,5 +1,6 @@
 const button = document.querySelector("#burgerMenuButton");
 const sideMenu = document.querySelector(".sideMenuContainer");
+const mobileSideMenu = document.querySelector("#mobileSideMenuContainer");
 const overlay = document.querySelector("#overlay");
 const menuIcon = document.querySelector("#menuIcon");
 const body = document.querySelector("body");
