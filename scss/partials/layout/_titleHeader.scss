@@ -1,9 +1,7 @@
-// #mainHeader {
-//     position: fixed;
-//     top: 0;
-//     left: 0;
-
-// }
+#mainHeader {
+    transition: transform 0.3s ease-in-out;
+    background-color: white;
+}
 
 #titleContainer {
     @include mq("m") {
@@ -135,12 +133,20 @@
     height: 55%;
 }
 
-.scrollDown #mainHeader {
+.scrollDown {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 20;
     transform: translateY(-100%);
-    transition: transform 0.3s ease-in-out;
 }
 
-.scrollUp #mainHeader {
+.scrollUp {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 20;
     transform: translateY(0);
-    transition: transform 0.3s ease-in-out;
 }
