@@ -67,11 +67,16 @@
 
 .scrollUpNavBar {
     position: fixed;
-    top: 115px;
     left: 0;
     width: 100%;
     z-index: 20;
     transform: translateY(0);
+    @include mq("l") {
+        top: 84px;
+    }
+    @include mq("xl") {
+        top: 115px;
+    }
 }
 
 // SUBMENU 
