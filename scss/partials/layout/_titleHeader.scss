@@ -1,3 +1,10 @@
+// #mainHeader {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+
+// }
+
 #titleContainer {
     @include mq("m") {
     width: 750px;
@@ -126,4 +133,14 @@
 
 #searchIcon img{
     height: 55%;
+}
+
+.scrollDown #mainHeader {
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.scrollUp #mainHeader {
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out;
 }
