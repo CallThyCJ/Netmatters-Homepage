@@ -25,14 +25,16 @@ cookieButton.addEventListener("click", () => {
     overlay.style.display = "none";
     overlay.style.opacity = "0";
     setCookie("cookie", true); 
+    console.log("cookie accepted");
 });
 
 cookieMessage = () => {
-    if(!getCookie("cookie"))
+    if(!getCookie("cookie")) {
         document.querySelector("#cookieContainer").style.display = "flex";
         overlay.style.display = "block";
         overlay.style.opacity = "1";
         cookieMessageDisplayed = true;
+    }
 }
 
 window.addEventListener("load", cookieMessage);
