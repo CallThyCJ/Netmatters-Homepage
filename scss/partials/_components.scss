@@ -429,10 +429,6 @@ a {
     }
 }
 
-// .sliderButton {
-//     opacity: 40%;
-// }
-
 .sliderButtonContainer button::after {
     content: "";
     position: absolute;
@@ -446,6 +442,10 @@ a {
     border-radius: 50%;
     box-sizing: border-box;
     visibility: hidden;
+}
+
+.sliderButtonContainer button.active {
+    opacity: 100%;
 }
 
 .sliderButtonContainer button.active::after {
