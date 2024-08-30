@@ -24,7 +24,7 @@ cookieButton.addEventListener("click", () => {
     cookieMessageDisplayed = false;
     overlay.style.display = "none";
     overlay.style.opacity = "0";
-    setCookie("cookie", true); 
+    setCookie("cookie", "accepted"); 
     console.log("cookie accepted");
 });
 
