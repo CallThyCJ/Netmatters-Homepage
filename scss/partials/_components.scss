@@ -396,7 +396,6 @@ a {
 
 .overlayingBannerItems button {
     height: 60px;
-    padding: 4%;
     line-height: 0px;
     @include mq("xl") {
         text-align: center;
@@ -406,6 +405,10 @@ a {
         padding: 0px;
         margin-top: 2.5%;
     }
+}
+
+.bannerButton {
+    padding: 4%;
 }
 
 #bannerButton:hover {
