@@ -421,9 +421,7 @@ a {
     border-radius: 50%;
     margin-right: 15px;
     box-sizing: border-box;
-    @include mq("l") {
-        padding: 0px;
-    }
+    padding: 0px;
 }
 
 .sliderButtonContainer button::after {
