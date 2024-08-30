@@ -1,4 +1,5 @@
 const cookieButton = document.querySelector("#cookieAccept");
+const cookieContrainer = document.querySelector("#cookieContainer");
 let cookieMessageDisplayed = true;
 
 setCookie = (cName, cValue) => {
@@ -20,7 +21,7 @@ getCookie = (cName) => {
 
 
 cookieButton.addEventListener("click", () => {
-    document.querySelector("#cookieContainer").style.display = "none";
+    cookieContrainer.style.display = "none";
     cookieMessageDisplayed = false;
     overlay.style.display = "none";
     overlay.style.opacity = "0";
@@ -30,7 +31,7 @@ cookieButton.addEventListener("click", () => {
 
 cookieMessage = () => {
     if(!getCookie("cookie")) {
-        document.querySelector("#cookieContainer").style.display = "flex";
+        cookieContrainer.style.display = "flex";
         overlay.style.display = "block";
         overlay.style.opacity = "1";
         cookieMessageDisplayed = true;
