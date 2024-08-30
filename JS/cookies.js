@@ -24,7 +24,7 @@ cookieButton.addEventListener("click", () => {
     cookieMessageDisplayed = false;
     overlay.style.display = "none";
     overlay.style.opacity = "0";
-    setCookie("cookie", "accepted"); 
+    setCookie("cookie", true); 
     console.log("cookie accepted");
 });
 
@@ -34,6 +34,7 @@ cookieMessage = () => {
         overlay.style.display = "block";
         overlay.style.opacity = "1";
         cookieMessageDisplayed = true;
+        console.log("no cookie");
     }
 }
 
