@@ -36,6 +36,9 @@ cookieMessage = () => {
         overlay.style.opacity = "1";
         cookieMessageDisplayed = true;
         console.log("no cookie");
+    } else {
+        cookieMessageDisplayed = false;
+        console.log("cookie already set");
     }
 }
 
