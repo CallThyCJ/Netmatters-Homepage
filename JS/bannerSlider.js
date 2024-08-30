@@ -37,6 +37,7 @@ function showImages(index) {
     bannerImages[bannerImageIndex].classList.add("displayItem");
     bannerInfo[bannerImageIndex].style.display = "flex";
     buttons[bannerImageIndex].classList.add("active");
+    buttons[bannerImageIndex].style.opacity = "100%";
 
 }
 
