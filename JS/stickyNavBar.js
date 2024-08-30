@@ -11,7 +11,7 @@ window.addEventListener("scroll", () => {
         header.classList.remove("scrollUp", "scrollDown");
         navBar.classList.remove("scrollUpNavBar", "scrollDownNavBar");
         navBarPos.classList.add("mainNavBarPosition");
-    } else if (currentScroll > scrollLimit && currentScroll > lastScroll && !header.classList.contains("scrollDown")) {
+    } else if (currentScroll > scrollLimit && currentScroll > lastScroll && cookieMessageDisplayed === false && !header.classList.contains("scrollDown")) {
         navBarPos.classList.remove("mainNavBarPosition");
         header.classList.remove("scrollUp");
         header.classList.add("scrollDown");
