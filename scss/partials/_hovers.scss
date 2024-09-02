@@ -1,3 +1,35 @@
+// IMAGE BANNER
+
+.overlayingBannerItems {
+    #slideTechCompany:hover {
+        background-color: $purpleHover;
+    }
+
+    #slideBespokeSoftware:hover {
+        background-color: $goldHover;
+    }
+
+    #slideITSupport:hover {
+        background-color: $blueHover;
+    }
+
+    #slideDigitalMarketing:hover {
+        background-color: $greenHover;
+    }
+
+    #slideTelecoms:hover {
+        background-color: $maroonHover;
+    }
+
+    #slideWebDesign:hover {
+        background-color: $purpleHover;
+    }
+
+    #slideSecurity:hover {
+        background-color: $hotPinkHover;
+    }
+}
+
 //MAIN NAV BAR
 
 #optionBespoke:hover {
