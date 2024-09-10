@@ -122,18 +122,37 @@
     padding-right: 30px;
 }
 
-.accreditations {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    @include mq("s") {
-        gap: 40px;
-    }
-    @include mq("xl") {
-        justify-content: center;
-        gap: 280px;
-    }
+.carouselContainer {
+    width: 100%;
+    position: relative;
 }
+
+.accreditations {
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    position: relative;
+    overflow-x: clip;
+    width: max-content;
+    @include mq("xl") {
+        column-gap: 120px;
+    }
+
+    .carouselItem {
+        position: absolute;
+        top: 0;
+        transition: all ease-in-out 800ms;
+    }
+    // @include mq("s") {
+    //     gap: 40px;
+    // }
+    // @include mq("xl") {
+    //     justify-content: center;
+    //     gap: 280px;
+    // }
+}
+
+
 
 .ourWork {
     display: flex;

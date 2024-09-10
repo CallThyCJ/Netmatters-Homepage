@@ -18,3 +18,14 @@ $maroonHover: rgb(214, 69, 65);
 $hotPinkHover: #f62459;
 $lightRedHover: #d64541;
 $goldHover: #e8a008;
+
+//Keyframes
+
+@keyframes slide {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
