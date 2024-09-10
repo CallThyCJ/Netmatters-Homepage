@@ -29,6 +29,12 @@ button {
     }
 }
 
+#contact {
+    @include mq("l") {
+        font-size: 1.15rem;
+    }
+}
+
 
 //MAIN NAV BAR
 
