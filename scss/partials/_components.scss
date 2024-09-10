@@ -195,6 +195,7 @@ a {
     min-width: 174px;
     max-width: 174px;
     text-indent: 8%;
+    border-color: #ccc;
     @include mq("xl") {
         min-width: 240px;
         min-height: 56px;
@@ -300,14 +301,12 @@ a {
 }
 
 #contactIcon {
-    @include mq("xl") { 
         display: none;
     }  
-}
 
 #whiteContactIcon {
     display: none;
-    @include mq("xl") { 
+    @include mq("l") { 
         display: inline;
     }
 }
