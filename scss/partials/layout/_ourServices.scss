@@ -129,14 +129,16 @@
 }
 
 .accreditations {
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
     position: relative;
     overflow-x: clip;
-    // width: max-content;
     // @include mq("xl") {
     //     column-gap: 120px;
+    // }
+
+    // img {
+    //     @include mq("xl") {
+    //             margin-right: 20px;
+    //         }
     // }
 
     .carouselItem {
