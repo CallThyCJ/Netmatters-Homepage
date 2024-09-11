@@ -78,11 +78,15 @@
     display: flex;
     width: 100%;
     gap: 10px;
+    @include mq("xs") {
+        gap: 20px;
+    }
 }
 
 #leftButtons {
     @media (min-width: 536px) {
         flex-direction: row;
+        gap: 10px;
     }
     @include mq("l") {
         flex-direction: column;
@@ -95,6 +99,7 @@
 #rightButtons {
     @media (min-width: 600px) {
         flex-direction: row;
+        gap: 10px;
     }
     @include mq("l") {
         flex-direction: column;
