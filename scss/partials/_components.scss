@@ -523,6 +523,7 @@ a {
         width: 294px;
         height: 337px;
         max-height: 337px;
+        margin-bottom: 26px;
     }
     @include mq("xl") {
         min-width: 370px;
@@ -530,6 +531,7 @@ a {
         width: 370px;
         height: 315px;
         margin-top: -6%;
+        margin-bottom: 16px;
     }
 }
 
