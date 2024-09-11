@@ -213,6 +213,8 @@ a {
     @include mq("xs") {
         min-width: 63px;
         min-height: 56px;
+        width: 63px;
+        height: 56px;
     }
     @include mq("m") {
         max-width: 0;
@@ -242,8 +244,8 @@ a {
 #searchIcon {
     border-right-style: solid;
     border-left-style: none;
-    border-top-left-radius: none;
-    border-bottom-left-radius: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 }
 
 #lSearchIcon {
