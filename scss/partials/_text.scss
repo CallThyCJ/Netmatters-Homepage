@@ -207,7 +207,7 @@ button {
 #client {
     font-size: 0.9rem;
     @include mq("xs") {
-        font-size: 0.8rem;
+        font-size: 1.1rem;
     }
     @include mq("m") {
         font-size: 1.2rem;
@@ -215,6 +215,11 @@ button {
     @include mq("xl") {
         font-size: 1.1rem;
     }
+}
+
+#client em {
+    color: white;
+    font-style: normal;   
 }
 
 #clintInfo {
@@ -248,8 +253,8 @@ button {
 }
 
 #newsSection h2 {
-    font-weight: 620;
-    font-size: 1.5rem;
+    font-weight: 600;
+    font-size: 1.6rem;
 }
 
 #juneNoteable {
@@ -270,6 +275,10 @@ button {
     }
 }
 
+.bottomSection p {
+    font-size: 0.9rem;
+}
+
 #newsSection .mobileOnly {
     font-weight: 550;
 }
@@ -284,6 +293,7 @@ button {
 }
 
 .postedBy {
+    margin-bottom: 7px;
     font-weight: bold;
 }
 
@@ -326,9 +336,7 @@ button {
 
 
 #copyrightSection {
-    @include mq("m") {
         font-size: 0.8rem;
-    }
 }
 
 

@@ -1021,7 +1021,7 @@ a {
 }
 
 .socialMedia button {
-    border-radius: 2px;
+    border-radius: 0;
     @include mq("xs") {
         width: 109.56px;
         height: 56px;

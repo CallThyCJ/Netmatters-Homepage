@@ -145,12 +145,24 @@
 }
 
 .bottomSection {
+    position: relative;
     display: flex;
     align-items: flex-start;
     width: 100%;
     padding-left: 4%;
     align-items: center;
     gap: 3%;
+    margin-top: 50px;
+}
+
+.bottomSection::before {
+    content: "";
+    position: absolute;
+    left: 35px; 
+    right: 35px; 
+    bottom: 85px; 
+    height: 1px;
+    background-color: #ccc; 
 }
 
 #newsSection .mobileOnly {
