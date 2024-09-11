@@ -53,13 +53,13 @@ class carousel {
     }
 
     async build() {
-        // let left = this.item.width * -1;
-        let left = 0;
+        let left = this.item.width * -1;
+        // let left = 0;
         for(let i = 0; i < this.items.length; i++) {
-            // this.items[i].style.width = this.item.width + "px";
-            this.items[i].style.left = left + "px";
-            left = left + this.items[i].clientWidth;
-            // left = left + this.item.width;
+            this.items[i].style.width = this.item.width + "px";
+            // this.items[i].style.left = left + "px";
+            // left = left + this.items[i].clientWidth;
+            left = left + this.item.width;
             if (i > 0) {
                 left = left + this.gap;
             }
