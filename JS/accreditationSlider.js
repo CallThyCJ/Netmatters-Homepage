@@ -1,21 +1,3 @@
-// document.addEventListener("DOMContentLoaded", function() {
-//     const carousels = document.querySelectorAll(".accreditations");
-
-//     carousels.forEach(carousel => {
-//         const containerWidth = carousel.parentElement.offsetWidth; 
-//         const totalCarouselWidth = carousel.scrollWidth;
-//         let currentPosition = 0;
-
-//     setInterval(() => {
-//         currentPosition -= 1;
-//         if  (Math.abs(currentPosition) >= totalCarouselWidth) {
-//             currentPosition = containerWidth;
-//         }
-//         carousel.style.transform = `translateX(${currentPosition}px)`;
-//     }, 16);
-// });
-// });
-
 class carousel {
     element = null;
     items = [];
