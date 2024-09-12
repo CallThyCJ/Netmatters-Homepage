@@ -19,15 +19,20 @@ getCookie = (cName) => {
     return value;
 }
 
+const handleLocalStorage = () => {
+    const isLocalCookieAccepted = localStorage.getItem("cookieAccepted");
 
-cookieButton.addEventListener("click", () => {
-    cookieContainer.style.display = "none";
-    cookieMessageDisplayed = false;
-    overlay.style.display = "none";
-    overlay.style.opacity = "0";
-    setCookie("cookie", true); 
-    console.log("cookie accepted");
-});
+    if (isLocalCookieAccepted) {
+        cookieContainer.style.display = "none";
+        overlay.style.display = "none";
+        cookieMessageDisplayed = false;
+        console.log("Cookie already set in localStorage");
+    } else {
+            cookieContainer.style.display = "flex";
+            overlay.style.display = "block";
+            console.log("No local cookie found");
+        }
+    };
 
 cookieMessage = () => {
     if(!getCookie("cookie")) {
@@ -36,11 +41,38 @@ cookieMessage = () => {
         overlay.style.opacity = "1";
         cookieMessageDisplayed = true;
         console.log("no cookie");
-    } else {
-        cookieMessageDisplayed = false;
-        console.log("cookie already set");
-    }
+        } else {
+            cookieMessageDisplayed = false;
+            console.log("cookie already set");
+        }
 }
 
-window.addEventListener("load", cookieMessage);
+const hideCookieMessageIfLocal = () => {
+    if (window.location.protocol === 'file:') {
+        handleLocalStorage();
+    } else {
+        handleCookie();
+    }
+};
+
+hideCookieMessageIfLocal();
+
+cookieButton.addEventListener("click", () => {
+    cookieContainer.style.display = "none";
+    cookieMessageDisplayed = false;
+    overlay.style.display = "none";
+    overlay.style.opacity = "0";
+    setCookie("cookie", true); 
+    if (window.location.protocol === 'file:') {
+        localStorage.setItem("cookieAccepted", "true");
+        console.log("Cookie accepted and stored in localStorage");
+    } else {
+        setCookie("cookie", true);
+        console.log("Cookie accepted and stored in cookies");
+    }
+});
+
+
+
+// window.addEventListener("load", cookieMessage);
 
