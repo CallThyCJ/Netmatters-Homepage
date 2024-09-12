@@ -1,15 +1,14 @@
 #welcome {
-    padding-left: 2%;
-    padding-right: 2%;
     padding-top: 3%;
     padding-bottom: 8%;
     @include mq("l") {
         display: flex;
         flex-wrap: wrap;
-    }
-    @include mq("xl") {
         padding-bottom: 4%;
-        }
+    }
+    @include mq("l") {
+        padding-bottom: 2%;
+    }
 }
 
 .welcomeContainer {

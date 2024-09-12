@@ -1,22 +1,12 @@
-.infoSection {
-    padding-left: 2%;
-    padding-right: 2%;
-}
-
 .smSectionContainer {
     @include mq("l") {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 970px;
-        column-gap: 10px;
-        margin-left: auto;
-        margin-right: auto;
     }
     @include mq("xl") {
         flex-direction: row;
         gap: 50px;
-        width: 1200px;
     }
 }
 

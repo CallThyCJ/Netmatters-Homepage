@@ -678,11 +678,11 @@ a {
     }
 }
 
-.accreditations img {
+.owl-carousel img{
     filter: grayscale(100%);
 }
 
-.accreditations img:hover {
+.owl-carousel img:hover {
     filter: none;
 }
 
@@ -884,7 +884,6 @@ a {
 #newsSection {
     @include mq("m") {
         padding-top: 3%;
-        padding-bottom: 4%;
     }
 }
 
@@ -892,9 +891,17 @@ a {
     color: #333645;
 }
 
+#newsSection .mobileOnly {
+    margin-top: 50px;
+    margin-bottom: 80px;
+    @include mq("s") {
+        margin-bottom: 20px;
+    }
+}
+
 .newsContainer {
     @include mq("m") {
-        margin-bottom: 14%;
+        margin-bottom: 10%;
     }
 }
 
@@ -977,17 +984,6 @@ a {
         display: inline;
     }
 } 
-
-#newsSection .accreditations img {
-    @include mq("xs") {
-        max-height: 48.77px;
-        max-width: 200px;
-    }
-    @include mq("m") {
-        max-height: 148.77px;
-        max-width: 300px;
-    }
-}
 
 .accreditationsButton {
     display: flex;
