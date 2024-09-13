@@ -30,6 +30,7 @@ button.addEventListener("click", function() {
             body.style.right = "275px";
         }
         sideMenuOpen = true;
+        navBarMove();
     } else {
         menuIcon.style.animation = "spin 4s linear infinite";
         menuIcon.style.opacity = "0";
@@ -72,5 +73,6 @@ overlay.addEventListener("click", function () {
         setTimeout(() => overlay.style.display = "none", 400);
         body.style.right = "0";
         sideMenuOpen = false;
+        navBarMoveBack();
     }
 });

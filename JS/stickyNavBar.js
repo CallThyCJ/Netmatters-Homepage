@@ -27,3 +27,24 @@ window.addEventListener("scroll", () => {
     lastScroll = currentScroll;
 
 });
+
+function navBarMove() {
+if (sideMenuOpen === true) {
+    const scrollUp = document.querySelector(".scrollUp");
+    const scrollUpNavBar = document.querySelector(".scrollUpNavBar");
+
+    scrollUp.style.left = "-350px";
+    scrollUpNavBar.style.left = "-350px";
+    console.log("I AM BEING CALLED");
+}
+}
+
+function navBarMoveBack() {
+    if (sideMenuOpen === false) {
+        const scrollUp = document.querySelector(".scrollUp");
+        const scrollUpNavBar = document.querySelector(".scrollUpNavBar");
+        scrollUp.style.left = "0";
+        scrollUpNavBar.style.left = "0";
+        console.log("MOVE BACK");
+    } 
+}

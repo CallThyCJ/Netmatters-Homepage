@@ -138,8 +138,9 @@
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 20;
+    z-index: 3;
     transform: translateY(-100%);
+    transition: left 0.5s ease;
 }
 
 .scrollUp {
@@ -147,6 +148,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 20;
+    z-index: 3;
     transform: translateY(0);
+    transition: left 0.5s ease;
 }
