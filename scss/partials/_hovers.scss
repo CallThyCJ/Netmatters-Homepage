@@ -161,6 +161,21 @@
         display: flex;
         transition: display 0.5s ease 0.3s;
     }
+    img {
+        filter: none;
+    }
+}
+
+#xupesInfo:hover {
+    .accreditationsDetails{
+        bottom: 225%;
+    }
+}
+
+#girlGuidingrInfo:hover {
+    .accreditationsDetails{
+        bottom: 135%;
+    }
 }
 
 // SOCIALS 
