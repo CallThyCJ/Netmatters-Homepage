@@ -155,15 +155,13 @@
 // NEWS
 
 
-// #blackSwanInfo:hover, #craneInfo:hover, #girlGuidingrInfo:hover {
-//     position: relative;
-//     .accreditationsDetails {
-//         display: flex;
-//         flex-direction: column;
-//         justify-content: center;
-//         align-items: center;
-//     }
-// }
+.accreditationsContainer:hover {
+    transition-delay: 2s;
+    .accreditationsDetails {
+        display: flex;
+        transition: display 0.5s ease 0.3s;
+    }
+}
 
 // SOCIALS 
 
