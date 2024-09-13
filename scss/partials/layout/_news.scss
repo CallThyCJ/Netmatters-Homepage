@@ -210,6 +210,11 @@
     position: relative;
 }
 
+// .owl-carousel .owl-stage-outer {
+//     overflow-y: visible;
+//     overflow-x: hidden;
+// }
+
 .accreditationsDetails {
     display: flex;
     flex-direction: column;
@@ -225,7 +230,6 @@
     color: white;
     bottom: 110%;
     left: 50%; 
-    transform: translateX(-50%);
     text-align: center;
     z-index: 100;
 }

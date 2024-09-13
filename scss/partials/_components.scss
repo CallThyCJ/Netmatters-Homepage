@@ -976,15 +976,6 @@ a {
     padding-bottom: 4%;
 }
 
-.thirdItem {
-    @include mq("xs") {
-        display: none;
-    }
-    @include mq("m") {
-        display: inline;
-    }
-} 
-
 .accreditationsButton {
     display: flex;
     align-items: center;
