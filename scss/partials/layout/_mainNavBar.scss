@@ -67,7 +67,6 @@
     width: 100%;
     z-index: 3;
     transform: translateY(-100%);
-    transition: left 0.5s ease;
 }
 
 .scrollUpNavBar {
@@ -77,6 +76,13 @@
     z-index: 3;
     transform: translateY(0);
     transition: left 0.5s ease;
+    &.sideMenuActive2 {
+        left: -275px;
+        
+        @include mq("l") {
+            left: -350px;
+        } 
+    }
     @include mq("l") {
         top: 84px;
     }

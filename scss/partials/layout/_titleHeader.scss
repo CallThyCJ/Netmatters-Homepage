@@ -1,6 +1,9 @@
 #mainHeader {
     transition: transform 0.3s ease-in-out;
     background-color: white;
+    &.scrollUp {
+        transition: left 0.5s ease;
+    }
 }
 
 #titleContainer {
@@ -140,7 +143,6 @@
     width: 100%;
     z-index: 3;
     transform: translateY(-100%);
-    transition: left 0.5s ease;
 }
 
 .scrollUp {
@@ -150,5 +152,11 @@
     width: 100%;
     z-index: 3;
     transform: translateY(0);
-    transition: left 0.5s ease;
+    &.sideMenuActive {
+        left: -275px;
+        
+        @include mq("l") {
+            left: -350px;
+        } 
+    }
 }

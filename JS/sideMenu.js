@@ -26,11 +26,13 @@ button.addEventListener("click", function() {
         setTimeout(() => overlay.style.opacity = "1", 10);
         if (window.getComputedStyle(sideMenu).display === "flex") {
             body.style.right = "350px";
+            header.classList.add("sideMenuActive");
         } else {
             body.style.right = "275px";
+            header.classList.add("sideMenuActive");
+            navBar.classList.add("sideMenuActive2");
         }
         sideMenuOpen = true;
-        navBarMove();
     } else {
         menuIcon.style.animation = "spin 4s linear infinite";
         menuIcon.style.opacity = "0";
@@ -49,6 +51,8 @@ button.addEventListener("click", function() {
         overlay.style.opacity = "0";
         setTimeout(() => overlay.style.display = "none", 400);
         body.style.right = "0";
+        header.classList.remove("sideMenuActive");
+        navBar.classList.remove("sideMenuActive2");
         sideMenuOpen = false;
     }
 });
@@ -72,7 +76,8 @@ overlay.addEventListener("click", function () {
         overlay.style.opacity = "0";
         setTimeout(() => overlay.style.display = "none", 400);
         body.style.right = "0";
+        header.classList.remove("sideMenuActive");
+        navBar.classList.remove("sideMenuActive2");
         sideMenuOpen = false;
-        navBarMoveBack();
     }
 });
