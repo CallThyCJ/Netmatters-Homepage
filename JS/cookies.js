@@ -34,7 +34,7 @@ const handleLocalStorage = () => {
         }
     };
 
-cookieMessage = () => {
+const cookieMessage = () => {
     if(!getCookie("cookie")) {
         cookieContainer.style.display = "flex";
         overlay.style.display = "block";
@@ -51,7 +51,7 @@ const hideCookieMessageIfLocal = () => {
     if (window.location.protocol === 'file:') {
         handleLocalStorage();
     } else {
-        handleCookie();
+        cookieMessage();
     }
 };
 
