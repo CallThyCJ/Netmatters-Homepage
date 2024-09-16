@@ -2,20 +2,15 @@ const button = document.querySelector("#burgerMenuButton");
 const sideMenu = document.querySelector(".sideMenuContainer");
 const mobileSideMenu = document.querySelector("#mobileSideMenuContainer");
 const overlay = document.querySelector("#overlay");
-const menuIcon = document.querySelector("#menuIcon");
+const menuIcon = document.querySelector("#hamburgerLine");
 const body = document.querySelector("body");
 const masterNavBar = document.querySelector("#masterNavBar");
 let sideMenuOpen = false;
 
 button.addEventListener("click", function() {
     if (sideMenuOpen === false) {
-        menuIcon.style.animation = "spin 4s linear infinite";
-        menuIcon.style.opacity = "0";
-        setTimeout(() => {
-            menuIcon.classList.replace("fa-bars", "fa-x");
-            menuIcon.style.opacity = "1";
-            menuIcon.style.animation = "none";
-        }, 200);
+        menuIcon.classList.toggle("hamburgerActive");
+
         if (window.getComputedStyle(sideMenu).display === "flex") {
             sideMenu.classList.add("sideMenuShow");
             sideMenu.classList.remove("sideMenuHide");
@@ -44,13 +39,6 @@ button.addEventListener("click", function() {
         }
         sideMenuOpen = true;
     } else {
-        menuIcon.style.animation = "spin 4s linear infinite";
-        menuIcon.style.opacity = "0";
-        setTimeout(() => {
-            menuIcon.classList.replace("fa-x", "fa-bars");
-            menuIcon.style.opacity = "1";
-            menuIcon.style.animation = "none";
-        }, 200);
         if (window.getComputedStyle(sideMenu).display === "flex") {
             sideMenu.classList.add("sideMenuHide");
             sideMenu.classList.remove("sideMenuShow");
@@ -71,13 +59,8 @@ button.addEventListener("click", function() {
 
 overlay.addEventListener("click", function () {
     if (sideMenuOpen === true) {
-        menuIcon.style.animation = "spin 4s linear infinite";
-        menuIcon.style.opacity = "0";
-        setTimeout(() => {
-            menuIcon.classList.replace("fa-x", "fa-bars");
-            menuIcon.style.opacity = "1";
-            menuIcon.style.animation = "none";
-        }, 200);
+        menuIcon.classList.toggle("hamburgerActive");
+        
         if (window.getComputedStyle(sideMenu).display === "flex") {
             sideMenu.classList.add("sideMenuHide");
             sideMenu.classList.remove("sideMenuShow");
