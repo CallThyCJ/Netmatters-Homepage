@@ -3,19 +3,26 @@
     top: 50%;
     left: 50%;
     z-index: 70;
-    min-width: 320px;
+    width: 320px;
     max-height: 599.14px;
     margin-top: -187.7px;
-    margin-left: -300px;
+    margin-left: -160px;
     // padding: 15px 20px 20px 15px;
     display: none;
     flex-direction: column;
     background-color: white;
     border-radius: 5px;
 
+    @media (min-width: 476px) {
+        width: 416px;
+        height: 539.14px;
+        margin-left: -205px;
+    }
+
     @include mq("m") {
         width: 600px;
         height: 374.14px;
+        margin-left: -300px;
     }
 }
 
@@ -42,21 +49,32 @@
 .cookieBottomSection {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     gap: 30px;
     margin-top: 24px;
     padding-top: 20px;
     border-top: solid 0.4px grey;
+    margin-bottom: 20px;
 
     @include mq("m") {
         flex-direction: row;
     }
 
     .cookieButton {
-        width: 264px;
-        height: 49px;
+        width: 278px;
+        height: 47px;
         padding-top: 17px;
         text-align: center;
         border-radius: 3px;
+
+        @media (min-width: 476px) {
+            width: 374px;
+        }
+
+        @include mq("m") {
+            width: 264px;
+            height: 49px;
+        }
     }
 
     #cookieChange {
