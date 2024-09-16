@@ -203,11 +203,39 @@
 #newsAccreditations {
     margin-bottom: 30px;
     position: relative;
+
+    img {
+        @include mq("xs") {
+            max-height: 70px;
+            width: auto;
+            max-width: 200px;
+        }
+    }
 }
 
 .accreditationsContainer {
     display: inline-block;
     position: relative;
+
+    &#ashcroftInfo .accreditationsButton {
+        background-color: $purple;
+    }
+
+    &#gdstInfo .accreditationsButton {
+        background-color: $lightGreenHover;
+    }
+
+    &#oneTravellerInfo .accreditationsButton {
+        background-color: $purple;
+    }
+
+    &#searlesInfo .accreditationsButton {
+        background-color: $lightGreenHover;
+    }
+
+    &#sweetzyInfo .accreditationsButton {
+        background-color: $lightGreenHover;
+    }
 }
 
 .owl-carousel .owl-stage-outer {
@@ -267,5 +295,4 @@
     width: 100%;
     align-items: center;
     z-index: 3;
-
 }
