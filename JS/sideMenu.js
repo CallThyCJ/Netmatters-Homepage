@@ -4,6 +4,7 @@ const mobileSideMenu = document.querySelector("#mobileSideMenuContainer");
 const overlay = document.querySelector("#overlay");
 const menuIcon = document.querySelector("#menuIcon");
 const body = document.querySelector("body");
+const masterNavBar = document.querySelector("#masterNavBar");
 let sideMenuOpen = false;
 
 button.addEventListener("click", function() {
@@ -27,10 +28,19 @@ button.addEventListener("click", function() {
         if (window.getComputedStyle(sideMenu).display === "flex") {
             body.style.right = "350px";
             header.classList.add("sideMenuActive");
+            masterNavBar.classList.add("sideMenuActive2");
+            setTimeout(() => {
+                masterNavBar.style.transition = "none";
+                header.style.transition = "none";
+            }, 500);
         } else {
             body.style.right = "275px";
             header.classList.add("sideMenuActive");
-            navBar.classList.add("sideMenuActive2");
+            masterNavBar.classList.add("sideMenuActive2");
+            setTimeout(() => {
+                masterNavBar.style.transition = "none";
+                header.style.transition = "none";
+            }, 500);
         }
         sideMenuOpen = true;
     } else {
@@ -50,9 +60,11 @@ button.addEventListener("click", function() {
         }
         overlay.style.opacity = "0";
         setTimeout(() => overlay.style.display = "none", 400);
+        masterNavBar.style.transition = "left 0.5s ease";
+        header.style.transition = "left 0.5s ease";
         body.style.right = "0";
         header.classList.remove("sideMenuActive");
-        navBar.classList.remove("sideMenuActive2");
+        masterNavBar.classList.remove("sideMenuActive2");
         sideMenuOpen = false;
     }
 });
@@ -75,9 +87,11 @@ overlay.addEventListener("click", function () {
         }
         overlay.style.opacity = "0";
         setTimeout(() => overlay.style.display = "none", 400);
+        masterNavBar.style.transition = "left 0.5s ease";
+        header.style.transition = "left 0.5s ease";
         body.style.right = "0";
         header.classList.remove("sideMenuActive");
-        navBar.classList.remove("sideMenuActive2");
+        masterNavBar.classList.remove("sideMenuActive2");
         sideMenuOpen = false;
     }
 });
