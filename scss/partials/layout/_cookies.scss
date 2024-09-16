@@ -3,8 +3,8 @@
     top: 50%;
     left: 50%;
     z-index: 70;
-    width: 600px;
-    height: 374.14px;
+    min-width: 320px;
+    max-height: 599.14px;
     margin-top: -187.7px;
     margin-left: -300px;
     // padding: 15px 20px 20px 15px;
@@ -12,6 +12,11 @@
     flex-direction: column;
     background-color: white;
     border-radius: 5px;
+
+    @include mq("m") {
+        width: 600px;
+        height: 374.14px;
+    }
 }
 
 .cookieTopSection {
@@ -41,6 +46,10 @@
     margin-top: 24px;
     padding-top: 20px;
     border-top: solid 0.4px grey;
+
+    @include mq("m") {
+        flex-direction: row;
+    }
 
     .cookieButton {
         width: 264px;
