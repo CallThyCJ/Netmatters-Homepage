@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/Style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+    <!-- database include -->
+     <?php
+        include "PHP/Includes/db_connection.php";
+     ?>   
 </head>
 
 <body>
@@ -36,7 +41,7 @@
 <!-- NAVIGATION -->
 
     <?php
-        require "PHP/navigation.php";
+        require "PHP/Includes/navigation.php";
     ?>
         
 <!-- IMAGE BANNER SECTION -->
@@ -254,6 +259,24 @@
 
 <!-- NEWS SECTION -->
 
+<?php
+
+    try {
+        $sql = "SELECT * FROM news_information";
+        $statement = $conn->prepare($sql);
+        $statement->execute();
+
+        // fetch all news data
+        $newsCards = $statement->fetchAll(PDO::FETCH_ASSOC);
+
+        // randomize the data order
+        shuffle($newsCards);
+
+        // limit how many cards there can be
+        $displayedCards = array_slice($newsCards, 0, 3);
+?>
+
+
         <div id="newsSection" class="globalContainer">
             <div id="newsTitleContainer">
             <div class="newsTitle">
@@ -263,66 +286,40 @@
                 </H2>
             </div>    
             </div>
+
             <div class="newsContainer">
-                <div class="item newsItem-1 clickable">
-                    <div class="topSection">
-                        <a href="" class="newsCategory redButton">News</a>
-                        <img src="Assets/junes-notables.png" alt="June Noteable">
-                    </div>
-                    <div class="midSection">
-                        <H3 id="juneNoteable">June's Noteable 2024 - Celebrating Our Team</H3>
-                        <p>June Notables 2024 Celebrating the achievements and dedication of our staff, at Netmatters, we put a...</p>
-                        <button type="button" class="redButton">Read More</button>
-                    </div>
-                    <div class="bottomSection">
-                        <img src="Assets/netmatters mini logo.png" alt="Netmatters no text logo">
-                        <div class="postDate">
-                            <p class="postedBy">Posted by Netmatters</p>
-                            <p>8th July 2024</p>  
-                        </div>   
-                    </div>
-                </div>
+                <?php
+                    foreach ($displayedCards as $row) {
+                        echo '
+                                
+                                    <div class="item newsItem clickable">
+                                        <div class="topSection">
+                                            <a href="" class="newsCategory redButton">' . htmlspecialchars($row['post_type']) . '</a>
+                                            <img src="' . htmlspecialchars($row['image']) . '" alt="' . htmlspecialchars($row['title']) . '">
+                                        </div>
+                                        <div class="midSection">
+                                            <h3>' . htmlspecialchars($row['title']) . '</h3>
+                                            <p>' . htmlspecialchars($row['description']) . '</p>
+                                            <button type="button" class="redButton">Read More</button>
+                                        </div>
+                                        <div class="bottomSection">
+                                            <img src="Assets/netmatters mini logo.png" alt="Netmatters no text logo">
+                                            <div class="postDate">
+                                                <p class="postedBy">Posted by ' . htmlspecialchars($row['author']) . '</p>
+                                                <p>' . date("jS F Y", strtotime($row['post_date'])) . '</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                            ';
+                    } 
 
-                <div class="item newsItem-2 clickable">
-                    <div class="topSection">
-                        <a href="" class="newsCategory">News</a>
-                        <img src="Assets/elliott-peacock.png" alt="Latest Hero">
-                    </div>
-                    <div class="midSection">
-                        <H3>Elliott Peacock - Netmatters 10 Year Hero</H3>
-                        <p>Elliott Peacock - Netmatters 10 Year Hero</p>
-                        <p>Today, we celebrate the brilliant accomplishments of Ellio...</p>
-                        <button type="button">Read More</button>
-                    </div>
-                    <div class="bottomSection">
-                        <img src="Assets/netmatters mini logo.png" alt="Netmatters no text logo">
-                        <div class="postDate">
-                            <p class="postedBy">Posted by Netmatters</p>
-                            <p>5th July 2024</p>
-                        </div>     
-                    </div>
-                </div>
-
-                <div id="thirdNewsItem" class="item newsItem-3 clickable">
-                    <div class="topSection">
-                        <a href="" class="newsCategory blueButton">News</a>
-                        <img src="Assets/tom-lancaster.png" alt="Latest Hero">
-                    </div>
-                    <div class="midSection">
-                        <H3>Tom Lancaster - Netmatters 10 Year Hero</H3>
-                        <p>Tom Lancaster - Netmatters 10 Year Hero</p>
-                        <p>Today, we celebrate the brilliant accomplishments of Tom Lan...</p>
-                        <button type="button" class="blueButton">Read More</button>
-                    </div>
-                    <div class="bottomSection">
-                        <img src="Assets/netmatters mini logo.png" alt="Netmatters no text logo">
-                        <div class="postDate">
-                            <p class="postedBy">Posted by Netmatters</p>
-                            <p>1st July 2024</p>
-                        </div>     
-                    </div>
-                </div>
+                } catch (PDOException $e) {
+                    echo "Error: " . $e->getMessage();
+                }  
+                ?>
             </div>
+
+
             <H2 class="mobileOnly">View All
                 <i class="fa-solid fa-arrow-right" id="arrowRight"></i>
             </H2>
@@ -495,89 +492,10 @@
         </div>
 
          <!-- SITE LINKS AND SOCIAL MEDIA SECTION -->
+        <?php
+            require "PHP/Includes/siteLinks.php";
+        ?>
 
-        <div class="infoSection poppins-light">
-            <div class="smSectionContainer globalContainer">
-                <div id="smLeftSide">
-            <img src="Assets/Netmatters logo white.png" alt="Netmatters logo white" id="whiteNetmattersLogo">
-            <div class="socialMedia">
-                <H3>FOLLOW US ON:</H3>
-                    <div id="socialButtonContainer">
-                        <button type="button" class="socials darkButton clickable" id="facebook">
-                            <img src="Assets/facebook.png" alt="facebook logo">
-                            <a href="https://www.facebook.com/netmatters/"></a>
-                        </button>
-                        <button type="button" class="socials darkButton clickable" id="Linkedin">
-                            <img src="Assets/Linkedin logo.png" alt="Linkedin logo">
-                            <a href="https://www.linkedin.com/company/netmatters-ltd/"></a>
-                        </button>
-                        <button type="button" class="socials darkButton clickable" id="X">
-                            <img src="Assets/X logo.png" alt="X logo">
-                            <a href="https://x.com/netmattersltd"></a>
-                        </button>
-                        <button type="button" class="socials darkButton clickable" id="Instagram">
-                            <img src="Assets/instagram logo.png" alt="Instagram logo">
-                            <a href="https://www.instagram.com/netmattersltd/"></a>
-                        </button>
-                    </div>
-            </div>
-        </div>
-
-
-            <div class="biggerDeviceSiteLinks">
-            <div class="aboutMatters">
-                <H3>ABOUT NETMATTERS</H3>
-                <div class="netmattersLinks">
-                <a href="https://www.netmatters.co.uk/news" class="clickable">News</a>
-                <a href="https://www.netmatters.co.uk/our-careers" class="clickable">Our Careers</a>
-                <a href="https://www.netmatters.co.uk/team" class="clickable">Our Team</a>
-                <a href="https://www.netmatters.co.uk/contact-us" class="clickable">Contact Us</a>
-                <a href="https://www.netmatters.co.uk/privacy-policy" class="clickable">Privacy Policy</a>
-                <a href="https://www.netmatters.co.uk/cookie-policy" class="clickable">Cookie Policy</a>
-                <a href="https://www.netmatters.co.uk/data-retention-disposal-policy" class="clickable">Data Retention &amp; Disposal Policy</a>
-                <a href="https://www.netmatters.co.uk/cctv-policy" class="clickable">CCTV Policy</a>
-                <a href="https://www.netmatters.co.uk/our-culture/environmental-policy" class="clickable">Environmental Policy</a>
-                <a href="https://www.netmatters.co.uk/terms-and-conditions" class="clickable">Terms &amp; Conditions</a>
-                </div>
-            </div>
-
-            <div class="ourServices">
-                <H3>OUR SERVICES</H3>
-                <div class="netmattersLinks">
-                <a href="https://www.netmatters.co.uk/bespoke-software" class="clickable">Bespoke Software</a>
-                <a href="https://www.netmatters.co.uk/it-support" class="clickable">IT Software</a>
-                <a href="https://www.netmatters.co.uk/digital-marketing" class="clickable">Digital Marketing</a>
-                <a href="https://www.netmatters.co.uk/telecoms-services" class="clickable">Telecoms Services</a>
-                <a href="https://www.netmatters.co.uk/web-design" class="clickable">Web Design</a>
-                <a href="https://www.netmatters.co.uk/cyber-security" class="clickable">Cyber Security</a>
-                <a href="https://www.netmatters.co.uk/train-for-a-career-in-tech" class="clickable">Developer Training</a>
-                </div>
-            </div>
-
-            <div class="ourIndustries">
-                <h3>OUR INDUSTRIES</h3>
-                <div class="netmattersLinks">
-                <a href="https://www.netmatters.co.uk/industries/financial-services" class="clickable">Financial Services</a>
-                <a href="https://www.netmatters.co.uk/industries/construction" class="clickable">Construction</a>
-                <a href="https://www.netmatters.co.uk/industries/e-commerce" class="clickable">Retail &amp; E-commerce</a>
-                <a href="https://www.netmatters.co.uk/industries/non-profits" class="clickable">Non-Profits</a>
-                <a href="https://www.netmatters.co.uk/industries/smes" class="clickable">SME's</a>
-                <a href="https://www.netmatters.co.uk/industries/healthcare" class="clickable">Healthcare</a>
-                <a href="https://www.netmatters.co.uk/industries/education-training" class="clickable">Education &amp; Training</a>
-                <a href="https://www.netmatters.co.uk/industries/travel-leisure" class="clickable">Travel &amp; Leisure</a>
-                </div>
-            </div>
-
-            <div class="Locations">
-                <h3>LOCATIONS</h3>
-                <div class="netmattersLinks">
-                <a href="https://www.netmatters.co.uk/cambridge-office" class="clickable">Cambridge Office</a>
-                <a href="https://www.netmatters.co.uk/wymondham-office" class="clickable">Wymondham Office</a>
-                <a href="https://www.netmatters.co.uk/yarmouth-office" class="clickable">Yarmouth Office</a>
-                </div>
-            </div>
-            </div>
-        </div>
         </div>
     </div>
 
@@ -594,12 +512,7 @@
 
 <!-- COPYRIGHT SECTION -->
 
-<footer id="copyrightSection">
-    <div id="coprightInfo" class="globalContainer">
-        <p id="netmattersCopyright">&copy; Copyright Netmatters 2024.</p>
-        <p id="rights">All rights reserved.</p>
-        <p id="hyphen" class="biggerDevice">-</p>
-        <p id="sitemap">Sitemap</p>
-    </div>
-</footer>
+<?php
+    require "PHP/Includes/footer.php";
+?>
 </html>
