@@ -36,7 +36,7 @@
 
             <div class="officeCard">
                 <div class="officeTopSection">
-                    <img src="" alt="">
+                    <img src="../../Assets/CambridgeOffice.jpg" alt="Cambridge Office">
                 </div>
 
                 <div class="officeMidSection">
@@ -56,13 +56,13 @@
                 <div class="officeBottomSection">
                     <a href="tel:01223375772">01223 37 57 72</a>
 
-                    <a>VIEW MORE</a>
+                    <a class ="officeButton">VIEW MORE</a>
                 </div>
             </div>
 
             <div class="officeCard">
                 <div class="officeTopSection">
-                    <img src="" alt="">
+                    <img src="../../Assets/WymondhamOffice.jpg" alt="Wymondham Office">
                 </div>
 
                 <div class="officeMidSection">
@@ -82,13 +82,13 @@
                 <div class="officeBottomSection">
                     <a href="tel:01603704020">01603 70 40 20</a>
 
-                    <a>VIEW MORE</a>
+                    <a class ="officeButton">VIEW MORE</a>
                 </div>
             </div>
 
             <div class="officeCard">
                 <div class="officeTopSection">
-                    <img src="" alt="">
+                    <img src="../../Assets/YarmouthOffice.jpg" alt="Yarmouth Office">
                 </div>
 
                 <div class="officeMidSection">
@@ -108,7 +108,7 @@
                 <div class="officeBottomSection">
                     <a href="tel:01603704020">01493 60 32 04</a>
 
-                    <a>VIEW MORE</a>
+                    <a class ="officeButton">VIEW MORE</a>
                 </div>
             </div>
 

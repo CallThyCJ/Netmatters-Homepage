@@ -1,0 +1,95 @@
+#officesTitle {
+    height: 87.59px;
+    display: flex;
+    align-items: center;
+    background-color: $NMgrey;
+
+    h2 {
+        font-size: 2.4rem;
+        font-weight: 400;
+        color: white;
+    }
+}
+
+#officeCardSection {
+    margin-top: 80px;
+
+    #officeCardContainer {
+        display: flex;
+        flex-direction: column;
+        row-gap: 70px;
+
+        .officeCard {
+            display: flex;
+            flex-direction: column;
+            height: 456.11px;
+            width: 310px;
+
+            .officeTopSection {
+                border-radius: 20px;
+                height: 30%;
+                
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-top-left-radius: 18px;
+                    border-top-right-radius: 18px;
+                }
+            }
+
+            .officeMidSection {
+            height: 40%;
+            padding: 30px;
+            border: 1px solid #cfcfcf;
+            border-bottom: none;
+            
+            h3 {
+                font-size: 1.25rem;
+                font-weight: 400;
+                margin-top: 0; 
+            }
+
+            p {
+                font-size: 0.85rem;
+                margin-bottom: 20px;
+                line-height: 1.4rem;
+                color: #666;
+                margin-bottom: 4px;
+            }
+            }
+
+            .officeBottomSection {
+                height: 30%;
+                display: flex;
+                flex-direction: column;
+                padding: 30px;
+                padding-top: 20px;
+                border: 1px solid #cfcfcf;
+                border-top: none;
+                
+                a {
+                    color: $NMpuples;
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                }
+                
+                .officeButton {
+                    font-size: 0.9rem;
+                    font-weight: 400;
+                    margin-top: 15px;
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                    color: white;
+                    background-color: $NMpuples;
+                    width: 144.03px;
+                    text-align: center;
+                    border-radius: 3px;
+                }
+        }
+
+    }
+
+    }
+
+}
