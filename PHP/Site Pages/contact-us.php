@@ -127,7 +127,21 @@
         </div>
 
         <div id="ItSupportContainer">
-            <h4>Out of Hours IT Support</h4>
+            <div id="supportTitleItems">
+                <h4 id ="accTitle">Out of Hours IT Support</h4>
+                <i class="fa-solid fa-chevron-down" id="accRevealButton"></i>
+            </div>
+
+            <div id="accordionContents">
+                <p>Netmatters IT are offering an Out of Hours service for Emergency and Critical tasks.</p>
+
+                <p>Monday - Friday 18:00 - 22:00</p>
+                <p>Saturday 08:00 - 16:00</p>
+                <p>Sunday 10:00 - 18:00</p>
+
+                <p>To log a critical task, you will need to call our main line number and select Option 2 to leave an Out of Hours  voicemail. A technician will contact you on the number provided within 45 minutes of your call. </p>
+
+            </div>
         </div>
 
         <form action="POST">
@@ -175,6 +189,9 @@
     <?php
         require "../Includes/footer.php";
     ?>
+
+
+<script src="../../JS/contactPage/formAccordion.js"></script>
 
 </body>
 </html>
