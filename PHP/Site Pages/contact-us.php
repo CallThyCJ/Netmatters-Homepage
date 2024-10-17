@@ -147,19 +147,19 @@
         <form action="send-email.php" method="POST" id ="contactForm">
 
             <label for="name">Your Name</label>
-            <input type="text" name="name">
+            <input type="text" name="name" class="contactInput">
 
             <label for="company">Company Name</label>
             <input type="text" name="company">
 
             <label for="email">Your Email</label>
-            <input type="text" name="email">
+            <input type="text" name="email" class="contactInput">
 
             <label for="telephone">Your Telephone Number</label>
-            <input type="text" name="telephone">
+            <input type="text" name="telephone" class="contactInput">
 
             <label for="message">Message</label>
-            <textarea name="message" id=""></textarea>
+            <textarea name="message" id="" class="contactInput"></textarea>
 
 
             <div class="privacyConfirmation">

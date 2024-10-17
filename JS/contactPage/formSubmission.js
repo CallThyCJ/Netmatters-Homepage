@@ -11,6 +11,14 @@ document.getElementById("contactForm").addEventListener("submit", function(event
     xhr.onload = function () {
         if (xhr.status === 200) {
             const response = JSON.parse(xhr.responseText);
+            const formInputs = document.getElementsByClassName("contactInput");
+            formInputsArray = Array.from(formInputs);
+
+            formInputsArray.forEach(input => {
+
+                    input.classList.remove("error");
+
+            });
 
             if (response.status === "success") {
                 
@@ -20,7 +28,16 @@ document.getElementById("contactForm").addEventListener("submit", function(event
             } else if (response.status === "error"){
                 if (response.errors) {
 
-                    console.log("Errors:\n" + response.errors.join("\n"));
+                    response.errors.forEach(error => {
+                        
+                        formInputsArray.forEach(input => {
+                            if (input.name === error.field) {
+                                input.classList.add("error");
+                            }
+                        });
+                    })
+    
+                    console.log("Errors:\n" + response.errors.map(e => e.message).join("\n"));
                     
                 } else {
                     console.log(response.message);

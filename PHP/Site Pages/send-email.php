@@ -16,23 +16,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // VALIDATION CHECKS
     if (empty($name)) {
-        $errors[] = "Please enter your name.";
+        $errors[] = ["field" => "name", "message" => "Please enter your name."];
     }
 
     if (empty($email)) {
-        $errors[] = "Please enter your email.";
+        $errors[] = ["field" => "email", "message" => "Please enter your email."];
     } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        $errors[] = "Please enter a valid email.";
+        $errors[] = ["field" => "email", "message" => "Please enter a valid email."];
     }
 
     if (empty($phoneNum)) {
-        $errors[] = "Please enter your phone number.";
+        $errors[] = ["field" => "telephone", "message" => "Please enter your phone number."];
     } elseif (!preg_match("/^[0-9]{10,15}$/", $phoneNum)) {
-        $errors[] = "Please enter a valid phone number.";
+        $errors[] = ["field" => "telephone", "message" => "Please enter a valid phone number."];
     }
 
     if (empty($message)) {
-        $errors[] = "Mesaage contents are required.";
+        $errors[] = ["field" => "message", "message" => "Mesaage contents are required."];
     }
 
     if (!empty($errors)) {
