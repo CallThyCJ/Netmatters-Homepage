@@ -144,21 +144,21 @@
             </div>
         </div>
 
-        <form action="POST">
+        <form action="send-email.php" method="POST" id ="contactForm">
 
-            <label for="name"></label>
+            <label for="name">Your Name</label>
             <input type="text" name="name">
 
             <label for="company">Company Name</label>
             <input type="text" name="company">
 
-            <label for="email"></label>
+            <label for="email">Your Email</label>
             <input type="text" name="email">
 
-            <label for="telephone"></label>
+            <label for="telephone">Your Telephone Number</label>
             <input type="text" name="telephone">
 
-            <label for="message"></label>
+            <label for="message">Message</label>
             <textarea name="message" id=""></textarea>
 
 
@@ -171,7 +171,7 @@
 
             <p>Fields Required</p>
 
-            <button>SEND ENQUIRY</button>
+            <button type="submit" name="submit">SEND ENQUIRY</button>
 
         </form>
 
@@ -192,6 +192,7 @@
 
 
 <script src="../../JS/contactPage/formAccordion.js"></script>
+<script src="../../JS/contactPage/formSubmission.js"></script>
 
 </body>
 </html>
