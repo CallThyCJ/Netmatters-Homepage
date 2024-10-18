@@ -163,7 +163,7 @@
             <input type="text" name="telephone" class="contactInput">
 
             <label for="message">Message</label>
-            <textarea name="message" id="" class="contactInput"></textarea>
+            <textarea name="message" id="messagebox" class="contactInput">Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?</textarea>
 
 
             <div class="privacyConfirmation">

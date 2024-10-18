@@ -1,3 +1,12 @@
+// Tick box
+const tickbox = document.querySelector(".tickBox");
+
+tickbox.addEventListener("click", function() {
+    tickbox.classList.toggle("ticked");
+});
+
+
+// Form Submission
 document.getElementById("contactForm").addEventListener("submit", function(event) {
     event.preventDefault();
 
