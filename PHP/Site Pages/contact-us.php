@@ -149,18 +149,30 @@
             <div id="submitSuccess" class="">
                 <p>Message has successfully been sent</p>
             </div>
+            
+            <div id="firstFormRow" class="formInputs">
+                <div class="inputElements">
+                    <label for="name">Your Name</label>
+                    <input type="text" name="name" class="contactInput">
+                </div>
 
-            <label for="name">Your Name</label>
-            <input type="text" name="name" class="contactInput">
+                <div class="inputElements">
+                    <label for="company">Company Name</label>
+                    <input type="text" name="company">
+                </div>
+            </div>
 
-            <label for="company">Company Name</label>
-            <input type="text" name="company">
+            <div id="secondFormRow" class="formInputs">
+                <div class="inputElements">
+                    <label for="email">Your Email</label>
+                    <input type="text" name="email" class="contactInput">
+                </div>
 
-            <label for="email">Your Email</label>
-            <input type="text" name="email" class="contactInput">
-
-            <label for="telephone">Your Telephone Number</label>
-            <input type="text" name="telephone" class="contactInput">
+                <div class="inputElements">
+                    <label for="telephone">Your Telephone Number</label>
+                    <input type="text" name="telephone" class="contactInput">
+                </div>
+            </div>
 
             <label for="message">Message</label>
             <textarea name="message" id="messagebox" class="contactInput">Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?</textarea>
@@ -173,9 +185,11 @@
 
             <p>This site is protected by reCAPTCHA and Google <em>Privacy Policy</em> and <em>Terms of Service</em> apply.</p>
 
-            <p>Fields Required</p>
+            <div id="bottomFormElements">
+                <p>Fields Required</p>
 
-            <button type="submit" name="submit">SEND ENQUIRY</button>
+                <button type="submit" name="submit">SEND ENQUIRY</button>
+            </div>
 
         </form>
 

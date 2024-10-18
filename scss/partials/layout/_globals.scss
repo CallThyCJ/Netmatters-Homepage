@@ -4,7 +4,7 @@
     padding-left: 15px;
     padding-right: 15px;
 
-    @include mq("l") {
+    @include mq("m") {
         width: 750px;
     }
 

@@ -1,5 +1,7 @@
 #contactUsSection {
     margin-top: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
 
     p {
         font-weight: 600;
@@ -92,7 +94,23 @@
         padding: 30px;
         min-height: 960.73px;
         max-height: 1100px;
+        min-width: 310px;
+        max-width: 429px;
         border-radius: 10px;
+
+        @media only screen and (min-width: 376px) {
+            min-height: 850px;
+        }
+        @include mq("s") {
+            max-width: 767px;
+        }
+        @include mq("m") {
+            min-height: 650px;
+            max-width: 720px;
+        }
+        @media only screen and (min-width: 992px) {
+            min-width: 940px;
+        }
 
         #submitSuccess {
             height: 35px;
@@ -144,13 +162,17 @@
         }
 
         input, textarea {
-            width: 250px;
+            width: 100%;
             height: 47px;
             padding: 5px 15px;
             border-radius: 2px;
             border: 1px solid #e5e5e5;
             border-color: #ccc;
             box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+
+            @media only screen and (min-width: 992px) {
+                width: 425px;
+            }
 
             &.error {
                 border-color: red;        
@@ -166,6 +188,20 @@
             }
         }
 
+        .formInputs {
+            @media only screen and (min-width: 992px) {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+        .inputElements {
+            @media only screen and (min-width: 992px) {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
         textarea {
             min-height: 100px;
             height: 100px;
@@ -176,7 +212,8 @@
 
         .privacyConfirmation {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start;
+            column-gap: 24px;
             width: 100%;
             margin-top: 12px;
 
@@ -209,10 +246,57 @@
                 font-size: 1rem;
                 margin-bottom: 15px;
 
+                @media only screen and (min-width: 376px) {
+                    font-size: 1.05rem;
+                }
+
+                @include mq("m") {
+                    width: 100%;
+                }
+
                 em {
                     font-style: normal;
                     text-decoration: underline;
                 }
+            }
+        }
+
+        #bottomFormElements {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            p {
+                font-size: 0.86rem;
+                font-weight: 300;
+                text-align: center;
+                margin-bottom: 4px;
+                margin-top: 22px;
+                position: relative;
+
+                @include mq("s") {
+                    margin-top: 0;
+                }
+
+                &::before {
+                    content: "*";
+                    position: absolute;
+                    z-index: $zindex2;
+                    bottom: 2px;
+                    left: -10px;
+                    color: #a94442;
+
+                }
+                
+            }
+
+            @media only screen and (min-width: 376px) {
+                flex-direction: row-reverse;
+                column-gap: 30px;
+            }
+
+            @include mq("s") {
+                justify-content: space-between;
             }
         }
 
@@ -223,28 +307,13 @@
             font-weight: 500;
             line-height: 1.1rem;
 
+            @media only screen and (min-width: 376px) {
+                font-size: 0.75rem;
+            }
+
             em {
                 font-style: normal;
                 text-decoration: underline;
-            }
-
-            &:nth-of-type(2) {
-                font-size: 0.8rem;
-                font-weight: 300;
-                text-align: center;
-                margin-bottom: 15px;
-                margin-top: 22px;
-                position: relative;
-
-                &::before {
-                    content: "*";
-                    position: absolute;
-                    z-index: $zindex2;
-                    bottom: 2px;
-                    left: 63px;
-                    color: #a94442;
-
-                }
             }
         }
         
@@ -254,6 +323,11 @@
             background-color: #333645;
             display: block;
             margin: 20px auto 0;
+            margin-top: 8px;
+
+            @include mq("s") {
+                margin: 0;
+            }
         }
     }
 
