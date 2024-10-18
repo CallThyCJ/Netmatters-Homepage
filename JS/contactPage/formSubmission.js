@@ -18,9 +18,13 @@ document.getElementById("contactForm").addEventListener("submit", function(event
 
                     input.classList.remove("error");
 
-            });
+            })
 
             if (response.status === "success") {
+                const successMessage = document.getElementById("submitSuccess");
+
+                successMessage.classList.add("success");
+                console.log(successMessage.classList);
                 
                 console.log(response.message);
             

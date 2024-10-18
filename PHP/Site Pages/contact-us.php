@@ -146,6 +146,10 @@
 
         <form action="send-email.php" method="POST" id ="contactForm">
 
+            <div id="submitSuccess" class="">
+                <p>Message has successfully been sent</p>
+            </div>
+
             <label for="name">Your Name</label>
             <input type="text" name="name" class="contactInput">
 

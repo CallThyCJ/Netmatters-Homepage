@@ -90,8 +90,33 @@
         background-color: #e6e7e9;
         margin-bottom: 45px;
         padding: 30px;
-        height: 960.73px;
+        min-height: 960.73px;
+        max-height: 1100px;
         border-radius: 10px;
+
+        #submitSuccess {
+            height: 35px;
+            width: 250px;
+            margin-top: 0px;
+            margin-bottom: 20px;
+            background-color: #bbffa1;
+            display: none;
+
+            &.success {
+                display: block;
+            }
+
+            p {
+                margin-top: 0;
+                text-align: center;
+                padding: 10px;
+                font-size: 0.7rem;
+            }
+        }
+
+        label {
+            font-weight: 550;
+        }
 
         input, textarea {
             width: 250px;
@@ -108,16 +133,18 @@
         } 
 
         input {
-            margin-bottom: 40px;
+            margin-bottom: 20px;
+            margin-top: 8px;
 
             &:nth-of-type(1) {
-                margin-bottom: 30px;
+                margin-bottom: 20px;
             }
         }
 
         textarea {
             min-height: 100px;
             height: 100px;
+            margin-top: 8px;
         }
 
         .privacyConfirmation {
@@ -138,7 +165,7 @@
                 line-height: 32px;
                 margin-top: 2px;
                 font-size: 1rem;
-                margin-bottom: 30px;
+                margin-bottom: 15px;
 
                 em {
                     font-style: normal;
@@ -149,7 +176,8 @@
 
         p {
             font-size: 0.7rem;
-            margin-top: 12px;
+            margin-top: 8px;
+            margin-bottom: 20px;
 
             em {
                 font-style: normal;
