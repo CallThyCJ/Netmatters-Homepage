@@ -1,7 +1,15 @@
 #contactUsSection {
+    display: flex;
+    flex-direction: column;
     margin-top: 50px;
     padding-left: 15px;
     padding-right: 15px;
+
+    @include mq("xl") {
+        flex-direction: row-reverse;
+        column-gap: 35px;
+    }    
+    
 
     p {
         font-weight: 600;
@@ -110,6 +118,12 @@
         }
         @media only screen and (min-width: 992px) {
             min-width: 940px;
+            min-height: 561px;
+        }
+        @include mq("xl") {
+            min-height: 593px;
+            max-width: 770px;
+            min-width: 770px;
         }
 
         #submitSuccess {
@@ -136,28 +150,38 @@
             font-weight: 550;
             position: relative;
 
-            &:nth-of-type(1)::after, &:nth-of-type(3)::after, &:nth-of-type(4)::after, &:nth-of-type(5)::after {
+            &.inputFour::after {
                 content: "*";
-                position: absolute;
-                z-index: $zindex2;
-                bottom: 2px;
-                color: #d24d57;
+                    position: absolute;
+                    z-index: $zindex2;
+                    bottom: 2px;
+                    color: #d24d57;
+                    left: 78px;
             }
+        }
 
-            &:nth-of-type(1)::after {
+        .inputElements  {
+
+            label.requiredEntry {
+                &::after {
+                    content: "*";
+                    position: absolute;
+                    z-index: $zindex2;
+                    bottom: 2px;
+                    color: #d24d57;
+                }
+            } 
+            
+            .inputOne::after {
                 left: 95px;
             }
             
-            &:nth-of-type(3)::after {
+            .inputTwo::after {
                 left: 91px;
             }
 
-            &:nth-of-type(4)::after {
+            .inputThree::after {
                 left: 202px;
-            }
-
-            &:nth-of-type(5)::after {
-                left: 78px;
             }
         }
 
@@ -186,6 +210,10 @@
             &:nth-of-type(1) {
                 margin-bottom: 20px;
             }
+
+            @include mq("xl") {
+                width: 340px;
+            }
         }
 
         .formInputs {
@@ -208,6 +236,10 @@
             margin-top: 8px;
             font-size: 0.9rem;
             font-weight: 300;
+
+            @media only screen and (min-width: 992px) {
+                width: 100%;
+            }
         }
 
         .privacyConfirmation {

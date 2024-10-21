@@ -119,28 +119,30 @@
 
     <div id="contactUsSection" class="globalContainer">
         
-        <div id="contactInfoContainer">
-            <p>Email us on:</p>
-            <a href="">sales@netmatters.com</a>
-            <p>Business hours:</p>
-            <p>Monday - Friday 07:00 - 18:00</p>
-        </div>
-
-        <div id="ItSupportContainer">
-            <div id="supportTitleItems">
-                <h4 id ="accTitle">Out of Hours IT Support</h4>
-                <i class="fa-solid fa-chevron-down" id="accRevealButton"></i>
+        <div id="generalContactInfoContainer">
+            <div id="contactInfoContainer">
+                <p>Email us on:</p>
+                <a href="">sales@netmatters.com</a>
+                <p>Business hours:</p>
+                <p>Monday - Friday 07:00 - 18:00</p>
             </div>
 
-            <div id="accordionContents">
-                <p>Netmatters IT are offering an Out of Hours service for Emergency and Critical tasks.</p>
+            <div id="ItSupportContainer">
+                <div id="supportTitleItems">
+                    <h4 id ="accTitle">Out of Hours IT Support</h4>
+                    <i class="fa-solid fa-chevron-down" id="accRevealButton"></i>
+                </div>
 
-                <p>Monday - Friday 18:00 - 22:00</p>
-                <p>Saturday 08:00 - 16:00</p>
-                <p>Sunday 10:00 - 18:00</p>
+                <div id="accordionContents">
+                    <p>Netmatters IT are offering an Out of Hours service for Emergency and Critical tasks.</p>
 
-                <p>To log a critical task, you will need to call our main line number and select Option 2 to leave an Out of Hours  voicemail. A technician will contact you on the number provided within 45 minutes of your call. </p>
+                    <p>Monday - Friday 18:00 - 22:00</p>
+                    <p>Saturday 08:00 - 16:00</p>
+                    <p>Sunday 10:00 - 18:00</p>
 
+                    <p>To log a critical task, you will need to call our main line number and select Option 2 to leave an Out of Hours  voicemail. A technician will contact you on the number provided within 45 minutes of your call. </p>
+
+                </div>
             </div>
         </div>
 
@@ -152,30 +154,32 @@
             
             <div id="firstFormRow" class="formInputs">
                 <div class="inputElements">
-                    <label for="name">Your Name</label>
+                    <label for="name" class="requiredEntry inputOne">Your Name</label>
                     <input type="text" name="name" class="contactInput">
                 </div>
 
                 <div class="inputElements">
-                    <label for="company">Company Name</label>
+                    <label for="company" class="unrequiredEntry">Company Name</label>
                     <input type="text" name="company">
                 </div>
             </div>
 
             <div id="secondFormRow" class="formInputs">
                 <div class="inputElements">
-                    <label for="email">Your Email</label>
+                    <label for="email" class="requiredEntry inputTwo">Your Email</label>
                     <input type="text" name="email" class="contactInput">
                 </div>
 
                 <div class="inputElements">
-                    <label for="telephone">Your Telephone Number</label>
+                    <label for="telephone" class="requiredEntry inputThree">Your Telephone Number</label>
                     <input type="text" name="telephone" class="contactInput">
                 </div>
             </div>
-
-            <label for="message">Message</label>
-            <textarea name="message" id="messagebox" class="contactInput">Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?</textarea>
+            
+            <div id="thirdFormRow" class="inputElements">
+                <label for="message" class="requiredEntry inputFour">Message</label>
+                <textarea name="message" id="messagebox" class="contactInput">Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?</textarea>
+            </div>
 
 
             <div class="privacyConfirmation">

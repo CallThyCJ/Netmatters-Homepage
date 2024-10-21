@@ -13,22 +13,67 @@
 
 #officeCardSection {
     margin-top: 80px;
-    width: 340px;
+    // width: 340px;
 
     #officeCardContainer {
         display: flex;
         flex-direction: column;
         row-gap: 70px;
 
+        @include mq("l") {
+            flex-direction: row;
+            justify-content: center;
+            column-gap: 32px;
+        }
+
         .officeCard {
             display: flex;
             flex-direction: column;
-            height: 456.11px;
-            width: 310px;
+            min-height: 456.11px;
+            max-height: 651px;
+            min-width: 310px;
+
+            @include mq("m") {
+                height: 643px;
+                width: 720px;
+                max-height: none;
+            }
+
+            @include mq("l") {
+                height: 448.52px;
+                width: 293.33px;
+                min-width: 293.33px;
+            }
+
+            @include mq("xl") {
+                height: 483.44px;
+                width: 370px;
+                min-width: 370px;
+            }
 
             .officeTopSection {
-                border-radius: 20px;
-                height: 30%;
+                // border-radius: 20px;
+                // height: 30%;
+                min-height: 140px;
+                max-height: 335px;
+                overflow: hidden;
+
+                @include mq("m") {
+                    height: 327px;
+                    min-height: 327px;
+                    max-height: none;
+                    overflow: initial;
+                }
+
+                @include mq("l") {
+                    min-height: 132.67px;
+                    height: 132.67px;  
+                }
+
+                @include mq("xl") {
+                    min-height: 169.59px;
+                    height: 169.59px; 
+                }
                 
                 img {
                     width: 100%;
@@ -40,10 +85,18 @@
             }
 
             .officeMidSection {
-            height: 40%;
+            // height: 40%;
             padding: 30px;
             border: 1px solid #cfcfcf;
             border-bottom: none;
+
+            @include mq("m") {
+                padding-bottom: 20px;
+            }
+
+            @include mq("l") {
+                padding-bottom: 7px;
+            }
             
             h3 {
                 font-size: 1.25rem;
@@ -61,18 +114,26 @@
             }
 
             .officeBottomSection {
-                height: 30%;
+                // height: 30%;
                 display: flex;
                 flex-direction: column;
                 padding: 30px;
                 padding-top: 20px;
                 border: 1px solid #cfcfcf;
                 border-top: none;
+
+                @include mq("l") {
+                    padding-top: 0;
+                }
                 
                 a {
                     color: $NMpuples;
                     font-size: 1.5rem;
                     font-weight: 700;
+                    
+                    @include mq("m") {
+                        font-size: 1.65rem;
+                    }
                 }
                 
                 .officeButton {
