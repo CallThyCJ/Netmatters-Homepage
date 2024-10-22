@@ -32,6 +32,10 @@
         color: $NMpuples;
         font-size: 1.6rem;
         font-weight: 600;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
     #ItSupportContainer {
@@ -46,6 +50,17 @@
 
             h4 {
                 font-weight: 600;
+
+                &:hover {
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+            }
+
+            i {
+                &:hover {
+                    cursor: pointer;
+                }
             }
         }
 
@@ -194,6 +209,16 @@
             border-color: #ccc;
             box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
 
+            &:focus {
+                border-color: $formFocus;
+                box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(91, 192, 222, .6);
+                outline: none;
+            }
+
+            &:active {
+                border-color: $formFocus;
+            }
+
             @media only screen and (min-width: 992px) {
                 width: 425px;
             }
@@ -256,6 +281,10 @@
                 border: 3px solid #333645;
                 position: relative;
 
+                &:hover {
+                    cursor: pointer;
+                }
+
                 &.ticked {
                     background-color: #333645;
 
@@ -289,6 +318,10 @@
                 em {
                     font-style: normal;
                     text-decoration: underline;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
                 }
             }
         }
@@ -346,6 +379,10 @@
             em {
                 font-style: normal;
                 text-decoration: underline;
+
+                &:hover {
+                    cursor: pointer;
+                }
             }
         }
         
@@ -356,6 +393,11 @@
             display: block;
             margin: 20px auto 0;
             margin-top: 8px;
+
+            &:hover {
+                cursor: pointer;
+                background-color: $darkHover;
+            }
 
             @include mq("s") {
                 margin: 0;

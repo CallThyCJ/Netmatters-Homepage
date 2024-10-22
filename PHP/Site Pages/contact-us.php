@@ -27,8 +27,16 @@
 
     <!-- OUR OFFICES -->
 
-    <div id="officesTitle" class="globalContainer">
-        <h2>Our Offices</h2>
+    <div id="officesTitle">
+        <div id="titleContents" class="globalContainer">
+            <h2 class="desktopFormat">Home</h2>
+            <h2 class="desktopFormat"> / </h2>
+            <h2 class="globalContainer">Our Offices</h2>
+        </div>
+    </div>
+
+    <div class="globalContainer">
+        <h2 id="desktopTitle">Our Offices</h2>
     </div>
 
     <div id="officeCardSection" class="globalContainer">

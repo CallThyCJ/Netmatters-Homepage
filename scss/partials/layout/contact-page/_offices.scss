@@ -4,16 +4,81 @@
     align-items: center;
     background-color: $NMgrey;
 
+    #titleContents {
+        display: flex;
+        align-items: center;
+
+        @include mq("xs") {
+            margin-left: 0;
+            padding-left: 7px;
+        }
+
+        @include mq("m") {
+            margin-left: auto;
+            padding-left: 15px;
+        }
+    }
+
+    .desktopFormat {
+        display: none;
+
+        @include mq("l") {
+            display: block;
+            font-size: 0.9rem;
+            color: black;
+        }
+    }
+
+    @include mq("l") {
+        background-color: transparent;
+        height: 45.56px;
+        box-shadow: 0 5px 35px rgba(0, 0, 0, .1);
+    }
+
     h2 {
         font-size: 2.4rem;
         font-weight: 400;
         color: white;
+
+        @include mq("l") {
+            font-size: 0.85rem;
+            color: black;
+
+            &:nth-of-type(1) {
+                margin-right: 10px;
+                margin-left: 30px;
+                font-weight: 600;
+
+                &:hover {
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+            }
+
+            &:nth-of-type(3) {
+                padding-left: 0;
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+#desktopTitle {
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin-left: 25px;
+    margin-top: 50px;
+    margin-bottom: 5px;
+    color: #333645;
+    display: none;
+
+    @include mq("l") {
+        display: block;
     }
 }
 
 #officeCardSection {
     margin-top: 80px;
-    // width: 340px;
 
     #officeCardContainer {
         display: flex;
@@ -81,6 +146,7 @@
                     object-fit: cover;
                     border-top-left-radius: 18px;
                     border-top-right-radius: 18px;
+                    display: block;
                 }
             }
 
@@ -101,7 +167,12 @@
             h3 {
                 font-size: 1.25rem;
                 font-weight: 400;
-                margin-top: 0; 
+                margin-top: 0;
+
+                &:hover {
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
             }
 
             p {
@@ -130,6 +201,14 @@
                     color: $NMpuples;
                     font-size: 1.5rem;
                     font-weight: 700;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+
+                    &:nth-of-type(1):hover {
+                        text-decoration: underline;
+                    }
                     
                     @include mq("m") {
                         font-size: 1.65rem;
@@ -147,6 +226,10 @@
                     width: 144.03px;
                     text-align: center;
                     border-radius: 3px;
+
+                    &:hover {
+                        background-color: $darkPurpleHover;
+                    }
                 }
         }
 
