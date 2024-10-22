@@ -48,7 +48,7 @@ const cookieMessage = () => {
 }
 
 const hideCookieMessageIfLocal = () => {
-    if (window.location.protocol === 'file:') {
+    if (window.location.protocol === 'file:' || window.location.hostname === 'localhost') {
         handleLocalStorage();
     } else {
         cookieMessage();
@@ -63,7 +63,7 @@ cookieButton.addEventListener("click", () => {
     overlay.style.display = "none";
     overlay.style.opacity = "0";
     setCookie("cookie", true); 
-    if (window.location.protocol === 'file:') {
+    if (window.location.protocol === 'file:' || window.location.hostname === 'localhost') {
         localStorage.setItem("cookieAccepted", "true");
         console.log("Cookie accepted and stored in localStorage");
     } else {

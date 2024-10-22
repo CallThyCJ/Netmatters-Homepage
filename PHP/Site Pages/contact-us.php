@@ -19,6 +19,13 @@
 
 <body>
 
+<div id="overlay"></div>
+
+    <!-- Cookies -->
+    <?php
+        include "../Includes/cookies.php";
+    ?>
+
     <!-- NAVIGATION -->
 
     <?php
@@ -221,8 +228,11 @@
     ?>
 
 
+<script src="../../JS/cookies.js"></script>
 <script src="../../JS/contactPage/formAccordion.js"></script>
 <script src="../../JS/contactPage/formSubmission.js"></script>
+<script src="../../JS/sideMenu.js"></script>
+<script src="../../JS/stickyNavBar.js"></script>
 
 </body>
 </html>
