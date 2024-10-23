@@ -3,6 +3,7 @@ const navBar = document.querySelector(".mainNavBar");
 const navBarPos = document.querySelector(".mainNavBarPosition");
 const scrollUp = document.querySelector(".scrollUp");
 const scrollUpNavBar = document.querySelector(".scrollUpNavBar");
+const netmattersLogo = document.querySelector("#homeNetmattersLogo");
 let lastScroll = 0;
 const scrollLimit = 217;
 
@@ -30,6 +31,16 @@ window.addEventListener("scroll", () => {
     lastScroll = currentScroll;
 
 });
+
+// Logo home navigation
+
+netmattersLogo.addEventListener("click", () => {
+    const homePage = "https://netmatters.celestin-jacobs.netmatters-scs.co.uk/" 
+
+    window.location.href = homePage;
+})
+
+
 
 // function navBarMove() {
 //     if (sideMenuOpen === true && window.getComputedStyle(sideMenu).display === "flex") {

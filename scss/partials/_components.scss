@@ -172,6 +172,10 @@ a {
     }
 }
 
+#homeNetmattersLogo:hover {
+    cursor: pointer;
+}
+
 .lDeviceSearchBar {
     grid-area: searchBar;
     @include mq("xs") {

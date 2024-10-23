@@ -1,24 +1,24 @@
 <div class="infoSection poppins-light">
             <div class="smSectionContainer globalContainer">
                 <div id="smLeftSide">
-                <img src="../../Assets/Netmatters logo white.png" alt="Netmatters logo white" id="whiteNetmattersLogo">
+                <img src="/Assets/Netmatters logo white.png" alt="Netmatters logo white" id="whiteNetmattersLogo">
                 <div class="socialMedia">
                     <H3>FOLLOW US ON:</H3>
                         <div id="socialButtonContainer">
                             <button type="button" class="socials darkButton clickable" id="facebook">
-                                <img src="../../Assets/facebook.png" alt="facebook logo">
+                                <img src="/Assets/facebook.png" alt="facebook logo">
                                 <a href="https://www.facebook.com/netmatters/"></a>
                             </button>
                             <button type="button" class="socials darkButton clickable" id="Linkedin">
-                                <img src="../../Assets/Linkedin logo.png" alt="Linkedin logo">
+                                <img src="/Assets/Linkedin logo.png" alt="Linkedin logo">
                                 <a href="https://www.linkedin.com/company/netmatters-ltd/"></a>
                             </button>
                             <button type="button" class="socials darkButton clickable" id="X">
-                                <img src="../../Assets/X logo.png" alt="X logo">
+                                <img src="/Assets/X logo.png" alt="X logo">
                                 <a href="https://x.com/netmattersltd"></a>
                             </button>
                             <button type="button" class="socials darkButton clickable" id="Instagram">
-                                <img src="../../Assets/instagram logo.png" alt="Instagram logo">
+                                <img src="/Assets/instagram logo.png" alt="Instagram logo">
                                 <a href="https://www.instagram.com/netmattersltd/"></a>
                             </button>
                         </div>
