@@ -102,4 +102,8 @@
     top: 100%;
     padding-top: 30px;
     padding-bottom: 30px;
+
+    a h4:hover {
+        text-decoration: underline;
+    }
 }
