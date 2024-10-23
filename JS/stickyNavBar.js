@@ -4,6 +4,7 @@ const navBarPos = document.querySelector(".mainNavBarPosition");
 const scrollUp = document.querySelector(".scrollUp");
 const scrollUpNavBar = document.querySelector(".scrollUpNavBar");
 const netmattersLogo = document.querySelector("#homeNetmattersLogo");
+const contactButton = document.querySelector("#contact");
 let lastScroll = 0;
 const scrollLimit = 217;
 
@@ -38,24 +39,8 @@ netmattersLogo.addEventListener("click", () => {
     const homePage = "https://netmatters.celestin-jacobs.netmatters-scs.co.uk/" 
 
     window.location.href = homePage;
-})
+});
 
-
-
-// function navBarMove() {
-//     if (sideMenuOpen === true && window.getComputedStyle(sideMenu).display === "flex") {
-//         scrollUp.style.left = "-350px";
-//         scrollUpNavBar.style.left = "-350px";
-//         console.log("I AM BEING CALLED");
-//     } else if (sideMenuOpen === true && window.getComputedStyle(sideMenu).display !== "flex")
-//         scrollUp.style.left = "-275px";
-//         scrollUpNavBar.style.left = "-275px";
-// }
-
-// function navBarMoveBack() {
-//     if (sideMenuOpen === false) {
-//         scrollUp.style.left = "0";
-//         scrollUpNavBar.style.left = "0";
-//         console.log("MOVE BACK");
-//     } 
-// }
+contactButton.addEventListener("click", () => {
+    window.location.href = "https://netmatters.celestin-jacobs.netmatters-scs.co.uk/PHP/Site%20Pages/contact-us.php";
+});

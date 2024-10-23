@@ -8,5 +8,8 @@ function toggleAccordion() {
 
 accordionToggleButton.addEventListener("click", toggleAccordion);
 
-accordionTitle.addEventListener("click", toggleAccordion);
+accordionTitle.addEventListener("click", function() {
+    toggleAccordion(); 
+    accordionTitle.classList.toggle("active");
+});
 

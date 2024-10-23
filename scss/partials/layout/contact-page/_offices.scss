@@ -97,6 +97,7 @@
             min-height: 456.11px;
             max-height: 651px;
             min-width: 310px;
+            box-shadow: 0 3px 35px rgba(0, 0, 0, .1);
 
             @include mq("m") {
                 height: 643px;
@@ -193,8 +194,17 @@
                 border: 1px solid #cfcfcf;
                 border-top: none;
 
-                @include mq("l") {
+                @include mq("m") {
                     padding-top: 0;
+                    padding-bottom: 15px;
+                }
+
+                @include mq("l") {
+                    padding-bottom: 34px;
+                }
+
+                @include mq("xl") {
+                    padding-bottom: 26px;
                 }
                 
                 a {

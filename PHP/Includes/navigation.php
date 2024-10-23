@@ -3,7 +3,7 @@
  <header id="mainHeader">
  <div id="titleContainer">
   <div class="titleBar">
-      <img src="/Assets/Netmatters logo.png" alt="Netmatters Logo" class="titleItems" id="homeNetmattersLogo">
+      <img src="/Assets/Netmatters logo.png" alt="Netmatters Logo" style="cursor: pointer;" class="titleItems" id="homeNetmattersLogo">
       <img src="/Assets/phone.png" alt="phone icon" class="titleItems" id="phoneIcon">
       <button type="button" id="support" class="blueButton clickable">
           <img src="/Assets/mouse.png" alt="mouse icon" id="mouseIcon">
