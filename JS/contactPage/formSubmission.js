@@ -1,9 +1,15 @@
 // Tick box
 const tickbox = document.querySelector(".tickBox");
+const privacyText = document.querySelector("#privacyText");
 
-tickbox.addEventListener("click", function() {
+function toggleTickBox() {
     tickbox.classList.toggle("ticked");
-});
+}
+
+tickbox.addEventListener("click", toggleTickBox);
+
+privacyText.addEventListener("click", toggleTickBox);
+
 
 
 // Form Submission

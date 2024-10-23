@@ -199,7 +199,7 @@
 
             <div class="privacyConfirmation">
                 <span class="tickBox"></span>
-                <p>Please tick this box if you wish to receive marketing information from us. Please see our <em>Privacy Policy</em> for more information on how we keep your data safe.</p>
+                <p id="privacyText">Please tick this box if you wish to receive marketing information from us. Please see our <em>Privacy Policy</em> for more information on how we keep your data safe.</p>
             </div>
 
             <p>This site is protected by reCAPTCHA and Google <em>Privacy Policy</em> and <em>Terms of Service</em> apply.</p>
