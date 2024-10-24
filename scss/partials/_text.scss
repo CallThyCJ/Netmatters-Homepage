@@ -324,18 +324,24 @@ button {
 
 .smSectionContainer h3 {
     font-weight: 400;
+    font-size: 1rem;
 }
 
 .biggerDeviceSiteLinks h3 {
+    margin-bottom: 29px;
+    font-size: 1rem;
+    
     @include mq("l") {
         font-size: 0.94rem;
     }
 }
 
 .netmattersLinks {
-    @include mq("l") {
         font-size: 0.85rem;
-    }
+
+        a {
+            margin-bottom: 7px;
+        }
 }
 
 
