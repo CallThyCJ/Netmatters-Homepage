@@ -937,16 +937,18 @@ a {
 .midSection h3 {
     margin-top: 9%;
     @include mq("l") {
-        margin-bottom: 10%;
+        margin-bottom: 33px;
     }
 }
 
 .midSection button {
     @include mq("l") {
-        margin-top: 18%;
+        margin-top: 56px;
+        margin-bottom: 30px;
     }
     @include mq("xl") {
         margin-top: 8%;
+        margin-bottom: 10px;
     }
 }
 
