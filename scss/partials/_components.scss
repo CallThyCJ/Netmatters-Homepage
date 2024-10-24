@@ -534,11 +534,12 @@ a {
     @include mq("m") {
         width: 720px;
         height: 270px;
+        margin-bottom: 0;
     }
 
     @include mq("l") {
-        min-width: 294px;
-        width: 294px;
+        min-width: 293.33px;
+        width: 293.33px;
         height: 337px;
         max-height: 337px;
         margin-bottom: 26px;
@@ -549,7 +550,7 @@ a {
         width: 370px;
         height: 315px;
         margin-top: -6%;
-        margin-bottom: 16px;
+        margin-bottom: 23px;
     }
 }
 
@@ -560,6 +561,8 @@ a {
     @include mq("m") {
         width: 345px;
         height: 292px;
+        min-width: 345px;
+        margin-bottom: 0;
     }
 
     @include mq("l") {

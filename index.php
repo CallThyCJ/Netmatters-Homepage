@@ -231,7 +231,7 @@
                 </div>
                     <p id="clientQoute" class="bold italic">Netmatters stood out from the start. Great guys and very easy to work with. Both the build and digital marketing teams are clearly skilled -they know their stuff! They delivered a website to our (high!) expectations and went over and above to ensure we were satisfied clients - and we are!</p>
                     <div id="clintInfo">
-                        <p id="client">Eleanor Bishop, Head of Marketing - <em class="bold">Ashcroft Partnership LLP</em></p>
+                        <p id="client"><em>Eleanor Bishop</em>, Head of Marketing - <em class="bold">Ashcroft Partnership LLP</em></p>
                     </div>
                 <div id="rightButtons" class="welcomeButtons">
                     <button id="googleButton" class="blueButton clickable">Google Reviews
