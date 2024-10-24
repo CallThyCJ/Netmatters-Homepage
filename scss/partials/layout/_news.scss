@@ -1,6 +1,7 @@
 #newsTitleContainer {
     display: flex;
     justify-content: flex-start;
+    margin-bottom: 25px;
     @include mq("s") {
         justify-content: flex-start;
     }
@@ -40,6 +41,7 @@
     @include mq("l") {
         gap: 30px;
         width: 100%;
+        max-height: 660px;
     }
     @include mq("xl") {
         flex-wrap: nowrap;

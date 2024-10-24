@@ -219,7 +219,12 @@ button {
 
 #client em {
     color: white;
-    font-style: normal;   
+    font-style: normal;
+    
+    &:nth-of-type(1) {
+        color: #a3a8ac;
+        font-weight: 500;
+    }
 }
 
 #clintInfo {
