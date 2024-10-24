@@ -3,24 +3,24 @@
  <header id="mainHeader">
  <div id="titleContainer">
   <div class="titleBar">
-      <img src="/Assets/Netmatters logo.png" alt="Netmatters Logo" style="cursor: pointer;" class="titleItems" id="homeNetmattersLogo">
-      <img src="/Assets/phone.png" alt="phone icon" class="titleItems" id="phoneIcon">
+      <img src="/Netmatters homepage/Netmatters-Homepage/Assets/Netmatters logo.png" alt="Netmatters Logo" style="cursor: pointer;" class="titleItems" id="homeNetmattersLogo">
+      <img src="/Netmatters homepage/Netmatters-Homepage/Assets/phone.png" alt="phone icon" class="titleItems" id="phoneIcon">
       <button type="button" id="support" class="blueButton clickable">
-          <img src="/Assets/mouse.png" alt="mouse icon" id="mouseIcon">
+          <img src="/Netmatters homepage/Netmatters-Homepage/Assets/mouse.png" alt="mouse icon" id="mouseIcon">
           SUPPORT
       </button>
       <button type="button" id="contact" class="greyButton clickable">
-          <img src="/Assets/paper airplane.png" alt="airplane icon" id="contactIcon">
-          <img src="/Assets/paper airplane white.png" alt="white airplane icon" id="whiteContactIcon">
+          <img src="/Netmatters homepage/Netmatters-Homepage/Assets/paper airplane.png" alt="airplane icon" id="contactIcon">
+          <img src="/Netmatters homepage/Netmatters-Homepage/Assets/paper airplane white.png" alt="white airplane icon" id="whiteContactIcon">
           CONTACT
       </button>
       <button type="button" id="searchButton" class="greyButton clickable">
-          <img src="/Assets/white search.png" alt="white search icon">
+          <img src="/Netmatters homepage/Netmatters-Homepage/Assets/white search.png" alt="white search icon">
       </button>
       <div class="lDeviceSearchBar">
           <input type="search" id="lSearchBar" name="lSearchBar" placeholder="Search...">
           <button type="submit" id="lSearchIcon" class="clickable">
-              <img src="/Assets/white search.png" alt="white search icon" id="whiteMagGlass">
+              <img src="/Netmatters homepage/Netmatters-Homepage/Assets/white search.png" alt="white search icon" id="whiteMagGlass">
           </button> 
       </div>
       <button type="button" class="titleItems clickable" id="burgerMenuButton">
@@ -31,7 +31,7 @@
   <div class="searchBar">
           <input type="search" id="mainSearchBar" name="mainSearchBar" placeholder="Search..."> 
           <button type="submit" id="searchIcon" class="clickable">
-              <img src="/Assets/search.png" alt="searchIcon">
+              <img src="/Netmatters homepage/Netmatters-Homepage/Assets/search.png" alt="searchIcon">
           </button> 
   </div>   
 </header>
@@ -42,8 +42,8 @@
         <div class="mainNavBar mainNavBarPosition" id="masterNavBar">
             <div class="navOptions">
                 <button type="button" class="navItem clickable" id="optionBespoke">
-                    <img src="/Assets/Bespoke Software Logo transparent.png" alt="Bespoke Software Logo" id="navBespokeLogo">
-                    <img src="/Assets/Bespoke Software Logo white transparent.png" alt="White Bespoke Software Logo" id="navBespokeLogoWhite" class="hide">
+                    <img src="/Netmatters homepage/Netmatters-Homepage/Assets/Bespoke Software Logo transparent.png" alt="Bespoke Software Logo" id="navBespokeLogo">
+                    <img src="/Netmatters homepage/Netmatters-Homepage/Assets/Bespoke Software Logo white transparent.png" alt="White Bespoke Software Logo" id="navBespokeLogoWhite" class="hide">
                     <p class="navTitleSmall">BESPOKE</p>
                     <P class="navTitleBottom">SOFTWARE</P>
 
@@ -111,8 +111,8 @@
 
 
                 <button type="button" class="navItem clickable" id="optionSupport">
-                    <img src="/Assets/IT Support Logo transparent.png" alt="IT Support Logo" id="navSupportLogo">
-                    <img src="/Assets/IT Support Logo white transparent.png" alt="White IT Support Logo" id="navSupportLogoWhite" class="hide">
+                    <img src="/Netmatters homepage/Netmatters-Homepage/Assets/IT Support Logo transparent.png" alt="IT Support Logo" id="navSupportLogo">
+                    <img src="/Netmatters homepage/Netmatters-Homepage/Assets/IT Support Logo white transparent.png" alt="White IT Support Logo" id="navSupportLogoWhite" class="hide">
                     <p class="navTitleSmall">IT</p>
                     <P class="navTitleBottom">SUPPORT</P>
 
@@ -156,8 +156,8 @@
 
 
                 <button type="button" class="navItem clickable" id="optionMarketing">
-                    <img src="/Assets/Digital Marketing Logo transparent.png" alt="Digital Marketing Logo" id="navMarketingLogo">
-                    <img src="/Assets/Digital Marketing Logo white transparent.png" alt="White Digital Marketing Logo" id="navMarketingLogoWhite" class="hide">
+                    <img src="/Netmatters homepage/Netmatters-Homepage/Assets/Digital Marketing Logo transparent.png" alt="Digital Marketing Logo" id="navMarketingLogo">
+                    <img src="/Netmatters homepage/Netmatters-Homepage/Assets/Digital Marketing Logo white transparent.png" alt="White Digital Marketing Logo" id="navMarketingLogoWhite" class="hide">
                     <p class="navTitleSmall">DIGITAL</p>
                     <P class="navTitleBottom">Marketing</P>
 
@@ -200,8 +200,8 @@
 
 
                 <button type="button" class="navItem clickable" id="optionTelecom">
-                    <img src="/Assets/Telecom Services Logo transparent.png" alt="Telecom Services Logo" id="navTelecomLogo">
-                    <img src="/Assets/Telecom Services Logo white transparent.png" alt="White Telecom Services Logo" id="navTelecomLogoWhite" class="hide">
+                    <img src="/Netmatters homepage/Netmatters-Homepage/Assets/Telecom Services Logo transparent.png" alt="Telecom Services Logo" id="navTelecomLogo">
+                    <img src="/Netmatters homepage/Netmatters-Homepage/Assets/Telecom Services Logo white transparent.png" alt="White Telecom Services Logo" id="navTelecomLogoWhite" class="hide">
                     <p class="navTitleSmall">TELECOM</p>
                     <P class="navTitleBottom">SERVICES</P>
 
@@ -243,8 +243,8 @@
                 </button>
                 
                 <button type="button" class="navItem clickable" id="optionDesign">
-                    <img src="/Assets/Web Design Logo transparent.png" alt="Web Design Logo" id="navDesignLogo">
-                    <img src="/Assets/Web Design Logo white transparent.png" alt="White Web Design Logo" id="navDesignLogoWhite" class="hide">
+                    <img src="/Netmatters homepage/Netmatters-Homepage/Assets/Web Design Logo transparent.png" alt="Web Design Logo" id="navDesignLogo">
+                    <img src="/Netmatters homepage/Netmatters-Homepage/Assets/Web Design Logo white transparent.png" alt="White Web Design Logo" id="navDesignLogoWhite" class="hide">
                     <p class="navTitleSmall">WEB</p>
                     <P class="navTitleBottom">DESIGN</P>
 
@@ -287,8 +287,8 @@
 
 
                 <button type="button" class="navItem clickable" id="optionSecurity">
-                    <img src="/Assets/Cyber Security Logo transparent.png" alt="Cyber Security Logo" id="navCyberLogo">
-                    <img src="/Assets/Cyber Security Logo white transparent.png" alt="White Cyber Security Logo" id="navCyberLogoWhite" class="hide">
+                    <img src="/Netmatters homepage/Netmatters-Homepage/Assets/Cyber Security Logo transparent.png" alt="Cyber Security Logo" id="navCyberLogo">
+                    <img src="/Netmatters homepage/Netmatters-Homepage/Assets/Cyber Security Logo white transparent.png" alt="White Cyber Security Logo" id="navCyberLogoWhite" class="hide">
                     <p class="navTitleSmall">CYBER</p>
                     <P class="navTitleBottom">SECURITY</P>
 
@@ -331,8 +331,8 @@
 
 
                 <button type="button" class="navItem clickable" id="optionDev">
-                    <img src="/Assets/Developer Logo transparent.png" alt="Developer Course Logo" id="navDevLogo">
-                    <img src="/Assets/Developer Logo white transparent.png" alt="White Developer Course Logo" id="navDevLogoWhite" class="hide">
+                    <img src="/Netmatters homepage/Netmatters-Homepage/Assets/Developer Logo transparent.png" alt="Developer Course Logo" id="navDevLogo">
+                    <img src="/Netmatters homepage/Netmatters-Homepage/Assets/Developer Logo white transparent.png" alt="White Developer Course Logo" id="navDevLogoWhite" class="hide">
                     <p class="navTitleSmall">DEVELOPER</p>
                     <P class="navTitleBottom">COURSE</P>
 
