@@ -451,6 +451,10 @@ a {
 
 .sliderButtonContainer button.active {
     opacity: 100%;
+
+    &:hover {
+        background-color: white;
+    }
 }
 
 .sliderButtonContainer button.active::after {
@@ -459,6 +463,7 @@ a {
 
 .sliderButton:hover {
     cursor: pointer;
+    background-color: #869791;
 }
 
 // OUR SERVICES SECTION
