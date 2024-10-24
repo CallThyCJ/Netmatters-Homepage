@@ -156,10 +156,17 @@ a {
         max-width: 298.59px;
     }
     @include mq("s") {
-        min-height: 50.06px;
-        min-width: 282px;
-        max-height: 50.06px;
-        max-width: 282px;
+        min-height: 0;
+        min-width: 0;
+        max-height: none;
+        max-width: none;
+        height: auto;
+        width: auto;
+    }
+    @media screen and (min-width: 562px) {
+        max-width: 402px;
+        width: 402px;
+        height: 70px;
     }
     @include mq("m") {
         grid-area: logo;
@@ -219,6 +226,7 @@ a {
         min-height: 56px;
         width: 63px;
         height: 56px;
+        flex-grow: 0;
     }
     @include mq("m") {
         max-width: 0;
