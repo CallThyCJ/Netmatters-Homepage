@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -118,7 +118,7 @@
 
                <div class="item item-2 clickable">
                     <img src="Assets/ITSupportLogo.png" alt="IT Support Logo" id="itLogo">
-                    <img src="Assets/ITSupportLogo hover.png" alt="IT Support Logo" id="itLogoHover" class="hide">
+                    <img src="Assets/ITSupportLogohover.png" alt="IT Support Logo" id="itLogoHover" class="hide">
                     <h3>IT Support</h3>
                     <p>Fully managed IT support and consultancy packages tailored to meet your exact business needs.</p>
                     <button type="button" class="tagButton blueButton" id="itButton">Read More</button>
@@ -170,7 +170,7 @@
             </div>
             <div class="ourWork clickable">
                 <h2>View Our Work</h2>
-                <i class="fa-solid fa-arrow-right" id="arrowRight"></i>
+                <i class="fa-solid fa-arrow-right arrowRight"></i>
             </div>
         </div>
 
@@ -207,10 +207,10 @@
                 <p id="wPara3">We pride ourselves on being an ethical business and have a unique business offering and cost model that ensures you get the most from our relationship in an upfront manner.</p>
                 <div id="leftButtons" class="welcomeButtons">
                     <button type="button" class="darkButton clickable" id="chooseUs">Why Choose Us
-                            <i class="fa-solid fa-arrow-right" id="arrowRight"></i>
+                            <i class="fa-solid fa-arrow-right arrowRight"></i>
                     </button>
                     <button type="button" class="darkButton clickable" id="cultureButton">Our Culture
-                            <i class="fa-solid fa-arrow-right" id="arrowRight"></i>
+                            <i class="fa-solid fa-arrow-right arrowRight"></i>
                     </button>
                 </div>
             </div>
@@ -236,10 +236,10 @@
                     </div>
                 <div id="rightButtons" class="welcomeButtons">
                     <button id="googleButton" class="blueButton clickable">Google Reviews
-                            <i class="fa-solid fa-arrow-right" id="arrowRight"></i>
+                            <i class="fa-solid fa-arrow-right arrowRight"></i>
                     </button>
                     <button id="trustButton" class="darkGreenButton clickable">Trustpilot Reviews
-                            <i class="fa-solid fa-arrow-right" id="arrowRight"></i>
+                            <i class="fa-solid fa-arrow-right arrowRight"></i>
                     </button>
                 </div>
             </div>
@@ -273,7 +273,7 @@
             <div class="newsTitle">
                 <h1>Latest News</h1>
                 <H2 class="biggerDevice">View All
-                    <i class="fa-solid fa-arrow-right" id="arrowRight"></i>
+                    <i class="fa-solid fa-arrow-right arrowRight"></i>
                 </H2>
             </div>    
             </div>
@@ -294,7 +294,7 @@
                                             <button type="button" class="redButton">Read More</button>
                                         </div>
                                         <div class="bottomSection">
-                                            <img src="Assets/netmatters mini logo.png" alt="Netmatters no text logo">
+                                            <img src="Assets/netmattersminilogo.png" alt="Netmatters no text logo">
                                             <div class="postDate">
                                                 <p class="postedBy">Posted by ' . htmlspecialchars($row['author']) . '</p>
                                                 <p>' . date("jS F Y", strtotime($row['post_date'])) . '</p>
@@ -312,7 +312,7 @@
 
 
             <H2 class="mobileOnly">View All
-                <i class="fa-solid fa-arrow-right" id="arrowRight"></i>
+                <i class="fa-solid fa-arrow-right arrowRight"></i>
             </H2>
 
         </div>
@@ -325,7 +325,7 @@
                         <h3>Black Swan Care Group</h3>
                         <p>Black Swan Care Group own and manage 21 high-quality care and residential homes with a focus on putting the needs of their residents first.</p>
                         <a href="" class="accreditationsButton">VIEW OUR CASE STUDY
-                            <i class="fa-solid fa-arrow-right" id="arrowRight"></i>
+                            <i class="fa-solid fa-arrow-right arrowRight"></i>
                         </a>
                     </div>
                 </div>
@@ -350,7 +350,7 @@
                         <h3>Girl Guiding Anglia</h3>
                         <p>Girl Guiding Anglia is part of Girlguiding, the UK's leading charity for girls and young women in the UK.</p>
                         <a href="" class="accreditationsButton">VIEW OUR CASE STUDY
-                            <i class="fa-solid fa-arrow-right" id="arrowRight"></i>
+                            <i class="fa-solid fa-arrow-right arrowRight"></i>
                         </a>
                     </div>
                 </div>
@@ -364,7 +364,7 @@
                         <h3>Ashcroft Partnership LLP</h3>
                         <p>Originally founded in 2006 as Ashcroft Anthony, they became Ashcroft Partnetship LLP in 2020 and are one of the top chartered accountancy firms in cambridge, advising entrepreneurs and families.</p>
                         <a href="" class="accreditationsButton">VIEW OUR CASE STUDY
-                            <i class="fa-solid fa-arrow-right" id="arrowRight"></i>
+                            <i class="fa-solid fa-arrow-right arrowRight"></i>
                         </a>
                     </div>
                 </div>
@@ -400,7 +400,7 @@
                         <h3>GDST</h3>
                         <p>The <em>Girls' Day School Trust (GDST)</em> is the UK's leading family of 25 independent girls' schools.</p>
                         <a href="" class="accreditationsButton">VIEW OUR CASE STUDY
-                            <i class="fa-solid fa-arrow-right" id="arrowRight"></i>
+                            <i class="fa-solid fa-arrow-right arrowRight"></i>
                         </a>
                     </div>
                 </div>
@@ -424,7 +424,7 @@
                         <h3>One Traveller</h3>
                         <p><em>One Traveller</em>, founded in 2007, is a leading provider of solo holidays for over 50s.</p>
                         <a href="" class="accreditationsButton">VIEW OUR CASE STUDY
-                            <i class="fa-solid fa-arrow-right" id="arrowRight"></i>
+                            <i class="fa-solid fa-arrow-right arrowRight"></i>
                         </a>
                     </div>
                 </div>
@@ -438,7 +438,7 @@
                         <h3>Searles Leisure Resort</h3>
                         <p>Searles Leisure Resort, on the beautiful North Norfolk coast, is an award-winning UK holiday resport for families.</p>
                         <a href="" class="accreditationsButton">VIEW OUR CASE STUDY
-                            <i class="fa-solid fa-arrow-right" id="arrowRight"></i>
+                            <i class="fa-solid fa-arrow-right arrowRight"></i>
                         </a>
                     </div>
                 </div>
@@ -462,7 +462,7 @@
                         <h3>Sweetzy</h3>
                         <p>Sweetzy are an online sweets retailer, based in Wymondham.</p>
                         <a href="" class="accreditationsButton">VIEW OUR CASE STUDY
-                            <i class="fa-solid fa-arrow-right" id="arrowRight"></i>
+                            <i class="fa-solid fa-arrow-right arrowRight"></i>
                         </a>
                     </div>
                 </div>
@@ -487,10 +487,15 @@
             require "PHP/Includes/siteLinks.php";
         ?>
 
-        </div>
     </div>
 
-</div> 
+</div>
+
+<!-- COPYRIGHT SECTION -->
+
+<?php
+    require "PHP/Includes/footer.php";
+?>
 
 <script src="JS/cookies.js"></script>
 <script src="JS/bannerSlider.js"></script>
@@ -501,10 +506,4 @@
 <script src="JS/newsContainerLimit.js"></script>
 
 </body>
-
-<!-- COPYRIGHT SECTION -->
-
-<?php
-    require "PHP/Includes/footer.php";
-?>
 </html>

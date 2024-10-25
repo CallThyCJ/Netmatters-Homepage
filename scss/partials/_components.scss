@@ -1006,8 +1006,9 @@ a {
     padding-left: 3%;
 }
 
-.socialMedia button {
+.socialMedia div {
     border-radius: 0;
+    display: flex;
     @include mq("xs") {
         width: 109.56px;
         height: 56px;
@@ -1022,7 +1023,8 @@ a {
     }
 }
 
-.socialMedia button img {
+.socialMedia div img {
+    margin: auto;
     @include mq("s") {
         height: 26px;
     }

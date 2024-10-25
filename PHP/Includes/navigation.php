@@ -3,24 +3,24 @@
  <header id="mainHeader">
  <div id="titleContainer">
   <div class="titleBar">
-      <img src="/Netmatters homepage/Netmatters-Homepage/Assets/NetmattersLogo.png" alt="Netmatters Logo" style="cursor: pointer;" class="titleItems" id="homeNetmattersLogo">
-      <img src="/Netmatters homepage/Netmatters-Homepage/Assets/phone.png" alt="phone icon" class="titleItems" id="phoneIcon">
+      <img src="/Assets/NetmattersLogo.png" alt="Netmatters Logo" style="cursor: pointer;" class="titleItems" id="homeNetmattersLogo">
+      <img src="/Assets/phone.png" alt="phone icon" class="titleItems" id="phoneIcon">
       <button type="button" id="support" class="blueButton clickable">
-          <img src="/Netmatters homepage/Netmatters-Homepage/Assets/mouse.png" alt="mouse icon" id="mouseIcon">
+          <img src="/Assets/mouse.png" alt="mouse icon" id="mouseIcon">
           SUPPORT
       </button>
       <button type="button" id="contact" class="greyButton clickable">
-          <img src="/Netmatters homepage/Netmatters-Homepage/Assets/paperairplane.png" alt="airplane icon" id="contactIcon">
-          <img src="/Netmatters homepage/Netmatters-Homepage/Assets/paperairplanewhite.png" alt="white airplane icon" id="whiteContactIcon">
+          <img src="/Assets/paperairplane.png" alt="airplane icon" id="contactIcon">
+          <img src="/Assets/paperairplanewhite.png" alt="white airplane icon" id="whiteContactIcon">
           CONTACT
       </button>
       <button type="button" id="searchButton" class="greyButton clickable">
-          <img src="/Netmatters homepage/Netmatters-Homepage/Assets/whitesearch.png" alt="white search icon">
+          <img src="/Assets/whitesearch.png" alt="white search icon">
       </button>
       <div class="lDeviceSearchBar">
           <input type="search" id="lSearchBar" name="lSearchBar" placeholder="Search...">
           <button type="submit" id="lSearchIcon" class="clickable">
-              <img src="/Netmatters homepage/Netmatters-Homepage/Assets/whitesearch.png" alt="white search icon" id="whiteMagGlass">
+              <img src="/Assets/whitesearch.png" alt="white search icon" id="whiteMagGlass">
           </button> 
       </div>
       <button type="button" class="titleItems clickable" id="burgerMenuButton">
@@ -31,7 +31,7 @@
   <div class="searchBar">
           <input type="search" id="mainSearchBar" name="mainSearchBar" placeholder="Search..."> 
           <button type="submit" id="searchIcon" class="clickable">
-              <img src="/Netmatters homepage/Netmatters-Homepage/Assets/search.png" alt="searchIcon">
+              <img src="/Assets/search.png" alt="searchIcon">
           </button> 
   </div>   
 </header>
@@ -41,13 +41,13 @@
 <div id="bigContainer">
         <div class="mainNavBar mainNavBarPosition" id="masterNavBar">
             <div class="navOptions">
-                <button type="button" class="navItem clickable" id="optionBespoke">
-                    <img src="/Netmatters homepage/Netmatters-Homepage/Assets/BespokeSoftwareLogotransparent.png" alt="Bespoke Software Logo" id="navBespokeLogo">
-                    <img src="/Netmatters homepage/Netmatters-Homepage/Assets/BespokeSoftwareLogowhitetransparent.png" alt="White Bespoke Software Logo" id="navBespokeLogoWhite" class="hide">
+                <div class="navItem clickable" id="optionBespoke">
+                    <img src="/Assets/BespokeSoftwareLogotransparent.png" alt="Bespoke Software Logo" id="navBespokeLogo">
+                    <img src="/Assets/BespokeSoftwareLogowhitetransparent.png" alt="White Bespoke Software Logo" id="navBespokeLogoWhite" class="hide">
                     <span class="navTitleSmall">BESPOKE</span>
                     <span class="navTitleBottom">SOFTWARE</span>
 
-                    <span class="navSubMenuContainer">
+                    <div class="navSubMenuContainer">
                         <div class="navSubMenu">
                             <div class="subMenuOption" id="subBespoke">
                                 <div class="subMenuTitle">
@@ -105,14 +105,14 @@
                                 </div>    
                             </div> 
                         </div>
-                    </span>     
+                    </div>     
                     
-                </button>
+                </div>
 
 
-                <button type="button" class="navItem clickable" id="optionSupport">
-                    <img src="/Netmatters homepage/Netmatters-Homepage/Assets/ITSupportLogotransparent.png" alt="IT Support Logo" id="navSupportLogo">
-                    <img src="/Netmatters homepage/Netmatters-Homepage/Assets/ITSupportLogowhitetransparent.png" alt="White IT Support Logo" id="navSupportLogoWhite" class="hide">
+                <div class="navItem clickable" id="optionSupport">
+                    <img src="/Assets/ITSupportLogotransparent.png" alt="IT Support Logo" id="navSupportLogo">
+                    <img src="/Assets/ITSupportLogowhitetransparent.png" alt="White IT Support Logo" id="navSupportLogoWhite" class="hide">
                     <p class="navTitleSmall">IT</p>
                     <P class="navTitleBottom">SUPPORT</P>
 
@@ -152,12 +152,12 @@
 
                         </div>
                     </div>    
-                </button>
+                </div>
 
 
-                <button type="button" class="navItem clickable" id="optionMarketing">
-                    <img src="/Netmatters homepage/Netmatters-Homepage/Assets/DigitalMarketingLogotransparent.png" alt="Digital Marketing Logo" id="navMarketingLogo">
-                    <img src="/Netmatters homepage/Netmatters-Homepage/Assets/DigitalMarketingLogowhitetransparent.png" alt="White Digital Marketing Logo" id="navMarketingLogoWhite" class="hide">
+                <div class="navItem clickable" id="optionMarketing">
+                    <img src="/Assets/DigitalMarketingLogotransparent.png" alt="Digital Marketing Logo" id="navMarketingLogo">
+                    <img src="/Assets/DigitalMarketingLogowhitetransparent.png" alt="White Digital Marketing Logo" id="navMarketingLogoWhite" class="hide">
                     <p class="navTitleSmall">DIGITAL</p>
                     <P class="navTitleBottom">Marketing</P>
 
@@ -196,12 +196,12 @@
                             </div>
                         </div>
                     </div>  
-                </button>
+                </div>
 
 
-                <button type="button" class="navItem clickable" id="optionTelecom">
-                    <img src="/Netmatters homepage/Netmatters-Homepage/Assets/TelecomServicesLogotransparent.png" alt="Telecom Services Logo" id="navTelecomLogo">
-                    <img src="/Netmatters homepage/Netmatters-Homepage/Assets/TelecomServicesLogowhitetransparent.png" alt="White Telecom Services Logo" id="navTelecomLogoWhite" class="hide">
+                <div class="navItem clickable" id="optionTelecom">
+                    <img src="/Assets/TelecomServicesLogotransparent.png" alt="Telecom Services Logo" id="navTelecomLogo">
+                    <img src="/Assets/TelecomServicesLogowhitetransparent.png" alt="White Telecom Services Logo" id="navTelecomLogoWhite" class="hide">
                     <p class="navTitleSmall">TELECOM</p>
                     <P class="navTitleBottom">SERVICES</P>
 
@@ -240,11 +240,11 @@
                             </div>
                         </div>
                     </div>        
-                </button>
+                </div>
                 
-                <button type="button" class="navItem clickable" id="optionDesign">
-                    <img src="/Netmatters homepage/Netmatters-Homepage/Assets/WebDesignLogotransparent.png" alt="Web Design Logo" id="navDesignLogo">
-                    <img src="/Netmatters homepage/Netmatters-Homepage/Assets/WebDesignLogowhitetransparent.png" alt="White Web Design Logo" id="navDesignLogoWhite" class="hide">
+                <div class="navItem clickable" id="optionDesign">
+                    <img src="/Assets/WebDesignLogotransparent.png" alt="Web Design Logo" id="navDesignLogo">
+                    <img src="/Assets/WebDesignLogowhitetransparent.png" alt="White Web Design Logo" id="navDesignLogoWhite" class="hide">
                     <p class="navTitleSmall">WEB</p>
                     <P class="navTitleBottom">DESIGN</P>
 
@@ -283,12 +283,12 @@
                             </div>
                         </div>
                     </div>       
-                </button>
+                </div>
 
 
-                <button type="button" class="navItem clickable" id="optionSecurity">
-                    <img src="/Netmatters homepage/Netmatters-Homepage/Assets/CyberSecurityLogotransparent.png" alt="Cyber Security Logo" id="navCyberLogo">
-                    <img src="/Netmatters homepage/Netmatters-Homepage/Assets/CyberSecurityLogowhitetransparent.png" alt="White Cyber Security Logo" id="navCyberLogoWhite" class="hide">
+                <div class="navItem clickable" id="optionSecurity">
+                    <img src="/Assets/CyberSecurityLogotransparent.png" alt="Cyber Security Logo" id="navCyberLogo">
+                    <img src="/Assets/CyberSecurityLogowhitetransparent.png" alt="White Cyber Security Logo" id="navCyberLogoWhite" class="hide">
                     <p class="navTitleSmall">CYBER</p>
                     <P class="navTitleBottom">SECURITY</P>
 
@@ -327,45 +327,43 @@
                             </div>
                         </div>
                     </div>       
-                </button>
+                </div>
 
 
-                <button type="button" class="navItem clickable" id="optionDev">
-                    <img src="/Netmatters homepage/Netmatters-Homepage/Assets/DeveloperLogotransparent.png" alt="Developer Course Logo" id="navDevLogo">
-                    <img src="/Netmatters homepage/Netmatters-Homepage/Assets/DeveloperLogowhitetransparent.png" alt="White Developer Course Logo" id="navDevLogoWhite" class="hide">
+                <div class="navItem clickable" id="optionDev">
+                    <img src="/Assets/DeveloperLogotransparent.png" alt="Developer Course Logo" id="navDevLogo">
+                    <img src="/Assets/DeveloperLogowhitetransparent.png" alt="White Developer Course Logo" id="navDevLogoWhite" class="hide">
                     <p class="navTitleSmall">DEVELOPER</p>
                     <P class="navTitleBottom">COURSE</P>
 
-                <div class="navSubMenuContainer">
-                    <div class="navSubMenu">
-                        <div class="subMenuOption" id="subSecurity">
-                            <div class="subMenuOption" id="subDev">
-                                <div class="subMenuTitle">
-                                    <h2>Our Developer Course Services</h2>
+                    <div class="navSubMenuContainer">
+                        <div class="navSubMenu">    
+                                <div class="subMenuOption" id="subDev">
+                                    <div class="subMenuTitle">
+                                        <h2>Our Developer Course Services</h2>
+                                    </div>
+                                    <div class="subMenuLinks">
+                                        <a href="" class="subMenuLinkOption">
+                                            <i class="fa-solid fa-laptop"></i>
+                                            <h4>Train For A Career In Tech</h4>                                   
+                                        </a>
+                                        <a href="" class="subMenuLinkOption">
+                                            <i class="fa-solid fa-code"></i>
+                                            <h4>Skills Bootcamp</h4>                                   
+                                        </a>
+                                        <a href="" class="subMenuLinkOption">
+                                            <i class="fa-solid fa-circle-question"></i>
+                                            <h4>Scion Scheme Frequently Asked Questions</h4>                                   
+                                        </a>
+                                        <a href="" class="subMenuLinkOption">
+                                            <i class="fa-regular fa-handshake"></i>
+                                            <h4>Scion Collaborators</h4>                                   
+                                        </a>
+                                    </div>    
                                 </div>
-                                <div class="subMenuLinks">
-                                     <a href="" class="subMenuLinkOption">
-                                        <i class="fa-solid fa-laptop"></i>
-                                        <h4>Train For A Career In Tech</h4>                                   
-                                     </a>
-                                     <a href="" class="subMenuLinkOption">
-                                        <i class="fa-solid fa-code"></i>
-                                        <h4>Skills Bootcamp</h4>                                   
-                                     </a>
-                                     <a href="" class="subMenuLinkOption">
-                                        <i class="fa-solid fa-circle-question"></i>
-                                        <h4>Scion Scheme Frequently Asked Questions</h4>                                   
-                                     </a>
-                                     <a href="" class="subMenuLinkOption">
-                                        <i class="fa-regular fa-handshake"></i>
-                                        <h4>Scion Collaborators</h4>                                   
-                                     </a>
-                                </div>    
-                            </div>
                         </div>
-                    </div>
-                </div>        
-                </button>
+                    </div>        
+                </div>
 
 
             </div>
@@ -381,12 +379,12 @@
                 </div>
                 
                 <ul class="sideMenuBottomSection">
-                    <a href=""><li><i class="fa-solid fa-angles-right"></i>BESPOKE SOFTWARE</li></a>
-                    <a href=""><li><i class="fa-solid fa-angles-right"></i>IT SUPPORT</li></a>
-                    <a href=""><li><i class="fa-solid fa-angles-right"></i>DIGITAL MARKETING</li></a>
-                    <a href=""><li><i class="fa-solid fa-angles-right"></i>TELECOMS SERVICES</li></a>
-                    <a href=""><li><i class="fa-solid fa-angles-right"></i>WEB DESIGN</li></a>
-                    <a href=""><li><i class="fa-solid fa-angles-right"></i>CYBER SECURITY</li></a>
+                    <li><a href=""><i class="fa-solid fa-angles-right"></i>BESPOKE SOFTWARE</a></li>
+                    <li><a href=""><i class="fa-solid fa-angles-right"></i>IT SUPPORT</a></li>
+                    <li><a href=""><i class="fa-solid fa-angles-right"></i>DIGITAL MARKETING</a></li>
+                    <li><a href=""><i class="fa-solid fa-angles-right"></i>TELECOMS SERVICES</a></li>
+                    <li><a href=""><i class="fa-solid fa-angles-right"></i>WEB DESIGN</a></li>
+                    <li><a href=""><i class="fa-solid fa-angles-right"></i>CYBER SECURITY</a></li>
                 </ul>
             </div>
 
@@ -396,12 +394,12 @@
                 </div>
                 
                 <ul class="sideMenuBottomSection">
-                    <a href=""><li><i class="fa-solid fa-angles-right"></i>CASE STUDIES</li></a>
-                    <a href=""><li><i class="fa-solid fa-angles-right"></i>OUR DIGITAL MARKETING CLIENTS</li></a>
-                    <a href=""><li><i class="fa-solid fa-angles-right"></i>OUR WEBSITE CLIENTS</li></a>
-                    <a href=""><li><i class="fa-solid fa-angles-right"></i>OUR IT CLIENTS</li></a>
-                    <a href=""><li><i class="fa-solid fa-angles-right"></i>OUR BESPOKE SOFTWARE CLIENTS</li></a>
-                    <a href=""><li><i class="fa-solid fa-angles-right"></i>OUR TELECOMS CLIENTS</li></a>
+                    <li><a href=""><i class="fa-solid fa-angles-right"></i>CASE STUDIES</a></li>
+                    <li><a href=""><i class="fa-solid fa-angles-right"></i>OUR DIGITAL MARKETING CLIENTS</a></li>
+                    <li><a href=""><i class="fa-solid fa-angles-right"></i>OUR WEBSITE CLIENTS</a></li>
+                    <li><a href=""><i class="fa-solid fa-angles-right"></i>OUR IT CLIENTS</a></li>
+                    <li><a href=""><i class="fa-solid fa-angles-right"></i>OUR BESPOKE SOFTWARE CLIENTS</a></li>
+                    <li><a href=""><i class="fa-solid fa-angles-right"></i>OUR TELECOMS CLIENTS</a></li>
                 </ul>
             </div>
 
@@ -411,10 +409,10 @@
                 </div>
                 
                 <ul class="sideMenuBottomSection">
-                    <a href=""><li><i class="fa-solid fa-angles-right"></i>TECHNOLOGIES</li></a>
-                    <a href=""><li><i class="fa-solid fa-angles-right"></i>INDUSTRIES</li></a>
-                    <a href=""><li><i class="fa-solid fa-angles-right"></i>NEWS</li></a>
-                    <a href=""><li><i class="fa-solid fa-angles-right"></i>INSIGHTS</li></a>
+                    <li><a href=""><i class="fa-solid fa-angles-right"></i>TECHNOLOGIES</a></li>
+                    <li><a href=""><i class="fa-solid fa-angles-right"></i>INDUSTRIES</a></li>
+                    <li><a href=""><i class="fa-solid fa-angles-right"></i>NEWS</a></li>
+                    <li><a href=""><i class="fa-solid fa-angles-right"></i>INSIGHTS</a></li>
                 </ul>
             </div>
 
@@ -424,10 +422,10 @@
                 </div>
                 
                 <ul class="sideMenuBottomSection">
-                    <a href=""><li><i class="fa-solid fa-angles-right"></i>TRAIN FOR A CAREER IN TECH</li></a>
-                    <a href=""><li><i class="fa-solid fa-angles-right"></i>SKILLS BOOTCAMP</li></a>
-                    <a href=""><li><i class="fa-solid fa-angles-right"></i>SCS FREQUENTLY ASKED QUESTIONS</li></a>
-                    <a href=""><li><i class="fa-solid fa-angles-right"></i>SCION COLLABORATORS</li></a>
+                    <li><a href=""><i class="fa-solid fa-angles-right"></i>TRAIN FOR A CAREER IN TECH</a></li>
+                    <li><a href=""><i class="fa-solid fa-angles-right"></i>SKILLS BOOTCAMP</a></li>
+                    <li><a href=""><i class="fa-solid fa-angles-right"></i>SCS FREQUENTLY ASKED QUESTIONS</a></li>
+                    <li><a href=""><i class="fa-solid fa-angles-right"></i>SCION COLLABORATORS</a></li>
                 </ul>
             </div>
 
@@ -437,11 +435,11 @@
                 </div>
                 
                 <ul class="sideMenuBottomSection">
-                    <a href=""><li><i class="fa-solid fa-angles-right"></i>WHY CHOOSE US</li></a>
-                    <a href=""><li><i class="fa-solid fa-angles-right"></i>OUR CULTURE</li></a>
-                    <a href=""><li><i class="fa-solid fa-angles-right"></i>OUR TEAM</li></a>
-                    <a href=""><li><i class="fa-solid fa-angles-right"></i>OUR CAREERS</li></a>
-                    <a href=""><li><i class="fa-solid fa-angles-right"></i>OUR BENEFITS</li></a>
+                    <li><a href=""><i class="fa-solid fa-angles-right"></i>WHY CHOOSE US</a></li>
+                    <li><a href=""><i class="fa-solid fa-angles-right"></i>OUR CULTURE</a></li>
+                    <li><a href=""><i class="fa-solid fa-angles-right"></i>OUR TEAM</a></li>
+                    <li><a href=""><i class="fa-solid fa-angles-right"></i>OUR CAREERS</a></li>
+                    <li><a href=""><i class="fa-solid fa-angles-right"></i>OUR BENEFITS</a></li>
                 </ul>
             </div>
 
@@ -451,9 +449,9 @@
                 </div>
                 
                 <ul class="sideMenuBottomSection">
-                    <a href=""><li><i class="fa-solid fa-angles-right"></i>CAMBRIDGE OFFICE</li></a>
-                    <a href=""><li><i class="fa-solid fa-angles-right"></i>WYMONDHAM OFFICE</li></a>
-                    <a href=""><li><i class="fa-solid fa-angles-right"></i><h4>GREAT YARMOUTH OFFICE</h4></li></a>
+                    <li><a href=""><i class="fa-solid fa-angles-right"></i>CAMBRIDGE OFFICE</a></li>
+                    <li><a href=""><i class="fa-solid fa-angles-right"></i>WYMONDHAM OFFICE</a></li>
+                    <li><a href=""><i class="fa-solid fa-angles-right"></i><h4>GREAT YARMOUTH OFFICE</h4></a></li>
                 </ul>
             </div>
 
@@ -480,19 +478,19 @@
                 </div>
                 
                 <ul class="mobileSMenuBottomSection">
-                    <a href=""><li>BESPOKE CRM</li></a>
-                    <a href=""><li>BUSINESS AUTOMATION</li></a>
-                    <a href=""><li>SOFTWARE INTEGRATIONS</li></a>
-                    <a href=""><li>MOBILE APP DEVELOPMENT</li></a>
-                    <a href=""><li>BESPOKE DATABASES</li></a>
-                    <a href=""><li>SHAREPOINT DEVELOPMENT</li></a>
-                    <a href=""><li>OPERATIONAL SYSTEMS</li></a>
-                    <a href=""><li>BUSINESS CENTRAL IMPLEMENTATION</li></a>
-                    <a href=""><li>INTERNET OF THINGS (IOT) SOFTWARE</li></a>
-                    <a href=""><li>INTRANET DEVELOPMENT</li></a>
-                    <a href=""><li>CUSTOMER PORTAL DEVELOPMENT</li></a>
-                    <a href=""><li>REPORTING HUB</li></a>
-                    <a href=""><li>SAP S/4HANA MANAGEMENT</li></a>
+                    <li><a href="">BESPOKE CRM</a></li>
+                    <li><a href="">BUSINESS AUTOMATION</a></li>
+                    <li><a href="">SOFTWARE INTEGRATIONS</a></li>
+                    <li><a href="">MOBILE APP DEVELOPMENT</a></li>
+                    <li><a href="">BESPOKE DATABASES</a></li>
+                    <li><a href="">SHAREPOINT DEVELOPMENT</a></li>
+                    <li><a href="">OPERATIONAL SYSTEMS</a></li>
+                    <li><a href="">BUSINESS CENTRAL IMPLEMENTATION</a></li>
+                    <li><a href="">INTERNET OF THINGS (IOT) SOFTWARE</a></li>
+                    <li><a href="">INTRANET DEVELOPMENT</a></li>
+                    <li><a href="">CUSTOMER PORTAL DEVELOPMENT</a></li>
+                    <li><a href="">REPORTING HUB</a></li>
+                    <li><a href="">SAP S/4HANA MANAGEMENT</a></li>
                 </ul>
             </div>
 
@@ -504,12 +502,12 @@
                 </div>
                 
                 <ul class="mobileSMenuBottomSection">
-                    <a href=""><li>MANAGED IT SUPPORT</li></a>
-                    <a href=""><li>BUSINESS IT SUPPORT</li></a>
-                    <a href=""><li>OFFICE 365 FOR BUSINESS</li></a>
-                    <a href=""><li>IT CONSULTANCY</li></a>
-                    <a href=""><li>CLOUD SERVICE PROVIDER</li></a>
-                    <a href=""><li>DATA BACKUP U+00026 DISASTER RECOVERY</li></a>
+                    <li><a href="">MANAGED IT SUPPORT</a></li>
+                    <li><a href="">BUSINESS IT SUPPORT</a></li>
+                    <li><a href="">OFFICE 365 FOR BUSINESS</a></li>
+                    <li><a href="">IT CONSULTANCY</a></li>
+                    <li><a href="">CLOUD SERVICE PROVIDER</a></li>
+                    <li><a href="">DATA BACKUP U+00026 DISASTER RECOVERY</a></li>
                 </ul>
             </div>
 
@@ -521,12 +519,12 @@
                 </div>
                 
                 <ul class="mobileSMenuBottomSection">
-                    <a href=""><li>SEARCH ENGINE OPTIMISATION (SEO)</li></a>
-                    <a href=""><li>PAY PER CLICK ADVERTISING (PPC)</li></a>
-                    <a href=""><li>CONVERSATION RATE OPTIMISATION (CRO)</li></a>
-                    <a href=""><li>EMAIL MARKETING</li></a>
-                    <a href=""><li>SOCIAL MEDIA MARKETING</li></a>
-                    <a href=""><li>CONTENT MARKETING</li></a>
+                    <li><a href="">SEARCH ENGINE OPTIMISATION (SEO)</a></li>
+                    <li><a href="">PAY PER CLICK ADVERTISING (PPC)</a></li>
+                    <li><a href="">CONVERSATION RATE OPTIMISATION (CRO)</a></li>
+                    <li><a href="">EMAIL MARKETING</a></li>
+                    <li><a href="">SOCIAL MEDIA MARKETING</a></li>
+                    <li><a href="">CONTENT MARKETING</a></li>
                 </ul>
             </div>
 
@@ -538,12 +536,12 @@
                 </div>
                 
                 <ul class="mobileSMenuBottomSection">
-                    <a href=""><li>BUSINESS MOBILE</li></a>
-                    <a href=""><li>HOSTED VOIP PROVIDER</li></a>
-                    <a href=""><li>BUSINESS VOIP SYSTEMS</li></a>
-                    <a href=""><li>BUSINESS BROADBAND</li></a>
-                    <a href=""><li>LEASED LINES PROVIDER</li></a>
-                    <a href=""><li>3CX SYSTEMS</li></a>
+                    <li><a href="">BUSINESS MOBILE</a></li>
+                    <li><a href="">HOSTED VOIP PROVIDER</a></li>
+                    <li><a href="">BUSINESS VOIP SYSTEMS</a></li>
+                    <li><a href="">BUSINESS BROADBAND</a></li>
+                    <li><a href="">LEASED LINES PROVIDER</a></li>
+                    <li><a href="">3CX SYSTEMS</a></li>
                 </ul>
             </div>
 
@@ -555,12 +553,12 @@
                 </div>
                 
                 <ul class="mobileSMenuBottomSection">
-                    <a href=""><li>BESPOKE WEBSITE DESIGN</li></a>
-                    <a href=""><li>ECOMMERCE WEBSITE DESIGN</li></a>
-                    <a href=""><li>PAY MONTHLY WEBSITES</li></a>
-                    <a href=""><li>BRANDING U+00026 DESIGN</li></a>
-                    <a href=""><li>MOBILE APP DEVELOPMENT</li></a>
-                    <a href=""><li>WEB HOSTING</li></a>
+                    <li><a href="">BESPOKE WEBSITE DESIGN</a></li>
+                    <li><a href="">ECOMMERCE WEBSITE DESIGN</a></li>
+                    <li><a href="">PAY MONTHLY WEBSITES</a></li>
+                    <li><a href="">BRANDING U+00026 DESIGN</a></li>
+                    <li><a href="">MOBILE APP DEVELOPMENT</a></li>
+                    <li><a href="">WEB HOSTING</a></li>
                 </ul>
             </div>  
 
@@ -572,12 +570,12 @@
                 </div>
                 
                 <ul class="mobileSMenuBottomSection">
-                    <a href=""><li>CYBER SECURITY ASSESSMENT</li></a>
-                    <a href=""><li>CYBER SECURITY MANAGEMENT</li></a>
-                    <a href=""><li>CYBER PENETRATION TESTING</li></a>
-                    <a href=""><li>CYBER ESSENTIALS CERTIFICATION</li></a>
-                    <a href=""><li>PCI COMPLIANCE</li></a>
-                    <a href=""><li>HACKING PREVENTION</li></a>
+                    <li><a href="">CYBER SECURITY ASSESSMENT</a></li>
+                    <li><a href="">CYBER SECURITY MANAGEMENT</a></li>
+                    <li><a href="">CYBER PENETRATION TESTING</a></li>
+                    <li><a href="">CYBER ESSENTIALS CERTIFICATION</a></li>
+                    <li><a href="">PCI COMPLIANCE</a></li>
+                    <li><a href="">HACKING PREVENTION</a></li>
                 </ul>
             </div> 
 
@@ -589,87 +587,87 @@
                 </div>
                 
                 <ul class="mobileSMenuBottomSection">
-                    <a href=""><li>TRAIN FOR A CAREER IN TECH</li></a>
-                    <a href=""><li>SKILLS BOOTCAMP</li></a>
-                    <a href=""><li>SCION SCHEME FREQUENTLY ASKED QUESTIONS</li></a>
-                    <a href=""><li>SCION COLLABORATORS</li></a>
+                    <li><a href="">TRAIN FOR A CAREER IN TECH</a></li>
+                    <li><a href="">SKILLS BOOTCAMP</a></li>
+                    <li><a href="">SCION SCHEME FREQUENTLY ASKED QUESTIONS</a></li>
+                    <li><a href="">SCION COLLABORATORS</a></li>
                 </ul>
             </div> 
 
-            <div id="sideMenuOurWork" class="sideMenuOption">
+            <div id="mobileSMenuSideMenuOurWork" class="sideMenuOption">
                 <div class="sideMenuTopSection">
                     <a href="">OUR WORK</a>
                 </div>
                 
                 <ul class="sideMenuBottomSection">
-                    <a href=""><li><i class="fa-solid fa-angles-right"></i>CASE STUDIES</li></a>
-                    <a href=""><li><i class="fa-solid fa-angles-right"></i>OUR DIGITAL MARKETING CLIENTS</li></a>
-                    <a href=""><li><i class="fa-solid fa-angles-right"></i>OUR WEBSITE CLIENTS</li></a>
-                    <a href=""><li><i class="fa-solid fa-angles-right"></i>OUR IT CLIENTS</li></a>
-                    <a href=""><li><i class="fa-solid fa-angles-right"></i>OUR BESPOKE SOFTWARE CLIENTS</li></a>
-                    <a href=""><li><i class="fa-solid fa-angles-right"></i>OUR TELECOMS CLIENTS</li></a>
+                    <li><a href=""><i class="fa-solid fa-angles-right"></i>CASE STUDIES</a></li>
+                    <li><a href=""><i class="fa-solid fa-angles-right"></i>OUR DIGITAL MARKETING CLIENTS</a></li>
+                    <li><a href=""><i class="fa-solid fa-angles-right"></i>OUR WEBSITE CLIENTS</a></li>
+                    <li><a href=""><i class="fa-solid fa-angles-right"></i>OUR IT CLIENTS</a></li>
+                    <li><a href=""><i class="fa-solid fa-angles-right"></i>OUR BESPOKE SOFTWARE CLIENTS</a></li>
+                    <li><a href=""><i class="fa-solid fa-angles-right"></i>OUR TELECOMS CLIENTS</a></li>
                 </ul>
             </div>
 
-            <div id="sideMenuOurKnowledge" class="sideMenuOption">
+            <div id="mobileSMenuSideMenuOurKnowledge" class="sideMenuOption">
                 <div class="sideMenuTopSection">
                     <a href="">OUR KNOWLEDGE</a>
                 </div>
                 
                 <ul class="sideMenuBottomSection">
-                    <a href=""><li><i class="fa-solid fa-angles-right"></i>TECHNOLOGIES</li></a>
-                    <a href=""><li><i class="fa-solid fa-angles-right"></i>INDUSTRIES</li></a>
-                    <a href=""><li><i class="fa-solid fa-angles-right"></i>NEWS</li></a>
-                    <a href=""><li><i class="fa-solid fa-angles-right"></i>INSIGHTS</li></a>
+                    <li><a href=""><i class="fa-solid fa-angles-right"></i>TECHNOLOGIES</a></li>
+                    <li><a href=""><i class="fa-solid fa-angles-right"></i>INDUSTRIES</a></li>
+                    <li><a href=""><i class="fa-solid fa-angles-right"></i>NEWS</a></li>
+                    <li><a href=""><i class="fa-solid fa-angles-right"></i>INSIGHTS</a></li>
                 </ul>
             </div>
 
-            <div id="sideMenuTraining" class="sideMenuOption">
+            <div id="mobileSMenuSideMenuTraining" class="sideMenuOption">
                 <div class="sideMenuTopSection">
                     <a href="">TRAINING</a>
                 </div>
                 
                 <ul class="sideMenuBottomSection">
-                    <a href=""><li><i class="fa-solid fa-angles-right"></i>TRAIN FOR A CAREER IN TECH</li></a>
-                    <a href=""><li><i class="fa-solid fa-angles-right"></i>SKILLS BOOTCAMP</li></a>
-                    <a href=""><li><i class="fa-solid fa-angles-right"></i>SCS FREQUENTLY ASKED QUESTIONS</li></a>
-                    <a href=""><li><i class="fa-solid fa-angles-right"></i>SCION COLLABORATORS</li></a>
+                    <li><a href=""><i class="fa-solid fa-angles-right"></i>TRAIN FOR A CAREER IN TECH</a></li>
+                    <li><a href=""><i class="fa-solid fa-angles-right"></i>SKILLS BOOTCAMP</a></li>
+                    <li><a href=""><i class="fa-solid fa-angles-right"></i>SCS FREQUENTLY ASKED QUESTIONS</a></li>
+                    <li><a href=""><i class="fa-solid fa-angles-right"></i>SCION COLLABORATORS</a></li>
                 </ul>
             </div>
 
-            <div id="sideMenuOurCompany" class="sideMenuOption">
+            <div id="mobileSMenuSideMenuOurCompany" class="sideMenuOption">
                 <div class="sideMenuTopSection">
                     <a href="">OUR COMPANY</a>
                 </div>
                 
                 <ul class="sideMenuBottomSection">
-                    <a href=""><li><i class="fa-solid fa-angles-right"></i>WHY CHOOSE US</li></a>
-                    <a href=""><li><i class="fa-solid fa-angles-right"></i>OUR CULTURE</li></a>
-                    <a href=""><li><i class="fa-solid fa-angles-right"></i>OUR TEAM</li></a>
-                    <a href=""><li><i class="fa-solid fa-angles-right"></i>OUR CAREERS</li></a>
-                    <a href=""><li><i class="fa-solid fa-angles-right"></i>OUR BENEFITS</li></a>
+                    <li><a href=""><i class="fa-solid fa-angles-right"></i>WHY CHOOSE US</a></li>
+                    <li><a href=""><i class="fa-solid fa-angles-right"></i>OUR CULTURE</a></li>
+                    <li><a href=""><i class="fa-solid fa-angles-right"></i>OUR TEAM</a></li>
+                    <li><a href=""><i class="fa-solid fa-angles-right"></i>OUR CAREERS</a></li>
+                    <li><a href=""><i class="fa-solid fa-angles-right"></i>OUR BENEFITS</a></li>
                 </ul>
             </div>
 
-            <div id="sideMenuContactUs" class="sideMenuOption">
+            <div id="mobileSMenuSideMenuContactUs" class="sideMenuOption">
                 <div class="sideMenuTopSection">
                     <a href="">CONTACT US</a>
                 </div>
                 
                 <ul class="sideMenuBottomSection">
-                    <a href=""><li><i class="fa-solid fa-angles-right"></i>CAMBRIDGE OFFICE</li></a>
-                    <a href=""><li><i class="fa-solid fa-angles-right"></i>WYMONDHAM OFFICE</li></a>
-                    <a href=""><li><i class="fa-solid fa-angles-right"></i>GREAT YARMOUTH OFFICE</li></a>
+                    <li><a href=""><i class="fa-solid fa-angles-right"></i>CAMBRIDGE OFFICE</a></li>
+                    <li><a href=""><i class="fa-solid fa-angles-right"></i>WYMONDHAM OFFICE</a></li>
+                    <li><a href=""><i class="fa-solid fa-angles-right"></i>GREAT YARMOUTH OFFICE</a></li>
                 </ul>
             </div>
 
-            <div id="sideMenuCovid" class="sideMenuOption">
+            <div id="mobileSMenuSideMenuCovid" class="sideMenuOption">
                 <div class="sideMenuTopSection">
                     <a href="">COVID RISK ASSESSMENTS</a>
                 </div>
             </div>
 
-            <div id="sideMenuCustomerSupport" class="sideMenuOption">
+            <div id="mobileSMenuSideMenuCustomerSupport" class="sideMenuOption">
                 <div class="sideMenuTopSection">
                     <a href="">SUPPORT</a>
                 </div>
