@@ -14,11 +14,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     @include mq("s") {
         justify-content: flex-start;
     }
     @include mq("m") {
-        gap: 377px;
+        justify-content: space-between;
     }
     @include mq("l") {
         gap: 588px;

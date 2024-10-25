@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/Style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Full Service Digital Agency | Cambridgeshire & Norfolk | Netmatters</title>
 
     <!-- database include -->
      <?php
@@ -38,13 +39,13 @@
 
         <div class="infoBanner">
             <div class="bannerSlider">
-                <img src="Assets/Banner Image.png" alt="Netmatters Building" class="infoBannerItem bannerImage">
-                <img src="Assets/Banner Bespoke.png" alt="Bespoke Software Image" class="infoBannerItem bannerImage">
-                <img src="Assets/Banner IT Support.png" alt="Building PC Image" class="infoBannerItem bannerImage">
-                <img src="Assets/Banner Digital Marketing.png" alt="Marketing Team Image" class="infoBannerItem bannerImage">
-                <img src="Assets/Banner Telecoms Services.png" alt="Phone Image" class="infoBannerItem bannerImage">
-                <img src="Assets/Banner web design.png" alt="Web Developer Image" class="infoBannerItem bannerImage">
-                <img src="Assets/Banner Cyber Security.png" alt="Security Lock Image" class="infoBannerItem bannerImage"> 
+                <img src="Assets/BannerImage.png" alt="Netmatters Building" class="infoBannerItem bannerImage">
+                <img src="Assets/BannerBespoke.png" alt="Bespoke Software Image" class="infoBannerItem bannerImage">
+                <img src="Assets/BannerITSupport.png" alt="Building PC Image" class="infoBannerItem bannerImage">
+                <img src="Assets/BannerDigitalMarketing.png" alt="Marketing Team Image" class="infoBannerItem bannerImage">
+                <img src="Assets/BannerTelecomsServices.png" alt="Phone Image" class="infoBannerItem bannerImage">
+                <img src="Assets/Bannerwebdesign.png" alt="Web Developer Image" class="infoBannerItem bannerImage">
+                <img src="Assets/BannerCyberSecurity.png" alt="Security Lock Image" class="infoBannerItem bannerImage"> 
             </div>
             <div id="bannerItemsContainer">
             <div class="overlayingBannerItems">
@@ -108,24 +109,24 @@
                 <!-- <H1 id="servicesGrid" class="poppins-light">Our Services</H1> -->
                 <div id="firstRow">
                 <div class="item item-1 clickable"> 
-                    <img src="Assets/Bespoke Software Logo.png" alt="Bespoke Software Logo" id="bespokeLogo">
-                    <img src="Assets/Bespoke Software Logo hover.png" alt="Bespoke Software Logo" id="bespokeLogoHover" class="hide">
+                    <img src="Assets/BespokeSoftwareLogo.png" alt="Bespoke Software Logo" id="bespokeLogo">
+                    <img src="Assets/BespokeSoftwareLogohover.png" alt="Bespoke Software Logo" id="bespokeLogoHover" class="hide">
                     <h3>Bespoke Software</h3>
                     <p>Bespoke software solutions for all your business needs including integrations and reporting.</p>
                     <button type="button" class="tagButton">Read More</button>
                </div>
 
                <div class="item item-2 clickable">
-                    <img src="Assets/IT Support Logo.png" alt="IT Support Logo" id="itLogo">
-                    <img src="Assets/IT Support Logo hover.png" alt="IT Support Logo" id="itLogoHover" class="hide">
+                    <img src="Assets/ITSupportLogo.png" alt="IT Support Logo" id="itLogo">
+                    <img src="Assets/ITSupportLogo hover.png" alt="IT Support Logo" id="itLogoHover" class="hide">
                     <h3>IT Support</h3>
                     <p>Fully managed IT support and consultancy packages tailored to meet your exact business needs.</p>
                     <button type="button" class="tagButton blueButton" id="itButton">Read More</button>
                </div>
 
                <div class="item item-3 clickable"> 
-                    <img src="Assets/Digital Marketing Logo.png" alt="Digital Marketing Logo" id="marketingLogo">
-                    <img src="Assets/Digital Marketing Logo hover.png" alt="Digital Marketing Logo" id="marketingLogoHover" class="hide">
+                    <img src="Assets/DigitalMarketingLogo.png" alt="Digital Marketing Logo" id="marketingLogo">
+                    <img src="Assets/DigitalMarketingLogohover.png" alt="Digital Marketing Logo" id="marketingLogoHover" class="hide">
                     <h3>Digital Marketing</h3>
                     <p>Driven brand awareness &amp; ROI through creative digital marketing campaigns.</p>
                     <button type="button" class="tagButton greenButton">Read More</button>
@@ -134,32 +135,32 @@
 
                <div id="secondRow">
                <div class="item item-4 clickable">
-                    <img src="Assets/Telecom Services Logo.png" alt="Telecom Services Logo" id="telecomLogo">
-                    <img src="Assets/Telecom Services Logo hover.png" alt="Telecom Services Logo" id="telecomLogoHover" class="hide"> 
+                    <img src="Assets/TelecomServicesLogo.png" alt="Telecom Services Logo" id="telecomLogo">
+                    <img src="Assets/TelecomServicesLogohover.png" alt="Telecom Services Logo" id="telecomLogoHover" class="hide"> 
                     <h3>Telecom Services</h3>
                     <p>Business telephony solutions including mobile &amp; connectivity solutions.</p>
                     <button type="button" class="tagButton maroon">Read More</button>
                </div>
 
                <div class="item item-5 clickable">
-                    <img src="Assets/Web Design Logo.png" alt="Web Design Logo" id="designLogo">
-                    <img src="Assets/Web Design Logo hover.png" alt="Web Design Logo" id="designLogoHover" class="hide"> 
+                    <img src="Assets/WebDesignLogo.png" alt="Web Design Logo" id="designLogo">
+                    <img src="Assets/WebDesignLogohover.png" alt="Web Design Logo" id="designLogoHover" class="hide"> 
                     <h3>Web Design</h3>
                     <p>User centric design for business looking to make a lasting impression.</p>
                     <button type="button" class="tagButton purpleButton">Read More</button>
                </div>
 
                <div class="item item-6 clickable">
-                    <img src="Assets/Cyber Security Logo.png" alt="Cyber Security Logo" id="cyberLogo">
-                    <img src="Assets/Cyber Security Logo hover.png" alt="Cyber Security Logo" id="cyberLogoHover" class="hide"> 
+                    <img src="Assets/CyberSecurityLogo.png" alt="Cyber Security Logo" id="cyberLogo">
+                    <img src="Assets/CyberSecurityLogohover.png" alt="Cyber Security Logo" id="cyberLogoHover" class="hide"> 
                     <h3>Cyber Security</h3>
                     <p>Prevention, testing, consultancy &amp; breach management services</p>
                     <button type="button" class="tagButton redButton">Read More</button>
                </div>
 
                <div class="item item-7 clickable">
-                    <img src="Assets/Developer Logo.png" alt="Developer Training Logo" id="devLogo">
-                    <img src="Assets/Developer Logo hover.png" alt="Developer Training Logo" id="devLogoHover" class="hide">  
+                    <img src="Assets/DeveloperLogo.png" alt="Developer Training Logo" id="devLogo">
+                    <img src="Assets/DeveloperLogohover.png" alt="Developer Training Logo" id="devLogoHover" class="hide">  
                     <h3>Developer Training</h3>
                     <p>Web design &amp; software courses designed to secure a job in tech.</p>
                     <button type="button" class="tagButton maroon">Read More</button>
@@ -176,17 +177,17 @@
         <div class="section">
             <div class="carouselContainer">
                 <div class="owl-carousel owl-theme" id="ourWorkaccreditations">
-                    <img src="Assets/norfolk carbon charter.png" alt="norfolk carbon award" class="carouselItem">
-                    <img src="Assets/citation information security iso certification.png" alt="Information Security Award" class="carouselItem">
-                    <img src="Assets/ISO Certification.png" alt="Quality Management Award" class="carouselItem">
+                    <img src="Assets/norfolkcarboncharter.png" alt="norfolk carbon award" class="carouselItem">
+                    <img src="Assets/citationinformationsecurityisocertification.png" alt="Information Security Award" class="carouselItem">
+                    <img src="Assets/ISOCertification.png" alt="Quality Management Award" class="carouselItem">
                     <img src="Assets/cyberessentials.jpg" alt="Cyber Essentials Awards" class="carouselItem">
                     <img src="Assets/future-50.jpg" alt="future 50 award" class="carouselItem">
                     <img src="Assets/futuregrowthaward.jpg" alt="invest future award" class="carouselItem">
-                    <img src="Assets/google partner.jpg" alt="google partner" class="carouselItem">
+                    <img src="Assets/googlepartner.jpg" alt="google partner" class="carouselItem">
                     <img src="Assets/livingwageemployer.png" alt="living wage award" class="carouselItem">
                     <img src="Assets/norfolkprohelp.png" alt="norfolk pro help award" class="carouselItem">
                     <img src="Assets/princess-royal-training-bw.png" alt="princess royal training award" class="carouselItem">
-                    <img src="Assets/prompt payment code.jpg" alt="prompt payment award" class="carouselItem">
+                    <img src="Assets/promptpaymentcode.jpg" alt="prompt payment award" class="carouselItem">
                     <img src="Assets/skillsoftommorowaward.jpg" alt="skills of tommorow award" class="carouselItem">
                 </div>
             </div>
@@ -195,7 +196,7 @@
 <!-- WELCOME TO NETMATTERS SECTION -->
 
         <div id="welcome">
-            <h1 id="welcomeHeading">Welcome to Netmatters</h1>
+            <h1 id="welcomeHeading" class="globalContainer">Welcome to Netmatters</h1>
             <div class="globalContainer">
                 <div id="welcomeGrid">
                 <div class="welcomeSections" id="welcomeLeftSection">
@@ -340,7 +341,7 @@
                     </div>
                 </div>
             
-                <img src="Assets/crane logo.png" alt="Crane Logo">
+                <img src="Assets/cranelogo.png" alt="Crane Logo">
             </div>
             
             <div class="accreditationsContainer" id="girlGuidingrInfo">

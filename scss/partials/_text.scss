@@ -176,6 +176,8 @@ button {
     }
 }
 
+
+
 #welcomeText p {
     font-size: 1.2rem;
 }
@@ -241,6 +243,12 @@ button {
     }
     @include mq("xl") {
         font-size: 1.1rem;
+    }
+}
+
+#clientThoughts h1 {
+    @include mq("s") {
+        margin-top: 45px;
     }
 }
 

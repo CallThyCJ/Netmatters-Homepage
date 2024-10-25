@@ -60,7 +60,7 @@ button {
     font-style: italic;
 }
 
-.mobileOnly {
+.mobileOnly h2 {
     @include mq("m") {
         display: none;
     }
@@ -93,33 +93,6 @@ button {
 a {
     text-decoration: none;
 }
-
-// .globalContainer {
-//     margin-right: auto;
-//     margin-left: auto;
-//     padding-left: 15px;
-//     padding-right: 15px;
-  
-//     @include mq("xs") {
-//       width: 323px;
-//     }
-  
-//     @include mq("s") {
-//       width: 750px;
-//     }
-  
-//     @include mq("m") {
-//       width: 750px;
-//     }
-  
-//     @include mq("l") {
-//       width: 970px;
-//     }
-  
-//     @include mq("xl") {
-//       width: 1200px;
-//     }
-//   }
 
 .clickable:hover {
     cursor: pointer
@@ -715,6 +688,9 @@ a {
 }
 
 #welcomeHeading {
+    @include mq("m") {
+        margin-bottom: 40px;
+    }
     @include mq("l") {
         display: none;
     }
@@ -760,6 +736,7 @@ a {
     }
     @include mq("m") {
         line-height: 30px;
+        margin-bottom: 30px;
     }
     @include mq("l") {
         margin-bottom: 3%;
@@ -916,7 +893,7 @@ a {
     margin-top: 50px;
     margin-bottom: 80px;
     @include mq("s") {
-        margin-bottom: 20px;
+        margin-bottom: 90px;
     }
 }
 
