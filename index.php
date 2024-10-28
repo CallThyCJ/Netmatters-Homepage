@@ -47,7 +47,7 @@
                 <img src="Assets/Bannerwebdesign.png" alt="Web Developer Image" class="infoBannerItem bannerImage">
                 <img src="Assets/BannerCyberSecurity.png" alt="Security Lock Image" class="infoBannerItem bannerImage"> 
             </div>
-            <div id="bannerItemsContainer">
+            <div id="bannerItemsContainer" class="globalContainer">
             <div class="overlayingBannerItems">
                 <div class="bannerInfo" id="slideTechCompany">
                     <H1 class="bold">The East Of England's Leading Technology Company</H1>

@@ -25,18 +25,9 @@
 #bannerItemsContainer {
     display: flex;
     justify-content: center;
-    width: 100%;
     height: 100%;
-    margin-right: auto;
-    margin-left: auto;
     position: absolute;
     z-index: 1;
-    @include mq("l") {
-        width: 970px;
-    }
-    @include mq("xl") {
-        width: 1200px;
-    }
 }
 
 .overlayingBannerItems {
@@ -45,7 +36,6 @@
     align-items: center;
     height: 100%;
     justify-content: center;
-    position: absolute;
     z-index: 1;
     @include mq("l") {
         align-items: flex-start;
