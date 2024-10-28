@@ -23,11 +23,11 @@
     @include mq("l") {
         display: flex;
         justify-content: center;
-        width: 970px;
+        // width: 970px;
         height: 99.02px;
     }
     @include mq("xl") {
-        width: 100%;
+        // width: 100%;
         height: 100%;
     }
 }

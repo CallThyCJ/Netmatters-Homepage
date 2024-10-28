@@ -40,7 +40,7 @@
 
 <div id="bigContainer">
         <div class="mainNavBar mainNavBarPosition" id="masterNavBar">
-            <div class="navOptions">
+            <div class="navOptions globalContainer">
                 <div class="navItem clickable" id="optionBespoke">
                     <img src="/Assets/BespokeSoftwareLogotransparent.png" alt="Bespoke Software Logo" id="navBespokeLogo">
                     <img src="/Assets/BespokeSoftwareLogowhitetransparent.png" alt="White Bespoke Software Logo" id="navBespokeLogoWhite" class="hide">
