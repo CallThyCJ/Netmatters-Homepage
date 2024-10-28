@@ -143,8 +143,14 @@ a {
     }
     @include mq("m") {
         grid-area: logo;
-        min-height: 60.06px;
-        min-width: 345px;
+        width: 345px;
+        height: 60.06px;
+    }
+    @include mq("l") {
+        min-height: 0;
+        min-width: 0;
+        width: 374.16px;
+        height: 65.14px;
     }
     @include mq("xl") {
         width: 370px;
@@ -206,10 +212,7 @@ a {
         max-height: 0;
         min-width: 63px;
         min-height: 56px;
-    }
-    @include mq("l") {
-        margin-left: -42.3%;
-    }  
+    } 
 }
 
 #mainSearchBar, #searchIcon, #lSearchBar {
