@@ -253,7 +253,7 @@
 <?php
 
     try {
-        $sql = "SELECT * FROM news_information";
+        $sql = "SELECT * FROM news_information ORDER BY post_date DESC";
         $statement = $conn->prepare($sql);
         $statement->execute();
 
@@ -261,7 +261,7 @@
         $newsCards = $statement->fetchAll(PDO::FETCH_ASSOC);
 
         // randomize the data order
-        shuffle($newsCards);
+        // shuffle($newsCards);
 
         // limit how many cards there can be
         $displayedCards = array_slice($newsCards, 0, 3);

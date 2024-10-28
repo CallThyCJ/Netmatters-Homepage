@@ -6,7 +6,7 @@
         justify-content: flex-start;
     }
     @include mq("m") {
-        justify-content: center;
+        justify-content: space-between;
         gap: 180px;
     }
     @include mq("l") {
