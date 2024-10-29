@@ -15,8 +15,19 @@ privacyText.addEventListener("click", toggleTickBox);
 // Form Submission
 document.getElementById("contactForm").addEventListener("submit", function(event) {
     event.preventDefault();
+    let marketingAgreement;
+
+    // Check if marketing is agreed
+    if (tickbox.classList.contains("ticked")) {
+        marketingAgreement = 1; 
+    } else {
+       marketingAgreement = 0;
+    }
 
     const formData = new FormData(this);
+
+    // Append Marketing Agreement to Form
+    formData.append("Receive_Marketing", marketingAgreement)
 
     const xhr = new XMLHttpRequest();
 

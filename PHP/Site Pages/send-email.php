@@ -42,8 +42,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // DATABASE LOGIC 
     try {
-        $contactSQL = "INSERT INTO contact_emails(name, company_name, email, telephone_number, message) 
-                        VALUES (:name, :company_name, :email, :telephone_number, :message)";
+        $marketingAgreement = $_POST["Receive_Marketing"] ?? 0;
+
+        $contactSQL = "INSERT INTO contact_emails(name, company_name, email, telephone_number, message, Receive_Marketing) 
+                        VALUES (:name, :company_name, :email, :telephone_number, :message, :Receive_Marketing)";
         $statement = $conn->prepare($contactSQL);
         
         $statement->bindValue(':name', $name);
@@ -51,6 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $statement->bindValue(':email', $email);
         $statement->bindValue(':telephone_number', $phoneNum);
         $statement->bindValue(':message', $message);
+        $statement->bindValue(':Receive_Marketing', $marketingAgreement);
 
 
         if ($statement->execute()) {
