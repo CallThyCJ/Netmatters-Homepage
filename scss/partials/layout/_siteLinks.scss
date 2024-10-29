@@ -58,4 +58,9 @@
     height: 132px;
     column-gap: 10px;
     row-gap: 3px;
+
+    @include mq("l") {
+        flex-wrap: nowrap;
+        padding-left: 0;
+    }
 }
