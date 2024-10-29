@@ -1,8 +1,8 @@
 <?php
-$host = 'localhost';
-$dbname = 'netmattershomepage';
-$username = 'root';
-$password = '';
+$host = getenv("MySQL_DB_HOST");
+$dbname = getenv("MySQL_DB_NAME");
+$username = getenv("MySQL_DB_USER_NAME");
+$password = getenv("MySQL_DB_PASSWORD");
 
 
 try {
