@@ -1,8 +1,10 @@
 <?php
-$host = getenv("MySQL_DB_HOST");
-$dbname = getenv("MySQL_DB_NAME");
-$username = getenv("MySQL_DB_USER_NAME");
-$password = getenv("MySQL_DB_PASSWORD");
+require __DIR__ . "/../loadenv.php";
+
+$host = $_ENV['MySQL_DB_HOST'];
+$dbname = $_ENV['MySQL_DB_NAME'];
+$username = $_ENV['MySQL_DB_USER_NAME'];
+$password = $_ENV['MySQL_DB_PASSWORD'];
 
 
 try {
