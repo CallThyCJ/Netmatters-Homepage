@@ -33,19 +33,16 @@
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    gap: 35px;
+    gap: 30px;
+    width: 100%;
+    flex-wrap: wrap;
     @include mq("m") {
         flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
+        // overflow-x: hidden;
     }
     @include mq("l") {
-        gap: 30px;
-        width: 100%;
         max-height: 660px;
-    }
-    @include mq("xl") {
-        flex-wrap: nowrap;
     }
 }
 
