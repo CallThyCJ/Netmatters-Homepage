@@ -1,7 +1,7 @@
 <!-- HEADER NAV BAR  -->
  
  <header id="mainHeader">
- <div id="titleContainer">
+ <div id="titleContainer" class="globalContainer">
   <div class="titleBar">
       <img src="/Assets/NetmattersLogo.png" alt="Netmatters Logo" style="cursor: pointer;" class="titleItems" id="homeNetmattersLogo">
       <img src="/Assets/phone.png" alt="phone icon" class="titleItems" id="phoneIcon">
