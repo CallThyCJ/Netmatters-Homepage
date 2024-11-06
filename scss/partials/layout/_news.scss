@@ -35,11 +35,9 @@
     align-items: stretch;
     gap: 30px;
     width: 100%;
-    flex-wrap: wrap;
     @include mq("m") {
         flex-direction: row;
         flex-wrap: nowrap;
-        // overflow-x: hidden;
     }
     @include mq("l") {
         max-height: 660px;
@@ -59,10 +57,14 @@
     justify-content: flex-start;
     border-radius: 3px;
     padding: 0px;
+    max-width: 737px;
+    max-height: 750px;
+
     @include mq("m") {
         min-width: 345px;
         min-height: 569px;
         max-width: 345px;
+        max-height: none;
     }
     @include mq("l") {
         min-width: 455px;
@@ -105,6 +107,22 @@
         min-height: 213.86px;
         max-height: 213.86px;
     }
+
+    .News {
+        background-color: $hotPinkHover;
+    }
+
+    .CASE {
+        background-color: $purple;
+    }
+
+    .INSIGHTS {
+        background-color: $lightGreenHover;
+    }
+
+    .CAREERS {
+        background-color: #db8c0d;
+    }
 }
 
 .newsCategory {
@@ -126,10 +144,54 @@
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
+    height: auto;
     padding-left: 28px;
     padding-right: 28px;
+
+    @include mq("m") {
+        height: 261px;
+    }
+    
     @include mq("xl") {
-        flex-wrap: wrap;
+        height: 250.81px;
+    }
+
+
+
+    h3 {
+        &.News {
+            color: $hotPinkHover;
+        }
+    
+        &.CASE {
+            color: $purple;
+        }
+    
+        &.INSIGHTS {
+            color: $lightGreenHover;
+        }
+    
+        &.CAREERS {
+            color: #db8c0d;
+        }
+    }
+
+    button {
+        &.News {
+            background-color: $hotPinkHover;
+        }
+    
+        &.CASE {
+            background-color: $purple;
+        }
+    
+        &.INSIGHTS {
+            background-color: $lightGreenHover;
+        }
+    
+        &.CAREERS {
+            background-color: #db8c0d;
+        }
     }
 }
 
@@ -146,15 +208,14 @@
     padding-left: 28px;
     align-items: center;
     gap: 3%;
-    margin-top: 45px;
-    margin-bottom: 35px;
-    @include mq("s") {
-        margin-top: 36px;
-        margin-bottom: 30px;
+    margin-top: 54px;
+    margin-bottom: 30px;
+    @include mq("m") {
+        gap: 7%;
     }
     @include mq("l") {
         margin-bottom: 24px;
-        margin-top: 24px;
+        margin-top: 28px;
     }
     @include mq("xl") {
         margin-top: 40px;
@@ -167,17 +228,17 @@
     position: absolute;
     left: 28px; 
     right: 28px; 
-    bottom: 75px; 
+    bottom: 75px;
     height: 1px;
     background-color: #ccc;
-    @include mq("s") {
-        bottom: 80px;
-    }
     @include mq("m") {
-        bottom: 77px;
+        bottom: 82px;
+    }
+    @include mq("l") {
+        bottom: 83px;
     }
     @include mq("xl") {
-        bottom: 71px;
+        bottom: 80px;
     }  
 }
 
@@ -300,4 +361,13 @@
     width: 100%;
     align-items: center;
     z-index: 3;
+}
+
+.newsMobileOnly {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 90px;
+    @include mq("m") {
+        display: none;
+    }
 }

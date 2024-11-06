@@ -278,12 +278,17 @@ button {
 
 .midSection p {
     line-height: 1.375rem;
+        font-size: 0.8rem;
     @include mq("l") {
-        font-size: 0.85rem;
+        font-size: 0.83rem;
     }
 }
 
 .midSection h3 {
+        font-size: 1rem;
+    @include mq("m") {
+        font-size: 1.03rem;
+    }
     @include mq("l") {
         font-size: 1rem;
     }

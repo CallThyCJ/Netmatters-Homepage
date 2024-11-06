@@ -29,9 +29,15 @@ function hideNewsCard() {
             if (index === 2) {
                 card.style.display = "none";
             }
-        } else if (newsContainerWidth < 720) {
+        } else if (newsContainerWidth >= 720 && newsContainerWidth < 940 && window.innerWidth >= 768) {
             card.style.display = "block";
-            currentWidth += cardWidth;  
+            currentWidth += cardWidth;
+            if (index === 2) {
+                card.style.display = "none";
+            }
+        } else if (newsContainerWidth < 738 && window.innerWidth < 768) {
+            card.style.display = "block";
+            currentWidth += cardWidth;    
         } else if (currentWidth + cardWidth > newsContainerWidth) {
             card.style.display = "none";
         } else {

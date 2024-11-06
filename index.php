@@ -285,13 +285,13 @@
                                 
                                     <div class="item newsItem clickable">
                                         <div class="topSection">
-                                            <a href="" class="newsCategory redButton">' . htmlspecialchars($row['post_type']) . '</a>
+                                            <a href="" class="newsCategory ' . htmlspecialchars($row['post_type']) . '">' . htmlspecialchars($row['post_type']) . '</a>
                                             <img src="' . htmlspecialchars($row['image']) . '" alt="' . htmlspecialchars($row['title']) . '">
                                         </div>
                                         <div class="midSection">
-                                            <h3>' . htmlspecialchars($row['title']) . '</h3>
+                                            <h3 class="' . htmlspecialchars($row['post_type']) . '">' . htmlspecialchars($row['title']) . '</h3>
                                             <p>' . htmlspecialchars($row['description']) . '</p>
-                                            <button type="button" class="redButton">Read More</button>
+                                            <button type="button" class="' . htmlspecialchars($row['post_type']) . '">Read More</button>
                                         </div>
                                         <div class="bottomSection">
                                             <img src="Assets/netmattersminilogo.png" alt="Netmatters no text logo">
@@ -311,7 +311,7 @@
             </div>
 
 
-            <H2 class="mobileOnly">View All
+            <H2 class="newsMobileOnly">View All
                 <i class="fa-solid fa-arrow-right arrowRight"></i>
             </H2>
 
