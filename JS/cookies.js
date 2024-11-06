@@ -1,5 +1,6 @@
 const cookieButton = document.querySelector("#cookieAccept");
 const cookieContainer = document.querySelector("#cookieContainer");
+const cookieMenuSpacing = document.querySelector("#cookieMenuSpacing");
 let cookieMessageDisplayed = true;
 
 setCookie = (cName, cValue) => {
@@ -11,6 +12,7 @@ getCookie = (cName) => {
     const name = cName + "=";
     const cookieDecoded = decodeURIComponent(document.cookie);
     const cookieArray = cookieDecoded.split("; ");
+    
     let value;
     cookieArray.forEach(val => {
         if(val.indexOf(name) === 0) value = val.substring(name.length);
@@ -25,10 +27,12 @@ const handleLocalStorage = () => {
     if (isLocalCookieAccepted) {
         cookieContainer.style.display = "none";
         overlay.style.display = "none";
+        cookieMenuSpacing.classList.remove("active");
         cookieMessageDisplayed = false;
         console.log("Cookie already set in localStorage");
     } else {
             cookieContainer.style.display = "flex";
+            cookieMenuSpacing.classList.add("active");
             overlay.style.display = "block";
             console.log("No local cookie found");
         }
@@ -39,6 +43,7 @@ const cookieMessage = () => {
         cookieContainer.style.display = "flex";
         overlay.style.display = "block";
         overlay.style.opacity = "1";
+        cookieMenuSpacing.classList.add("active");
         cookieMessageDisplayed = true;
         console.log("no cookie");
         } else {
@@ -60,6 +65,7 @@ hideCookieMessageIfLocal();
 cookieButton.addEventListener("click", () => {
     cookieContainer.style.display = "none";
     cookieMessageDisplayed = false;
+    cookieMenuSpacing.classList.remove("active");
     overlay.style.display = "none";
     overlay.style.opacity = "0";
     setCookie("cookie", true); 
