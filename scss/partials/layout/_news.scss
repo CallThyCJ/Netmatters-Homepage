@@ -376,6 +376,12 @@
     text-align: center;
     margin-top: 50px;
     margin-bottom: 90px;
+
+    &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    
     @include mq("m") {
         display: none;
     }
