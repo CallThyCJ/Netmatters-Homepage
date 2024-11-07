@@ -221,6 +221,11 @@
         require "../Includes/siteLinks.php";
     ?>
 
+    <!-- Site Tools -->
+    <?php
+        require "../Includes/siteAssistance.php";
+    ?>
+
     <!-- COPYRIGHT FOOTER SECTION -->
 
     <?php

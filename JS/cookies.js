@@ -1,6 +1,7 @@
 const cookieButton = document.querySelector("#cookieAccept");
 const cookieContainer = document.querySelector("#cookieContainer");
 const cookieMenuSpacing = document.querySelector("#cookieMenuSpacing");
+const manageConsent = document.querySelector("#manageConsent");
 let cookieMessageDisplayed = true;
 
 setCookie = (cName, cValue) => {
@@ -77,6 +78,14 @@ cookieButton.addEventListener("click", () => {
         console.log("Cookie accepted and stored in cookies");
     }
 });
+
+manageConsent.addEventListener("click", () => {
+    cookieContainer.style.display = "flex";
+    cookieMenuSpacing.classList.add("active");
+    overlay.style.display = "block";
+    overlay.style.opacity = "1";
+    cookieMessageDisplayed = true;
+})
 
 
 

@@ -487,6 +487,11 @@
             require "PHP/Includes/siteLinks.php";
         ?>
 
+        <!-- Site Tools -->
+         <?php
+            require "PHP/Includes/siteAssistance.php";
+        ?>
+
     </div>
 
 </div>

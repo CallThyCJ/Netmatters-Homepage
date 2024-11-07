@@ -135,6 +135,11 @@
     padding-right: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
+    text-transform: uppercase;
+
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 
@@ -191,6 +196,10 @@
     
         &.CAREERS {
             background-color: #db8c0d;
+        }
+
+        &:hover {
+            cursor: pointer;
         }
     }
 }

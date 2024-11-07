@@ -21,3 +21,39 @@
     padding-top: 50px;
     padding-bottom: 50px;
 }
+
+#manageConsent, #chat {
+   position: fixed;
+   z-index: $zindex500;
+   bottom: 0; 
+   
+   &:hover {
+        cursor: pointer;
+   }
+}
+
+#chat {
+    right: 26px;
+    bottom: 27px; 
+    height: 60px;
+    width: 60px;
+    background-color: $NMgrey;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19);
+    border-radius: 30px;
+
+    .fa-message {
+        font-size: 1.6rem;
+    }
+}
+
+#manageConsent {
+    background-color: #75788a;
+    border-radius: 0;
+    border-top-right-radius: 10px;
+    padding: 0 10px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 22px;
+    text-transform: none;
+    border-width: 1px 1px 0 0;
+}
