@@ -253,7 +253,7 @@
 <?php
 
     try {
-        $sql = "SELECT * FROM news_information ORDER BY post_date DESC";
+        $sql = "SELECT * FROM news_information ORDER BY post_date DESC LIMIT 3";
         $statement = $conn->prepare($sql);
         $statement->execute();
 
@@ -264,7 +264,7 @@
         // shuffle($newsCards);
 
         // limit how many cards there can be
-        $displayedCards = array_slice($newsCards, 0, 3);
+        // $displayedCards = array_slice($newsCards, 0, 3);
 ?>
 
 
@@ -280,7 +280,7 @@
 
             <div class="newsContainer">
                 <?php
-                    foreach ($displayedCards as $row) {
+                    foreach ($newsCards as $row) {
                         echo '
                                 
                                     <div class="item newsItem clickable">
